@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}?xml version=\PYGZdq{}1.0\PYGZdq{} encoding=\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}?\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}LinearLayout}\PYG{+w}{ }\PYG{n+na}{xmlns:android=}\PYG{l+s}{\PYGZdq{}http://schemas.android.com/apk/res/android\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{xmlns:app=}\PYG{l+s}{\PYGZdq{}http://schemas.android.com/apk/res\PYGZhy{}auto\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{xmlns:tools=}\PYG{l+s}{\PYGZdq{}http://schemas.android.com/tools\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{android:layout\PYGZus{}width=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{android:layout\PYGZus{}height=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{android:orientation=}\PYG{l+s}{\PYGZdq{}vertical\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{tools:context=}\PYG{l+s}{\PYGZdq{}.MainActivity\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}LinearLayout}\PYG{+w}{ }\PYG{n+na}{android:background=}\PYG{l+s}{\PYGZdq{}\PYGZsh{}ff0000\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}width=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{android:orientation=}\PYG{l+s}{\PYGZdq{}horizontal\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}height=}\PYG{l+s}{\PYGZdq{}0dp\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}weight=}\PYG{l+s}{\PYGZdq{}1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/LinearLayout\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}LinearLayout}\PYG{+w}{ }\PYG{n+na}{android:background=}\PYG{l+s}{\PYGZdq{}\PYGZsh{}00ff00\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}width=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{android:orientation=}\PYG{l+s}{\PYGZdq{}horizontal\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}height=}\PYG{l+s}{\PYGZdq{}0dp\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}weight=}\PYG{l+s}{\PYGZdq{}1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/LinearLayout\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}LinearLayout}\PYG{+w}{ }\PYG{n+na}{android:background=}\PYG{l+s}{\PYGZdq{}\PYGZsh{}0000ff\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}width=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{android:orientation=}\PYG{l+s}{\PYGZdq{}horizontal\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}height=}\PYG{l+s}{\PYGZdq{}0dp\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}weight=}\PYG{l+s}{\PYGZdq{}1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/LinearLayout\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}LinearLayout}\PYG{+w}{ }\PYG{n+na}{android:background=}\PYG{l+s}{\PYGZdq{}\PYGZsh{}777777\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}width=}\PYG{l+s}{\PYGZdq{}match\PYGZus{}parent\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{android:orientation=}\PYG{l+s}{\PYGZdq{}horizontal\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}height=}\PYG{l+s}{\PYGZdq{}0dp\PYGZdq{}}
+\PYG{+w}{        }\PYG{n+na}{android:layout\PYGZus{}weight=}\PYG{l+s}{\PYGZdq{}1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/LinearLayout\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/LinearLayout\PYGZgt{}}
+\end{Verbatim}

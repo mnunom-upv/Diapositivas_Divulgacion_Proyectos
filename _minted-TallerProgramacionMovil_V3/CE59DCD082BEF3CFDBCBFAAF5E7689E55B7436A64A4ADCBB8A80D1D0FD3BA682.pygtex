@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{ActualizarEstatusTablero}\PYG{p}{(}\PYG{n}{fila}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Ultimo Turno: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{            }\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{fila}\PYG{o}{][}\PYG{n}{columna}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{            }\PYG{l+s}{\PYGZdq{}\PYGZbs{}n Conteo Cruces: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{            }\PYG{l+s}{\PYGZdq{}\PYGZbs{}n Contro Corazones: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{ConteoCorazones}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

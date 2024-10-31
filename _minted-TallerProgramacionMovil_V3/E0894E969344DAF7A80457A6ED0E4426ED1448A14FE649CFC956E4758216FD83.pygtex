@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{InicializarBotonesConIds}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{TextViewPizarra}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{textView\PYGZus{}Pizarra\PYGZus{}Estatus}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton1\PYGZus{}1}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton1\PYGZus{}2}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}3}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton1\PYGZus{}3}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton2\PYGZus{}1}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton2\PYGZus{}2}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}3}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton2\PYGZus{}3}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton3\PYGZus{}1}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton3\PYGZus{}2}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}3}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{boton3\PYGZus{}3}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

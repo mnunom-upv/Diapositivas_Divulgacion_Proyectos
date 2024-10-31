@@ -1,14 +1,3 @@
-
-# Pasos Previos
-#git init
-#git add .
-#git commit -m "Initial Commit"
-#git config --global credential.helper store
-#git config --global user.email "mnunom@upv.edu.mx" 
-#git branch -M main
-#git remote add origin https://github.com/mnunom-upv/Diapositivas_Divulgacion_Proyectos.git
-
-
 rm *.aux *.bbl *.blg *.out *.toc *.nav *.bcf *.xml *.snm *.log *.gz *.vrb
 rm .fuse*
 

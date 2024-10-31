@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{btnListener}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{View}\PYG{p}{.}\PYG{n+na}{OnClickListener}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nv}{fila}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{columna}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ObtieneFilaColumna}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nb}{it}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{makeText}\PYG{p}{(}\PYG{n}{applicationContext}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{l+s}{\PYGZdq{}PresionasteBoton [\PYGZdq{}}\PYG{o}{+}\PYG{n}{fila}\PYG{o}{+}\PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{o}{+}\PYG{n}{columna}\PYG{o}{+}\PYG{l+s}{\PYGZdq{}]\PYGZdq{}}\PYG{o}{+}
+\PYG{+w}{                }\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{fila}\PYG{o}{][}\PYG{n}{columna}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{LENGTH\PYGZus{}SHORT}\PYG{p}{).}\PYG{n+na}{show}\PYG{p}{()}
+\PYG{+w}{        }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Alguna informacion util\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
