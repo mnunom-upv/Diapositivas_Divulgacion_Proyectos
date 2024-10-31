@@ -15,7 +15,7 @@ rm .fuse*
 file=2024_ForoNalTI
 
 file=ProyectosMaestria_2009-2024
-file=TallerProgramacionMovil_V3
+#file=TallerProgramacionMovil_V3
 #file=SalonDeLaFamaAplicacionesMoviles
 #file=ConferenciaProgramacionMovil_2024
 #file=MacroPresentacion
