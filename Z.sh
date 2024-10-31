@@ -7,8 +7,8 @@ file=ProyectosMaestria_2009-2024
 file=TallerProgramacionMovil_V3
 file=SalonDeLaFamaAplicacionesMoviles
 #file=ConferenciaProgramacionMovil_2024
-file=MacroPresentacion
-file=2023_PonenciaRealidadVirtual
+#file=MacroPresentacion
+#file=2023_PonenciaRealidadVirtual
 
 
 
@@ -18,5 +18,9 @@ biber $file
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex
 rm *.aux *.bbl *.blg *.out *.toc *.nav *.bcf *.xml *.snm *.log *.gz *.vrb
 rm .fuse*
+
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $file.pdf
+cp output.pdf $file.pdf
+rm output.pdf
 
 open $file.pdf
