@@ -1,0 +1,85 @@
+
+OEM [40] 
+Oceanic environment monitoring 
+Light weight; costly and invasive sensory networks 
+Wireless Sensors
+
+IOT Based SM [46] 
+Soil monitoring for farming 
+Efficient vegetable crop monitoring; Greenhouse gases pose challenges on health of vegetables like tomato 
+Wireless sensors
+
+IoT Protocols for MEM [42] 
+Marine environment acoustic monitoring 
+Lower latency; low power consumption; installation and coverage issues 
+WSN and IoT
+
+IoT for air pollution [47] 
+Air pollution monitoring system 
+Mobile kit “IoT-Mobair” for prediction; inferior precision; low sensitivity; computationally complex 
+Gas sensor and IoT
+
+[5] 
+Air quality monitoring 
+Scalable and high-density air quality monitoring with interconnection of heterogeneous sensors; computational complexity due to huge data captured and processed 
+Mobile sensor network and WSN
+
+IoT based SEM [7] 
+Environmental monitoring 
+W3C standard for interoperability; interoperability issues of heterogeneous sensors 
+Heterogeneous sensors
+
+Air quality [12] 
+Air quality monitoring 
+Large area monitoring; noisy data; accuracy and cost issues 
+Geomatics sensors and IoT
+
+Pollution monitoring [16] 
+Air pollution monitoring 
+System Real time monitoring; accuracy issues 
+Sensors with MQ3 Model, Raspberry Pi and IoT
+
+Sensor based AQM [37] 
+Air pollution monitoring system 
+Efficient for low coverage area; low cost; easy to install; less number of pollutants are covered 
+Gas sensor and LASER sensor
+
+SEM [48] 
+Dust and humidity monitoring 
+Wide coverage and efficiency; low cost and small size 
+IoT
+
+Radiation [36] 
+Radiation monitoring 
+High cost and low stability against temperature variation HPXe chamber
+
+Aqua farming and energy conservation [49] 
+Aqua Farming 
+Water quality and quantity control; higher carbon emission and energy requirement 
+Odor, pH, conductance and temperature sensor
+
+Multi-agent supervising system [50] 
+e-health monitoring system due to temperature and radiation changes around the surroundings 
+Detection of emergency situations 
+Supervising system and AI
+
+SEM in winter season [51] 
+Effect of surroundings during winter season only 
+Effect of batteries and other radiation 
+Wireless sensor network 
+
+LoRa technology for climate monitoring [32] 
+Climate and ecology monitoring 
+Study of emissions in the environment 
+LoRa technology and sensor network
+
+Smart city and SEM [52] 
+Monitoring of data center radiation 
+Temperature, humidity and energy consumption in data centers monitored for smart city and SEM 
+IoT
+
+ZigBee based environment monitoring [53] 
+Smart industry environment 
+To study hazardous effects in industries 
+ZigBee and WSN LoRa: Long Range
+

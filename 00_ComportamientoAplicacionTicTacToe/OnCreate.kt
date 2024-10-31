@@ -1,0 +1,6 @@
+
+InicializarBotonesConIds()
+AsignarListenerABotones()
+CrearMatrizEstatus ()
+ReiniciarControles()
+

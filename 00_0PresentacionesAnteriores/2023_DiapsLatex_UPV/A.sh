@@ -1,0 +1,2 @@
+pdflatex PonenciaReportesTecnicosLatex.tex 
+acroread PonenciaReportesTecnicosLatex.pdf &

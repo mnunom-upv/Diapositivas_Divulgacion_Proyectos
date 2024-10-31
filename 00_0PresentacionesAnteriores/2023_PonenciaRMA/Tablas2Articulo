@@ -1,0 +1,36 @@
+
+Plant growth [54] 
+IoT, WSN, Machine learning based “gCrop” (green-crop) 
+Regression model of 3rd degree of polynomial with 98% prediction accuracy but suffers with computational complexity
+
+Crop quality [14,46] 
+SVM using remotely sensed synthetic aperture radar (SAR) for paddy rice monitoring 
+Back-scattering features, SVM and regression tree with 77.65% accuracy; limited sample size
+
+Leaf area index [55] 
+SAR images and machine learning and SVM 
+Gaussian process model, limited sample size
+
+Expert system for fertilizer, pesticides, irrigation control [57] 
+Machine learning operates on sensor data 
+Naïve Bayes, 89.13% of accuracy; comparison of testing with different machine learning was missing
+
+Crop quality [21,59,60] 
+Machine learning applied to real-time UAV images of soya bean crop. Tested 5 different diseases and soil quality assessment 
+Resnet-50, VGG-19 with 99.04 % accuracy
+
+Crop quality [61] 
+Deep learning applied over Phenological data, 6 different crops were tested 
+CNN (convolutional neural network), accuracy not mentioned
+
+Smart farming [62] 
+IoT, WSN, deep learning for fruit growth 
+SVM, accuracy not reported
+
+Pest control [63] 
+IoT and deep learning using global and local features for pest monitoring 
+CNN model with 86.6% of average accuracy
+
+Crop area [61] 
+Deep learning for plant area monitoring of peanut crop 
+CNN with 96.45% of accuracy 

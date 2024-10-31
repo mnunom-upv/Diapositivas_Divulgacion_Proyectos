@@ -1,0 +1,368 @@
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.7,0.7,0.0}]{structure}
+
+% define
+\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+\title{20 proyectos de la línea de sistemas inteligentes de la maestría en ingeniería de la UPV: aplicaciones en el área de salud, agroindustria, seguridad y educación}
+%\title{Proyectos selectos de visión por computadora y aprendizaje automático del Laboratorio de Sistemas Inteligentes de la UPV} % TecMTY
+%\title{Recopilación de 10 años de investigación del Laboratorio de Sistemas Inteligentes de la UPV}
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Octubre 2022}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+\section{Introducción}
+\frame{
+\frametitle{Introducción}
+\begin{itemize}
+\item Se presentan proyectos relacionados con sistemas inteligentes desarrolados por nuestro laboratorio
+\item Proyectos desarrollados en con apoyo de estudiantes de licenciatura (Ingeniería en Tecnologías de la Información e Ingeniería en Mecatrónica) y de Maestría en Ingeniería
+\item Colaboraciones con otras universidades y empresas
+\end{itemize}
+\begin{block}{}
+\begin{itemize}
+\item Pertenezco a un Cuerpo Académico en Formación (CAEF) registrado ante PRODEP, llamado \textit{Sistemas Inteligentes}, integrado por 3 investigadores
+\item Miembro del Sistema Nacional de Investigadores (Investigador Nacional Nivel I - Vigencia 2020-2022)
+\item Perfil Deseable PRODEP 
+\end{itemize}
+\end{block}
+}
+
+
+
+
+
+\section{Salud} %5
+% Area de Salud
+% 1.- Glucometro
+\input{2012_Glucometro/T21_ES.tex}
+% 2.- Samantha
+\input{2018_RemoteMonitoring/T12.tex}
+% 3.- Cromosomas
+\input{2020_Karyograms/T15.tex}
+% 4.- Bascula Inteligente
+\input{2020_BasculaInteligente/T17.tex}
+% 5.- Secretaria de SAluid - Refrigeradores Frios
+\input{2022_RefrigeradoresFrios/RefrigeradoresFrios.tex}
+
+\section{Agroindustria} % 3
+% Agroindustria
+% 6 
+\input{2019_Naranjas/Segmentacion_Naranjas_2019.tex}
+% 7
+\input{2022_HidroponicosDavid/Hidroponicos.tex}
+% 8
+\input{2022_BottleClassifier/ClasificadorBotellas.tex}
+
+% Seguridad
+\section{Seguridad} % 5
+% 9
+\input{2012_HuellasDactilares/T22_EN.tex}
+% 10
+\input{2014_VehicleCounter/T9.tex}
+% 11
+\input{2015_ActivityRecognition/T11.tex}
+% 12
+\input{2020_SeguridadAutomotriz/T18.tex}
+% 13 Indor Position System
+\input{2018_IPS/T13.tex}
+
+\section{Educación} % 5
+
+% Educación
+% 14
+\input{2014_BookSCanner/T10.tex}
+% 15
+\input{2018_AugmentedReality/T14.tex} % Augmented Reality System
+% 16
+\input{2020_AEDMA/T19.tex}
+% 17
+\input{2020_RemoteLearning/T16.tex}
+% 18
+\input{2022_FatChild3D/T20.tex}
+
+\section{Proyectos en Desarrollo} % 2
+% Proyetos en Desarrollo
+% 19.- MicroAlgas
+\input{2022_ConteoMicroAlgas/ConteoMicroAlgas.tex}
+
+% 20.- Ostiones
+\input{2022_ConteoOstioncitos/ConteoOstioncitos.tex}
+
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{itemize}
+\item Se presentaron proyectos de sistemas inteligentes y visión por computadora y los resultados obtenidos
+\item Los proyectos fueron desarrollados por estudiantes de la Maestría en Ingeniería de la UPV
+\item Algunos trabajos establecen vínculos de colaboracion con otras universidades
+\end{itemize}
+\end{frame}
+
+
+
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\begin{frame}%%     1
+\begin{center}
+\Huge Thank You! \\
+\Huge Gracias! \\
+\end{center}
+\end{frame}
+
+\begin{frame}%%     2
+\begin{center}
+{\fontsize{40}{50}\selectfont Thank You!}\\
+{\fontsize{40}{50}\selectfont Gracias!}
+\end{center}
+\end{frame}
+
+
+
+\end{document}
+
+
+
+
+\input{00_IntroAI/IntroAI.tex}
+\input{00_IntroMachineLearning/IntroML.tex}
+\input{00_IntroComputerVision/IntroVC.tex}
+
+%\input{00_IntroRedesNeuronales/IntroRNA.tex}
+
+
+
+
+%Parte 1: ALimentos y Agricultura
+
+
+\section{Soluciones tecnológicas en Agricultura e Industria de los Alimentos}
+
+
+
+
+
+
+
+
+
+\section{Soluciones técnologicas en el área de Salud}
+% 
+% Parte 2: Cuidado de la Salud
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{block}{Recapitulación de la presentación} 
+	\begin{itemize}
+\item Se revisaron conceptos básicos relacionado con las áreas de investigación de los trabajos expuestos en esta presentación
+\item Se expusieron desarrollos tecnológicos elaborados por estudiantes de licenciatura y de posgrado
+\item Se expusieron proyectos de investigación elaborados principalmente por estudiantes de maestría, algunos de ellos fueron derivados de la elaboración de una tesis
+	\end{itemize}
+\end{block} 
+
+\begin{block}{Trabajo futuro} 
+	\begin{itemize}
+        \item Mucho trabajo aquí presentado es mejorable
+        \item Es posible aplicarlo a nuevas áreas
+	\end{itemize}
+
+\end{block} 
+
+\end{frame}
+
+
+
+\end{document}
+
+
+\section{Introducción}
+\begin{frame}{Introducción}
+\begin{itemize}
+\item Se presentarán resultados de aplicaciones sobresalientes. 
+\begin{itemize}
+\item Proyectos iniciativa del presentador para resolver problematicas del entorno docente/personal.
+\item Proyectos finales de asignaturas, principalmente de Programación Movil (Cómputo en Dispositivos Móviles), Graficación por Computadora Avanzada. Se da el crédito a los autores (al equipo completo).
+\item Proyectos de tesis de maestría. En algunos casos dichos resultados derivan la publicación de un articulo en congreso o revista. 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{Proyectos Independientes}
+
+\input{2020_RemoteLearning/T16.tex} % Remote Learning (JCR)
+\input{2022_AppPaseLista/AppPaseLista.tex} % Pase lista
+\input{2022_Spelling/Spelling.tex} % Pase lista
+
+% Parte V: Desarrollos Tecnologicos (No publicados formalmente)
+\section{Ingeniería en Tecnologías de la Información}
+
+\input{2021_RecorridoUPV/RecorridoUPV.tex}
+\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+\input{2017_Ajedrez3D/Ajedrez3D.tex}
+\input{2017_CruzdeMalta/CruzDeMalta.tex}
+\input{2017_Tetris3D/Tetris3D.tex} % Tetris 3D
+\input{2020_MascotaUPV3D/MascotaUPV3D.tex}
+\input{2019_RealidadAumentada/RealidadAumentada.tex}
+\input{2020_TutorialBlender/TutorialBlender.tex}
+
+
+% Parte IV: Aplicaciones Moviles
+\section{Maestría en Ingeniería}
+
+%\input{2015_ActivityRecognition/T11.tex} % Activity Recognition Mobile App
+\input{2015_ActivityRecognition/T11_EN.tex} % Activity Recognition Mobile App
+
+%\input{2018_RemoteMonitoring/T12.tex} % Vital Signs Remote Sensing System
+\input{2018_RemoteMonitoring/T12_EN.tex} % Vital Signs Remote Sensing System
+
+%\input{2018_IPS/T13.tex} % Indoor Positioning System
+\input{2018_IPS/T13_EN.tex} % Indoor Positioning System
+
+%\input{2018_AugmentedReality/T14.tex} % Augmented Reality System
+\input{2018_AugmentedReality/T14_EN.tex} % Augmented Reality System
+
+\input{2020_SeguridadAutomotriz/T18_EN.tex} % Seguridad en el Automovil
+%\input{2020_SeguridadAutomotriz/T18.tex} % Seguridad en el Automovil
+
+\input{2020_AEDMA/T19_EN.tex} % AEDMA
+%\input{2020_AEDMA/T19.tex} % AEDMA
+
+% Esta aplicación desentona aqui porque no hay una 
+%\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+
+\input{2022_FatChild3D/T20_EN.tex} % JuegoEchartea
+%\input{2022_FatChild3D/T20.tex} % JuegoEchartea
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{itemize}
+\item Se presentaron avances de aplicaciones móviles diversas, con varios grados de complejidad.
+\item Los resultados derivaron una publicación (congreso, revista)
+\item Hay muchas mejoras que se pueden hacer a las aplicaciones actuales, generalmente el proyecto se va mejorando en cada generacion (Recorrido Virtual, Realidad Aumentada).
+\end{itemize}
+\end{frame}
+
+
+  
+
+
+
+\end{document}
+
+
