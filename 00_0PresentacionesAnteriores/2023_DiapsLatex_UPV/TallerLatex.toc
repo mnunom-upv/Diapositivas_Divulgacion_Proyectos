@@ -1,0 +1,22 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {1}{Fundamentos}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Primer Documento en LATEX}{4}{0}{1}
+\beamer@sectionintoc {2}{Secciones}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Organizaci\'on del Documento}{7}{0}{2}
+\beamer@sectionintoc {3}{Portadas}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Formato Predefinido}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Pagina de Portada Definida por el Autor}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{TOC (Table of Contents)}{11}{0}{3}
+\beamer@sectionintoc {4}{Formatos}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Formato de Texto}{12}{0}{4}
+\beamer@subsectionintoc {4}{2}{Numeracion y vi\~netas}{15}{0}{4}
+\beamer@sectionintoc {5}{Figuras y Tablas}{16}{0}{5}
+\beamer@subsectionintoc {5}{1}{Figuras}{16}{0}{5}
+\beamer@subsectionintoc {5}{2}{Tablas}{18}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{21}{0}{6}
+\beamer@subsectionintoc {6}{1}{BIBTEX}{21}{0}{6}
+\beamer@subsectionintoc {6}{2}{BIBTEX}{22}{0}{6}
+\beamer@sectionintoc {7}{Ecuaciones}{23}{0}{7}
+\beamer@subsectionintoc {7}{1}{Definicion y Referencia}{23}{0}{7}
+\beamer@sectionintoc {8}{Ejercicio Final}{24}{0}{8}
+\beamer@subsectionintoc {8}{1}{Ejercicio Final}{24}{0}{8}

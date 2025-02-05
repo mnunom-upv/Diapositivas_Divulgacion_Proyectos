@@ -1,0 +1,24 @@
+    <LinearLayout android:background="#00ff00" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <ImageButton android:id="@+id/boton2_1"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/boton2_2"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/boton2_3"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:background="#0000ff" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <ImageButton android:id="@+id/boton3_1"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/boton3_2"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/boton3_3"
+            android:src="@drawable/usuario" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>

@@ -1,0 +1,280 @@
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.0,0.4,0.4}]{structure}
+%\usecolortheme[rgb={0,0.4,0}]{structure}
+%\usetheme{AnnArbor}
+
+% define
+\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+\title{Avance de Proyectos en Conjunto UTMarT-UPV}
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Mayo 2022}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50]{biblatex}
+
+\DeclareSortingScheme{ydmdddnt}{ 
+  \sort{ 
+    \field{presort} 
+  } 
+  \sort[final]{ 
+    \field{sortkey} 
+  } 
+  \sort[direction=descending]{ 
+    \field{year} 
+  } 
+  \sort[direction=descending]{ 
+    \field{month} 
+  } 
+  \sort[direction=descending]{ 
+    \field{day} 
+  } 
+  \sort{ 
+    \field{journaltitle} 
+  } 
+  \sort{ 
+    \field{author} 
+    \field{editor} 
+  } 
+  \sort{ 
+    \field{title} 
+  } 
+}
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+%Parte 1: ALimentos y Agricultura
+%\setcounter{footnote}{0}
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+
+
+
+% MicroAlgas
+\section{Conteo de Algas}
+\input{2022_ConteoMicroAlgas/ConteoMicroAlgas.tex}
+% Ostiones
+\section{Conteo de Ostiones}
+\input{2022_ConteoOstioncitos/ConteoOstioncitos.tex}
+% Chile Piquin
+
+% Naranjas (Antonio)
+
+% Jose Ramon (Monitoreo Remotop)
+
+% David (Hidroponia)
+
+% Josue (Botellas)
+
+% 
+% Parte 2: Cuidado de la Salud
+
+% 1.- Secretaria de SAluid
+% 2.- Samantha
+% 3.- Glucometro
+% 4.- AEDMA
+% 5.- EChartea
+
+
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\begin{frame}%%     1
+\begin{center}
+\Huge Thank You! \\
+\Huge Gracias! \\
+\end{center}
+\end{frame}
+
+\begin{frame}%%     2
+\begin{center}
+{\fontsize{40}{50}\selectfont Thank You!}\\
+{\fontsize{40}{50}\selectfont Gracias!}
+\end{center}
+\end{frame}
+
+\end{document}
+
+
+\section{Introducción}
+\begin{frame}{Introducción}
+\begin{itemize}
+\item Se presentarán resultados de aplicaciones sobresalientes. 
+\begin{itemize}
+\item Proyectos iniciativa del presentador para resolver problematicas del entorno docente/personal.
+\item Proyectos finales de asignaturas, principalmente de Programación Movil (Cómputo en Dispositivos Móviles), Graficación por Computadora Avanzada. Se da el crédito a los autores (al equipo completo).
+\item Proyectos de tesis de maestría. En algunos casos dichos resultados derivan la publicación de un articulo en congreso o revista. 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{Proyectos Independientes}
+
+\input{2020_RemoteLearning/T16.tex} % Remote Learning (JCR)
+\input{2022_AppPaseLista/AppPaseLista.tex} % Pase lista
+\input{2022_Spelling/Spelling.tex} % Pase lista
+
+% Parte V: Desarrollos Tecnologicos (No publicados formalmente)
+\section{Ingeniería en Tecnologías de la Información}
+
+\input{2021_RecorridoUPV/RecorridoUPV.tex}
+\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+\input{2017_Ajedrez3D/Ajedrez3D.tex}
+\input{2017_CruzdeMalta/CruzDeMalta.tex}
+\input{2017_Tetris3D/Tetris3D.tex} % Tetris 3D
+\input{2020_MascotaUPV3D/MascotaUPV3D.tex}
+\input{2019_RealidadAumentada/RealidadAumentada.tex}
+\input{2020_TutorialBlender/TutorialBlender.tex}
+
+
+% Parte IV: Aplicaciones Moviles
+\section{Maestría en Ingeniería}
+
+%\input{2015_ActivityRecognition/T11.tex} % Activity Recognition Mobile App
+\input{2015_ActivityRecognition/T11_EN.tex} % Activity Recognition Mobile App
+
+%\input{2018_RemoteMonitoring/T12.tex} % Vital Signs Remote Sensing System
+\input{2018_RemoteMonitoring/T12_EN.tex} % Vital Signs Remote Sensing System
+
+%\input{2018_IPS/T13.tex} % Indoor Positioning System
+\input{2018_IPS/T13_EN.tex} % Indoor Positioning System
+
+%\input{2018_AugmentedReality/T14.tex} % Augmented Reality System
+\input{2018_AugmentedReality/T14_EN.tex} % Augmented Reality System
+
+\input{2020_SeguridadAutomotriz/T18_EN.tex} % Seguridad en el Automovil
+%\input{2020_SeguridadAutomotriz/T18.tex} % Seguridad en el Automovil
+
+\input{2020_AEDMA/T19_EN.tex} % AEDMA
+%\input{2020_AEDMA/T19.tex} % AEDMA
+
+% Esta aplicación desentona aqui porque no hay una 
+%\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+
+\input{2022_FatChild3D/T20_EN.tex} % JuegoEchartea
+%\input{2022_FatChild3D/T20.tex} % JuegoEchartea
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{itemize}
+\item Se presentaron avances de aplicaciones móviles diversas, con varios grados de complejidad.
+\item Los resultados derivaron una publicación (congreso, revista)
+\item Hay muchas mejoras que se pueden hacer a las aplicaciones actuales, generalmente el proyecto se va mejorando en cada generacion (Recorrido Virtual, Realidad Aumentada).
+\end{itemize}
+\end{frame}
+
+
+  
+
+
+
+\end{document}
+
+

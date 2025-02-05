@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{ChecarEmpate}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// Numero de Celdas Marcadas con Gato}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{ConteoCorazones}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m}{9}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{  }
+\PYG{+w}{        }\PYG{n}{MostrarAlertDialog}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Empate\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{MostrarAlertDialog}\PYG{p}{(}\PYG{n}{C}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{String}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{builder}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{AlertDialog}\PYG{p}{.}\PYG{n+na}{Builder}\PYG{p}{(}\PYG{k}{this}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{setTitle}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Juego Finalizado\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{setMessage}\PYG{p}{(}\PYG{n}{C}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{setCancelable}\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{setPositiveButton}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Reiniciar\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{dialog}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{which}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{        }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{makeText}\PYG{p}{(}\PYG{n}{applicationContext}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{android}\PYG{p}{.}\PYG{n+na}{R}\PYG{p}{.}\PYG{n+na}{string}\PYG{p}{.}\PYG{n+na}{yes}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{LENGTH\PYGZus{}SHORT}\PYG{p}{).}\PYG{n+na}{show}\PYG{p}{()}
+\PYG{+w}{        }\PYG{n}{ReiniciarControles}\PYG{p}{()}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{setNegativeButton}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Salir\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{dialog}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{which}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{        }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{makeText}\PYG{p}{(}\PYG{n}{applicationContext}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{android}\PYG{p}{.}\PYG{n+na}{R}\PYG{p}{.}\PYG{n+na}{string}\PYG{p}{.}\PYG{n+na}{no}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Toast}\PYG{p}{.}\PYG{n+na}{LENGTH\PYGZus{}SHORT}\PYG{p}{).}\PYG{n+na}{show}\PYG{p}{()}
+\PYG{+w}{        }\PYG{n}{finish}\PYG{p}{()}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{show}\PYG{p}{()}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

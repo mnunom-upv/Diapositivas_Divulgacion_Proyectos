@@ -1,0 +1,634 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{u14010494}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5ca3762a480463c6a574cfaca8842556}{%
+           family={Caballero-Rico},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={Frida\bibnamedelima Carmina},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=63178ab658d59ad468055840a9ac8148}{%
+           family={Roque-Hernández},
+           familyi={R\bibinithyphendelim H\bibinitperiod},
+           given={Ramón\bibnamedelima Ventura},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=44b376b18b1307f8b1591bda57584948}{%
+           family={Garza\bibnamedelima Cano},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{hash=7f5271b4542829bae85c2602909251d4}{%
+           family={Arvizu-Sánchez},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{816b98b3df4c66c5ef30349608ee0092}
+      \strng{fullhash}{816b98b3df4c66c5ef30349608ee0092}
+      \strng{bibnamehash}{816b98b3df4c66c5ef30349608ee0092}
+      \strng{authorbibnamehash}{816b98b3df4c66c5ef30349608ee0092}
+      \strng{authornamehash}{816b98b3df4c66c5ef30349608ee0092}
+      \strng{authorfullhash}{816b98b3df4c66c5ef30349608ee0092}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2071-1050}
+      \field{journaltitle}{Sustainability}
+      \field{number}{1}
+      \field{title}{Challenges for the Integrated Management of Priority Areas for Conservation in Tamaulipas, México}
+      \field{volume}{14}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/su14010494
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/14/1/494
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/14/1/494
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{LOPEZ2020100369}{article}{}
+      \name{author}{7}{}{%
+        {{hash=01af3b6185bbaa0b0b419c4f17f6b8ea}{%
+           family={López},
+           familyi={L\bibinitperiod},
+           given={Elisenda},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6ad8e160bf65765b9e7b5de9f20f7e25}{%
+           family={Patiño},
+           familyi={P\bibinitperiod},
+           given={Reynaldo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b3c98b187a20bcce0ab8d1f48ebd199c}{%
+           family={Vázquez-Sauceda},
+           familyi={V\bibinithyphendelim S\bibinitperiod},
+           given={María\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4a6c62d2d8e6d0266d6ae62b3aaa7f8e}{%
+           family={Pérez-Castañeda},
+           familyi={P\bibinithyphendelim C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e38f5fb1f2084f8cbe07d1509bc91b4d}{%
+           family={Arellano-Méndez},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Leonardo\bibnamedelima U.},
+           giveni={L\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=884b3b3ae5b89375a27b2ba0f9c2677c}{%
+           family={Ventura},
+           familyi={V\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod}}}%
+        {{hash=40a662591076ca0c94e07c1890da7943}{%
+           family={Heyer},
+           familyi={H\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \strng{fullhash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \strng{bibnamehash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \strng{authorbibnamehash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \strng{authornamehash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \strng{authorfullhash}{6008cc3adc1c9ab8f59f53f2aa2c645c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2215-1532}
+      \field{journaltitle}{Environmental Nanotechnology, Monitoring \& Management}
+      \field{title}{Water quality and ecological risk assessment of intermittent streamflow through mining and urban areas of San Marcos River sub-basin, Mexico}
+      \field{volume}{14}
+      \field{year}{2020}
+      \field{pages}{100369}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.enmm.2020.100369
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2215153220303512
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2215153220303512
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{s21124118}{article}{}
+      \name{author}{8}{}{%
+        {{hash=08d1f462f2acacc993d963d0c32f9351}{%
+           family={Arias-Rodriguez},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Leonardo\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8b646066c6215c0692a913de872169d2}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fbcbae50a803f2b89c03a4709b1e1910}{%
+           family={Díaz-Torres},
+           familyi={D\bibinithyphendelim T\bibinitperiod},
+           given={José\bibnamedelimb de\bibnamedelima Jesús},
+           giveni={J\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7ed7b894fe2772a645892d8dc4643dd1}{%
+           family={Basilio\bibnamedelima Hazas},
+           familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Mónica},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fc7cf829c7a0273e06f56a6693255936}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jingshui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f75aa099120eb6e59a9df92f8ea6766c}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Bapitha\bibnamedelima Udhaya},
+           giveni={B\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=c0d8f33a7f9b9391fa50d468a97610e8}{%
+           family={Tuo},
+           familyi={T\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=09d5bcca06dc2abdeaedf8a13c69ff57}{%
+           family={Disse},
+           familyi={D\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0eb62df3012c2656ff252704fbd2f994}
+      \strng{fullhash}{0eb62df3012c2656ff252704fbd2f994}
+      \strng{bibnamehash}{0eb62df3012c2656ff252704fbd2f994}
+      \strng{authorbibnamehash}{0eb62df3012c2656ff252704fbd2f994}
+      \strng{authornamehash}{0eb62df3012c2656ff252704fbd2f994}
+      \strng{authorfullhash}{0eb62df3012c2656ff252704fbd2f994}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{12}
+      \field{title}{Integration of Remote Sensing and Mexican Water Quality Monitoring System Using an Extreme Learning Machine}
+      \field{volume}{21}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/s21124118
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{72460107}{article}{}
+      \name{author}{6}{}{%
+        {{hash=04dbf29d5d78d08bc677238284bdcf89}{%
+           family={Uresti\bibnamedelima Marín},
+           familyi={U\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={R.\bibnamedelimi M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4ff3238c9f47b81d443026f423a018e2}{%
+           family={Santiago\bibnamedelima Adame},
+           familyi={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=782d218dea3783f881edc92034d567ae}{%
+           family={Díaz\bibnamedelima Moroles},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={N.\bibnamedelimi E},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=056234e638c428aa79cc485b02a0ada6}{%
+           family={Gutiérrez\bibnamedelima Lozano},
+           familyi={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=753a1ec10428e21f7eafcca04c08ff18}{%
+           family={Vázquez},
+           familyi={V\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9cf75f901c55896c36d21c633b1a2092}{%
+           family={Ramírez\bibnamedelimb de\bibnamedelima León},
+           familyi={R\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \strng{fullhash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \strng{bibnamehash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \strng{authorbibnamehash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \strng{authornamehash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \strng{authorfullhash}{5ed5b4b47f3002b98266ac5c4a890c59}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1135-8122}
+      \field{journaltitle}{Ciencia y Tecnología Alimentaria}
+      \field{title}{Evaluación preliminar de la presencia de pesticidas organoclorados en pescados de la Presa Vicente Guerrero (Tamaulipas, México)}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.redalyc.org/articulo.oa?id=72460107
+      \endverb
+      \verb{url}
+      \verb https://www.redalyc.org/articulo.oa?id=72460107
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{doi:10.1080/11263504.2022.2056648}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f4667f8fd8bc1579d82b5e2b04692daf}{%
+           family={García-Morales},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Leccinum\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2740d1a81cfd0d2456e456ad21b017c3}{%
+           family={García-Jiménez},
+           familyi={G\bibinithyphendelim J\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8b1a932c8b19b9a33ba4780eb307621d}{%
+           family={Contreras-Medina},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a55d9ad86dc23a0ee09bc8405eea5012}{%
+           family={Alcántara-Ayala},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Othón},
+           giveni={O\bibinitperiod}}}%
+        {{hash=16a901257f98e84114f7c1c16eb4f632}{%
+           family={Luna-Vega},
+           familyi={L\bibinithyphendelim V\bibinitperiod},
+           given={Isolda},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{da37fc6b155428582a59701ec77bcf9f}
+      \strng{fullhash}{da37fc6b155428582a59701ec77bcf9f}
+      \strng{bibnamehash}{da37fc6b155428582a59701ec77bcf9f}
+      \strng{authorbibnamehash}{da37fc6b155428582a59701ec77bcf9f}
+      \strng{authornamehash}{da37fc6b155428582a59701ec77bcf9f}
+      \strng{authorfullhash}{da37fc6b155428582a59701ec77bcf9f}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Biosystems - An International Journal Dealing with all Aspects of Plant Biology}
+      \field{number}{6}
+      \field{title}{Diversity, distribution and conservation of the Cactaceae (Caryophyllales) from Tamaulipas, Mexico}
+      \field{volume}{156}
+      \field{year}{2022}
+      \field{pages}{1405\bibrangedash 1421}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/11263504.2022.2056648
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{articleOchoa2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=36c5e886ebbb0866d12c1972a0d7e012}{%
+           family={Ochoa-Sandoval},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ce14782f59efe4b847a2a0b84cc2c052}{%
+           family={Requena\bibnamedelima Lara},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Glenda},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a7933cacccd0016fd769d4f54b8af57d}{%
+           family={Carreón},
+           familyi={C\bibinitperiod},
+           given={Jacinto},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31a8376ea536eef008cc44a5eee426cb}{%
+           family={Morales\bibnamedelima Pacheco},
+           familyi={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Juan\bibnamedelima Francisco},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \strng{fullhash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \strng{bibnamehash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \strng{authorbibnamehash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \strng{authornamehash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \strng{authorfullhash}{d02b2f32e25e3d149b29e52b8c7aaa6c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Latinoamericana el Ambiente y las Ciencias}
+      \field{month}{06}
+      \field{title}{Uso de un SIG y Google Earth™ para generar un modelo de distribución potencial del bosque de oyamel en Tamaulipas}
+      \field{volume}{2}
+      \field{year}{2015}
+      \keyw{primary}
+    \endentry
+    \entry{ortega-huerta_medley_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d55862f8a0c482dfbb82dd3c9d1a06a5}{%
+           family={ORTEGA-HUERTA},
+           familyi={O\bibinithyphendelim H\bibinitperiod},
+           given={MIGUEL\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=043810ac4618f0cb8a2999cf810f1d64}{%
+           family={MEDLEY},
+           familyi={M\bibinitperiod},
+           given={KIMBERLY\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \strng{fullhash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \strng{bibnamehash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \strng{authorbibnamehash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \strng{authornamehash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \strng{authorfullhash}{434ac1e90c874119e9f1ffdaacbbca88}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Conservation}
+      \field{number}{4}
+      \field{title}{Landscape analysis of jaguar (Panthera onca) habitat using sighting records in the Sierra de Tamaulipas, Mexico}
+      \field{volume}{26}
+      \field{year}{1999}
+      \field{pages}{257\bibrangedash 269}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1017/S0376892999000387
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{caso2018confirmed}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8c2714f45821067c59a85e3c68e863ef}{%
+           family={Caso},
+           familyi={C\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=162538925e4be53ffdb35ca0ea5d5efe}{%
+           family={Domínguez},
+           familyi={D\bibinitperiod},
+           given={Eferaín},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb9043022ba4e8b1593f224df3bda6af}
+      \strng{fullhash}{eb9043022ba4e8b1593f224df3bda6af}
+      \strng{bibnamehash}{eb9043022ba4e8b1593f224df3bda6af}
+      \strng{authorbibnamehash}{eb9043022ba4e8b1593f224df3bda6af}
+      \strng{authornamehash}{eb9043022ba4e8b1593f224df3bda6af}
+      \strng{authorfullhash}{eb9043022ba4e8b1593f224df3bda6af}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CatNews}
+      \field{title}{Confirmed presence of jaguar, ocelot and jaguarundi in the Sierra of San Carlos, Mexico}
+      \field{year}{2018}
+      \keyw{primary}
+    \endentry
+    \entry{OcanasJaguares}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ea9969b85b0324afabb81a0784e345fe}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Omar\bibnamedelimb Alejandro\bibnamedelima Ocañas},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Autónoma de Nuevo León}%
+      }
+      \strng{namehash}{ea9969b85b0324afabb81a0784e345fe}
+      \strng{fullhash}{ea9969b85b0324afabb81a0784e345fe}
+      \strng{bibnamehash}{ea9969b85b0324afabb81a0784e345fe}
+      \strng{authorbibnamehash}{ea9969b85b0324afabb81a0784e345fe}
+      \strng{authornamehash}{ea9969b85b0324afabb81a0784e345fe}
+      \strng{authorfullhash}{ea9969b85b0324afabb81a0784e345fe}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Densidad Poblacional de Ocelote Leopardus Pardalis en la Region de la Laguna Madre, Tamaulipas}
+      \field{type}{mathesis}
+      \field{year}{2019}
+      \keyw{primary}
+    \endentry
+    \entry{doi.org/10.1002/ece3.8642}{article}{}
+      \name{author}{15}{}{%
+        {{hash=7621032d85e797cca32eba883bba91ae}{%
+           family={Lombardi},
+           familyi={L\bibinitperiod},
+           given={Jason\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=496b44ed5cae0c84f48ed05c0744f8e1}{%
+           family={Haines},
+           familyi={H\bibinitperiod},
+           given={Aaron\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=722366509bda2ec1d0c3a2f676b332ef}{%
+           family={Watts\bibnamedelima III},
+           familyi={W\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={G.\bibnamedelimi Wesley},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=9ed7bed375074fc29f5efd39503bb8b6}{%
+           family={Grassman\bibnamedelima Jr.},
+           familyi={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Lonnie\bibnamedelima I.},
+           giveni={L\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=353e28453b56d4bc403019e57c269e4e}{%
+           family={Janečka},
+           familyi={J\bibinitperiod},
+           given={Jan\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=8c2714f45821067c59a85e3c68e863ef}{%
+           family={Caso},
+           familyi={C\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ea2111c902a6226bb1b3c442502b7f66}{%
+           family={Carvajal},
+           familyi={C\bibinitperiod},
+           given={Sasha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4d0a4b4e123701c4f5687da78d3a148f}{%
+           family={Wardle},
+           familyi={W\bibinitperiod},
+           given={Zachary\bibnamedelima M.},
+           giveni={Z\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0d205afbd31bdd34f123080f70837d80}{%
+           family={Yamashita},
+           familyi={Y\bibinitperiod},
+           given={Thomas\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=26568c22c0a8b9a2bd5939d10c59f585}{%
+           family={Stasey},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi Chad},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=89f4bd04264731529fa4fccf9e6c4896}{%
+           family={Branney},
+           familyi={B\bibinitperiod},
+           given={Aidan\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7198d747a8f01d8b5552f5baf0c0d0c6}{%
+           family={Scognamillo},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=147832638ce8d3e017d3a07ccd4b4530}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Tyler\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6ba836a4c7016548e6adafdcc4f6192f}{%
+           family={Young\bibnamedelima Jr},
+           familyi={Y\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={John\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e27799d2862680cb1b1d61337acf80c5}{%
+           family={Tewes},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{44710a1cd1810e5fec9389362de28e4f}
+      \strng{fullhash}{44710a1cd1810e5fec9389362de28e4f}
+      \strng{bibnamehash}{44710a1cd1810e5fec9389362de28e4f}
+      \strng{authorbibnamehash}{44710a1cd1810e5fec9389362de28e4f}
+      \strng{authornamehash}{44710a1cd1810e5fec9389362de28e4f}
+      \strng{authorfullhash}{44710a1cd1810e5fec9389362de28e4f}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecology and Evolution}
+      \field{number}{3}
+      \field{title}{Status and distribution of jaguarundi in Texas and Northeastern México: Making the case for extirpation and initiation of recovery in the United States}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{e8642}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/ece3.8642
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.8642
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.8642
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.8642
+      \endverb
+      \keyw{camera-trap,endangered,extirpation,felid conservation,Puma yagouaroundi,recovery,South Texas,Tamaulipasprimary}
+    \endentry
+    \entry{articleNipko2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a3e5bbc3e918c0421dc0b05d8404ae39}{%
+           family={Nipko},
+           familyi={N\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=706d8d76ff407424093483239d462bb3}{%
+           family={Holcombe},
+           familyi={H\bibinitperiod},
+           given={Brogan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ca059b1024483e05549129263e065a68}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Marcella},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{58a52412c2866a5c28cd2ef12ace451f}
+      \strng{fullhash}{58a52412c2866a5c28cd2ef12ace451f}
+      \strng{bibnamehash}{58a52412c2866a5c28cd2ef12ace451f}
+      \strng{authorbibnamehash}{58a52412c2866a5c28cd2ef12ace451f}
+      \strng{authornamehash}{58a52412c2866a5c28cd2ef12ace451f}
+      \strng{authorfullhash}{58a52412c2866a5c28cd2ef12ace451f}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wildlife Society Bulletin}
+      \field{month}{04}
+      \field{title}{Identifying Individual Jaguars and Ocelots via Pattern‐Recognition Software: Comparing HotSpotter and Wild‐ID}
+      \field{volume}{44}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1002/wsb.1086
+      \endverb
+      \keyw{primary}
+    \endentry
+    \entry{s20113113}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5e9d0b475099260d653514b2db8e5916}{%
+           family={Ullo},
+           familyi={U\bibinitperiod},
+           given={Silvia\bibnamedelima Liberata},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5b7be4d2b203074295d50aedbba385c0}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2aebf465af679bc050e446458ae9adc0}
+      \strng{fullhash}{2aebf465af679bc050e446458ae9adc0}
+      \strng{bibnamehash}{2aebf465af679bc050e446458ae9adc0}
+      \strng{authorbibnamehash}{2aebf465af679bc050e446458ae9adc0}
+      \strng{authornamehash}{2aebf465af679bc050e446458ae9adc0}
+      \strng{authorfullhash}{2aebf465af679bc050e446458ae9adc0}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{11}
+      \field{title}{Advances in Smart Environment Monitoring Systems Using IoT and Sensors}
+      \field{volume}{20}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/s20113113
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/20/11/3113
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/20/11/3113
+      \endverb
+      \keyw{primary}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

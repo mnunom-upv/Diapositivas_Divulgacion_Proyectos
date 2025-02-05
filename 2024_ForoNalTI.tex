@@ -1,0 +1,207 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.7,0.2,0.0}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+\title{Aplicaciones de visión por computadora desarrolladas en el laboratorio de sistemas inteligentes de la UPV: una retrospectiva} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{15 de Noviembre de 2023}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+% ACtualizacion 2024: Se necesita esta Entrada
+\newcommand{\EntradaBibtex}{InvalidEntry}
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+\section{2012}
+\input{2012_HuellasDactilares/T22_EN.tex}
+
+
+
+\section{2014}
+\input{2014_BookSCanner/T10.tex}
+\input{2014_Llantas/DeteccionLlantas.tex}
+\input{2014_VehicleCounter/T9.tex}
+
+
+\section{2020}
+\input{2020_Karyograms/T15.tex}   
+\input{2020_RemoteLearning/T16.tex}          
+\input{2020_SeguridadAutomotriz/T18.tex}
+
+
+\section{2021}
+\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+
+
+\section{2022}
+\input{2022_AplicacionLSM/LSM.tex}
+\input{2022_BottleClassifier/ClasificadorBotellas.tex}  
+\input{2022_ConteoMicroAlgas/ConteoMicroAlgas.tex}      
+\input{2022_Plagio/Plagio.tex}
+\input{2022_ConteoOstioncitos/ConteoOstioncitos.tex}    
+
+\section{2023}
+\input{2023_AppComidaTamaulipeca/AppComidaTamaulipeca.tex}
+\input{2023_ConteoNaranjasBandaTransportadora/ConteoNaranjasTransportadora.tex}
+\input{2023_AppSegmentaCromosomas/AppSegmentaCromosomas.tex}
+\input{2023_ManoRobotica/ManoRobotica.tex}
+\input{2023_ChilesHabaneros/ClasificadorChilesHabaneros.tex}
+
+\section{2024}
+\input{2024_ConteoMonedasEscritorio/ConteMonedasEscritorio.tex}
+\input{2024_ConteoNaranjasArbol/ConteoNaranjasArbol.tex}
+\input{2024_DeteccionAlimentosAlbercas/DeteccionAlimentosAlbercas.tex}
+\input{2024_DetectorMotos/DetectorMotos.tex}
+\input{2024_GerminadorAutomatico/GerminadorAutomatico.tex}
+\input{2024_IdentificadorGeneroEspectrograma/IdentificadorGeneroEspectrograma.tex}
+\input{2024_PaseDeListaCodigoQR/PaseListaCodigoQR.tex}
+\input{2024_ProyectoCalificadorExamenes/ProyectoCalificadorExamenes.tex}
+
+
+
+\section[CP1]{Conclusiones}
+\begin{frame}{Conclusi\'on}
+\begin{itemize}
+\item Se present\'o la relaci\'on entre Inteligencia Articial, Visi\'on por Computadora y los Gr\'aficos por Computadora con la RA y la RV
+\item Se establecieron las herramientas Hardware y Software para Realizar proyectos Gr\'aficos y de RA y RV para Tel\'efonos Inteligentes en Android Studio
+\item Se presentaron proyectos de Graficaci\'on y de RA y RV, principalmente desarrollados por estudiantes de la UPV (Ingenier\'ia en Tecnolog\'ias de la Informaci\'on y de Maestría en Ingeniería)
+%\item Algunos trabajos establecen vínculos de colaboracion con otras universidades
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\end{document}
+
+

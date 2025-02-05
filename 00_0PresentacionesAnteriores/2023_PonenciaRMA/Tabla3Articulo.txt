@@ -1,0 +1,55 @@
+
+Lagoon water [64] 
+Agricultural water pollution control using remote sensing 
+Machine learning and image analysis for prediction 
+Linear regression (LR), stochastic gradient descent (SGD) and ridge regression (R-23 PLS)
+
+Water contamination [65] 
+Water contamination assessments 
+FFT and machine learning 
+Color layout descriptor and SVM
+
+Water quality [66] 
+Study of water pollutants 
+Extreme learning DSA-ELM model for classification 
+DSA-ELM model and dolphin swarm with 83.33% accuracy
+
+Water quality pollutants parameters [67] 
+Water contamination analysis 
+Neural network for prediction for alkalinity, chloride, sulphate values 
+Levenberg–Marquardt algorithm with 87.23% accuracy
+
+Big data and SVM [68] 
+Water contamination analysis 
+Machine learning based classification 
+SVM with 91.38% accuracy
+
+Drinking water [69] 
+Drinking water analysis 
+Machine learning for classification: drinkable or non-drinkable water 
+DT, KNN, SVM with 97% accuracy
+
+Water quality [70] 
+Water Contamination analysis 
+Neural network for classification: drinkable or non-drinkable water 
+SVM
+
+Water pollutant security [71] 
+Water contamination surveillance 
+SVM for classification as polluted or clean water 
+SVM with 93.8% accuracy
+
+Drinking water [73] 
+Drinking water analysis 
+Machine learning based prediction 
+FAST learning technique
+
+Chlorophyll-a in lake water [72] 
+Chlorophyll-A concentration in lake water 
+Machine learning based classification of water 
+BPNN, SVM with 78% accuracy
+
+Water quality monitoring [74] 
+Water quality monitoring 
+IoT for surface water quality assessment 
+IoT with smart sensors

@@ -1,0 +1,9 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Motivacion}{3}
+\contentsline {section}{\numberline {1.2}Justificacion}{3}
+\contentsline {chapter}{\numberline {2}Marco Conceptual}{5}
+\contentsline {section}{\numberline {2.1}Computadoras}{5}
+\contentsline {subsection}{\numberline {2.1.1}Escritorio}{5}
+\contentsline {subsubsection}{PCs}{5}
+\contentsline {subsection}{\numberline {2.1.2}De Celulares}{5}
+\contentsline {subsubsection}{Nokia}{5}

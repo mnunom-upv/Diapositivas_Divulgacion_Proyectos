@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B1\PYGZus{}1}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B1\PYGZus{}2}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B1\PYGZus{}3}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B2\PYGZus{}1}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B2\PYGZus{}2}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B2\PYGZus{}3}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B3\PYGZus{}1}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B3\PYGZus{}2}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{B3\PYGZus{}3}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{TextViewPizarra}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{TextView}
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{Turno}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{1}\PYG{+w}{   }\PYG{c+c1}{// 1\PYGZhy{}Turno Cruz, 2\PYGZhy{}Turno Corazon}
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{numRows}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{3}
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{numCols}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{3}
+\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{matrix}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Array}\PYG{o}{\PYGZlt{}}\PYG{n}{Array}\PYG{o}{\PYGZlt{}}\PYG{n}{CeldaGato?\PYGZgt{}}\PYG{o}{\PYGZgt{}}
+
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{ConteoCruces}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0}\PYG{+w}{  }\PYG{c+c1}{// \PYGZsh{} de Celdas Marcadas Cruz }
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{ConteoCorazones}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0}\PYG{+w}{  }\PYG{c+c1}{// de Celdas Marcadas Corazon}
+
+\end{Verbatim}

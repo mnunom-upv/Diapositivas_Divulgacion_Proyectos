@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{CrearMatrizEstatus}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{matrix}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Array}\PYG{p}{(}\PYG{n}{numRows}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{row}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{        }\PYG{n}{Array}\PYG{p}{(}\PYG{n}{numCols}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{col}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{            }\PYG{n}{CeldaGato}\PYG{p}{(}\PYG{n}{row}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{col}\PYG{p}{)}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

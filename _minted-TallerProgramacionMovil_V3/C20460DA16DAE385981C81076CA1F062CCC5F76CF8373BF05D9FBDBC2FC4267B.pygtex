@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{CambiarEstadoCasilla}\PYG{p}{(}\PYG{n}{b}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{fila}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{fila}\PYG{o}{][}\PYG{n}{columna}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{p}{.}\PYG{n+na}{equals}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}SIN\PYGZus{}MARCA\PYGZdq{}}\PYG{p}{))}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Turno}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{b}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{cruz}\PYG{p}{)}
+\PYG{+w}{            }\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{fila}\PYG{o}{][}\PYG{n}{columna}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}CRUZ\PYGZdq{}}
+\PYG{+w}{            }\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{l+m}{1}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{b}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{corazon}\PYG{p}{)}
+\PYG{+w}{            }\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{fila}\PYG{o}{][}\PYG{n}{columna}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}CORAZON\PYGZdq{}}
+\PYG{+w}{            }\PYG{n}{ConteoCorazones}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{l+m}{1}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Turno}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{Turno}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{2}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{n}{Turno}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{1}
+\PYG{+w}{        }\PYG{n}{ActualizarEstatusTablero}\PYG{p}{(}\PYG{n}{fila}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

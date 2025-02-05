@@ -1,0 +1,263 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+%\usetheme{Warsaw}
+\usetheme{Berlin}
+\usecolortheme[rgb={0.7,0.2,0.0}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+\title{Recapitulación de Proyectos de Tesis de Maestría en Ingeniería,\\ Línea de Investigación Sistemas Inteligentes} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Agosto 2024}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+% ACtualizacion 2024: Se necesita esta Entrada
+\newcommand{\EntradaBibtex}{InvalidEntry}
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+\section{Introducción}
+\begin{frame}{Introducción}
+\begin{itemize}
+\item Se presentarán resultados de proyectos sobresalientes. 
+\begin{itemize}
+\item Proyectos iniciativa del presentador para resolver problematicas del entorno docente/personal.
+\item Proyectos de tesis de maestría. En algunos casos dichos resultados derivan la publicación de un articulo en congreso o revista. 
+\item Proyectos finales de asignaturas, principalmente de Programación Movil (Cómputo en Dispositivos Móviles), Graficación por Computadora Avanzada. Se da el crédito a los autores (al equipo completo).
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+
+% Parte IV: Aplicaciones Moviles
+\section[MI]{Maestría en Ingeniería}
+
+\input{2014_BookSCanner/T10.tex}
+
+\input{2014_VehicleCounter/T9.tex}
+
+\input{2015_ActivityRecognition/T11.tex} % Activity Recognition Mobile App
+%\input{2015_ActivityRecognition/T11_EN.tex} % Activity Recognition Mobile App
+
+\input{2018_RemoteMonitoring/T12.tex} % Vital Signs Remote Sensing System
+%\input{2018_RemoteMonitoring/T12_EN.tex} % Vital Signs Remote Sensing System
+
+\input{2018_IPS/T13.tex} % Indoor Positioning System
+%\input{2018_IPS/T13_EN.tex} % Indoor Positioning System
+
+\input{2018_AugmentedReality/T14.tex} % Augmented Reality System
+%\input{2018_AugmentedReality/T14_EN.tex} % Augmented Reality System
+
+\input{2020_SeguridadAutomotriz/T18_EN.tex} % Seguridad en el Automovil
+%\input{2020_SeguridadAutomotriz/T18.tex} % Seguridad en el Automovil
+
+\input{2020_AEDMA/T19_EN.tex} % AEDMA
+%\input{2020_AEDMA/T19.tex} % AEDMA
+
+% Esta aplicación desentona aqui porque no hay una 
+%\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+
+\input{2020_BasculaInteligente/T17.tex}
+
+%\input{2022_FatChild3D/T20_EN.tex} % JuegoEchartea
+\input{2022_FatChild3D/T20.tex} % JuegoEchartea
+
+\input{2022_BottleClassifier/ClasificadorBotellas.tex}
+
+\input{2022_HidroponicosDavid/Hidroponicos.tex}
+
+\input{2023_ConteoNaranjasBandaTransportadora/ConteoNaranjasTransportadora.tex}
+
+
+\section[PPE]{Proyectos con Potencial de Extensión}
+
+\input{2020_RemoteLearning/T16.tex} % Remote Learning (JCR)
+\input{2022_AppPaseLista/AppPaseLista.tex} % Pase lista
+%\input{2022_Spelling/Spelling.tex} % Pase lista
+
+\input{2022_AplicacionLSM/LSM.tex}
+%\input{2022_BottleClassifier/ClasificadorBotellas.tex}  
+\input{2022_ConteoMicroAlgas/ConteoMicroAlgas.tex}      
+%\input{2022_Plagio/Plagio.tex}
+\input{2022_ConteoOstioncitos/ConteoOstioncitos.tex}   
+
+\input{2024_ProyectoCalificadorExamenes/ProyectoCalificadorExamenes.tex}
+
+
+% Parte V: Desarrollos Tecnologicos (No publicados formalmente)
+\section{Ingeniería en Tecnologías de la Información}
+
+%\input{2021_RecorridoUPV/RecorridoUPV.tex}
+%\input{2017_CruzdeMalta/CruzDeMalta.tex}
+%\input{2017_Tetris3D/Tetris3D.tex} % Tetris 3D
+%\input{2020_MascotaUPV3D/MascotaUPV3D.tex}
+%\input{2019_RealidadAumentada/RealidadAumentada.tex}
+%\input{2020_TutorialBlender/TutorialBlender.tex}
+
+\input{2017_Ajedrez3D/Ajedrez3D.tex}
+\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+\input{2023_AppComidaTamaulipeca/AppComidaTamaulipeca}
+\input{2023_AppSegmentaCromosomas/AppSegmentaCromosomas.tex}
+\input{2023_ManoRobotica/ManoRobotica.tex}
+\input{2024_ConteoMonedasEscritorio/ConteMonedasEscritorio.tex}
+
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{itemize}
+\item Se presentaron avances de aplicaciones móviles diversas, con varios grados de complejidad.
+\item Los resultados derivaron una publicación (congreso, revista)
+\item Hay muchas mejoras que se pueden hacer a las aplicaciones actuales, generalmente el proyecto se va mejorando en cada generacion (Recorrido Virtual, Realidad Aumentada).
+\end{itemize}
+\end{frame}
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\begin{frame}%%     1
+\begin{center}
+\Huge Thank You! \\
+\Huge Gracias! \\
+\end{center}
+\end{frame}
+
+\begin{frame}%%     2
+\begin{center}
+{\fontsize{40}{50}\selectfont Thank You!}\\
+{\fontsize{40}{50}\selectfont Gracias!}
+\end{center}
+\end{frame}
+
+  
+
+
+
+\end{document}
+
+
