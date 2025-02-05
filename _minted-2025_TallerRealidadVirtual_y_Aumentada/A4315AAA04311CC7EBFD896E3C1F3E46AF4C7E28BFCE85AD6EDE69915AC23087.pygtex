@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{numero\PYGZus{}ninos}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{8}\PYG{p}{;}
+\PYG{n}{indice}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{indice}\PYG{o}{\PYGZlt{}}\PYG{n}{numero\PYGZus{}ninos}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{indice}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{mas\PYGZus{}alto}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{indice}
+\PYG{+w}{        }\PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{Estaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k}{else}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Estaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}\PYG{o}{\PYGZgt{}}\PYG{n}{mas\PYGZus{}alto}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{mas\PYGZus{}alto}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{indice}
+\PYG{+w}{            }\PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{Estaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{indice}\PYG{o}{=}\PYG{n}{indice}\PYG{o}{+}\PYG{l+m+mi}{1}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

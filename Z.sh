@@ -8,13 +8,17 @@
 #git branch -M main
 #git remote add origin https://github.com/mnunom-upv/Diapositivas_Divulgacion_Proyectos.git
 
+#
+# git pull origin main --allow-unrelated-histories
+
 
 rm *.aux *.bbl *.blg *.out *.toc *.nav *.bcf *.xml *.snm *.log *.gz *.vrb
 rm .fuse*
 
 file=2024_ForoNalTI
 
-file=ProyectosMaestria_2009-2024
+#file=ProyectosMaestria_2009-2024
+file=2025_TallerRealidadVirtual_y_Aumentada
 #file=TallerProgramacionMovil_V3
 #file=SalonDeLaFamaAplicacionesMoviles
 #file=ConferenciaProgramacionMovil_2024
@@ -39,7 +43,7 @@ git add .
 # Establece una version
 git commit -m "Version${current}"
 # Hace el Push
-git push -u origin main
+git push --force -u origin main
 
 
 

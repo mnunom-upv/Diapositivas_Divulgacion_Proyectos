@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ArregloEstaturas}\PYG{o}{=}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{numero\PYGZus{}ninos} \PYG{o}{=} \PYG{l+m+mi}{8}\PYG{p}{;} 
+\PYG{n}{indice}\PYG{o}{=}\PYG{l+m+mi}{0}
+\PYG{k}{while} \PYG{p}{(}\PYG{n}{indice}\PYG{o}{\PYGZlt{}}\PYG{n}{numero\PYGZus{}ninos}\PYG{p}{):}
+    \PYG{n}{Estatura}\PYG{o}{=}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Dame la estatura del elemento \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{indice}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} : \PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{ArregloEstaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}\PYG{o}{=}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{Estatura}\PYG{p}{)}
+    \PYG{n}{indice}\PYG{o}{=}\PYG{n}{indice}\PYG{o}{+}\PYG{l+m+mi}{1}
+
+\PYG{n}{indice}\PYG{o}{=}\PYG{l+m+mi}{0}
+\PYG{k}{while} \PYG{p}{(}\PYG{n}{indice}\PYG{o}{\PYGZlt{}}\PYG{n}{numero\PYGZus{}ninos}\PYG{p}{):}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{indice}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{):}
+        \PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{ArregloEstaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}
+        \PYG{n}{indice\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{indice}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{ArregloEstaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}\PYG{o}{\PYGZgt{}}\PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{p}{):}
+            \PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{ArregloEstaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}
+            \PYG{n}{indice\PYGZus{}mas\PYGZus{}alto}\PYG{o}{=}\PYG{n}{indice}
+    \PYG{n}{indice}\PYG{o}{=}\PYG{n}{indice}\PYG{o}{+}\PYG{l+m+mi}{1}
+\PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Estura del mas alto: \PYGZdq{}}\PYG{p}{,}\PYG{n}{estatura\PYGZus{}mas\PYGZus{}alto}\PYG{p}{)}
+\PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Posicion del mas alto: \PYGZdq{}}\PYG{p}{,}\PYG{n}{indice\PYGZus{}mas\PYGZus{}alto}\PYG{p}{)}                
+        
+\end{Verbatim}
