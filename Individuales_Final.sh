@@ -67,7 +67,7 @@ myArray=(
 
 #myArray=("2002_ArquitecturaPiramide")
 
-myArray=('2002_ArquitecturaPiramide' '2003_PiramideMultiresolucion')
+#myArray=('2002_ArquitecturaPiramide' '2003_PiramideMultiresolucion')
 #myArray=('2024_ConteoNaranjasArbol')
 #myArray=('2024_DetectorMotos' )
 #myArray=('2024_PaseDeListaCodigoQR')
@@ -90,6 +90,8 @@ myArray=('2002_ArquitecturaPiramide' '2003_PiramideMultiresolucion')
 #myArray=('00_AndroidStudio')
 #myArray=('00_CambiosInterfaz')
 #myArray=('00_ComportamientoAplicacionTicTacToe')
+
+myArray=('2024_GerminadorAutomatico')
 
 cat ZZ_Generica.tex > TemporalFinal2.tex
 
