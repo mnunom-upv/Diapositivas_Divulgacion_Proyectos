@@ -91,7 +91,169 @@ aspectratio=169]{beamer}
 \end{frame}
 
 \input{00_IntroProgramacionYMoviles/Introduccion.tex}
-\input{00_IntroProgramacionMovil/IntroPM.tex}
+%\input{00_IntroProgramacionMovil/IntroPM.tex}
+
+
+\section[Intro]{OpenGL, GLSL y tecnologías asociadas}
+
+
+
+
+% https://www.mathematik.uni-marburg.de/~thormae/lectures/graphics1/graphics_4_1_eng_web.html#1
+\frame{
+\frametitle{OpenGL}
+\begin{itemize}
+\item OpenGL significa Open Graphics Library, un estándar para la progamación gráfica.
+\item Los comandos de gráficos son implementados por el controlador de la tarjeta gráfica y, por lo tanto, son independientes del hardware de la tarjeta gráfica, del sistema operativo y del administrador de ventanas empleado.
+\item Los comandos de gráficos están cercanos hardware y son suficientes para lograr la funcionalidad principal
+\item Varias bibliotecas y frameworks se basan en OpenGL y permiten la programación a un mayor nivel de abstracción.
+\end{itemize}
+}
+
+\frame{
+\frametitle{Versiones OpenGL para PC}
+\begin{itemize}
+\item Desde su introducción (1992) OpenGL se ha ampliado continuamente para admitir nuevas funciones de tarjetas gráficas.
+\item OpenGL 1.0 (1992), OpenGL 1.1 (1997), OpenGL 1.2 (1998), OpenGL 1.3 (2001), OpenGL 1.4 (2002), OpenGL 1.5 (2003)
+\item OpenGL 2.0 (2004), OpenGL 2.1 (2006)
+\item OpenGL 3.0 (2008), OpenGL 3.1 (2009), OpenGL 3.2 (2009), OpenGL 3.3 (2010)
+\item OpenGL 4.0 (2010), OpenGL 4.1 (2010), OpenGL 4.2 (2011), OpenGL 4.3 (2012), OpenGL 4.4 (2013), OpenGL 4.5 (2014), OpenGL 4.6 (2017)
+%\item En esta ponencia, se combina la versi
+\item A partir de la  versión 3.1, el Pipeline de funciones fijo ya no esta soportado, por l ocual es necesario implementar shaders, lo cual dificulta el aprendizaje.
+\end{itemize}
+}
+
+
+\frame{
+\frametitle{OpenGL ES y WebGL}
+\begin{itemize}
+\item OpenGL ES (Embedded System) es una versión de OpenGL con funcionalidad reducida para teléfonos móviles, televisores, tabletas, etc.
+\item OpenGL ES 1.0 (2003): similar a OpenGL 1.3 (Pipeline Fijo)
+\item OpenGL ES 1.1 (2004): similar a OpenGL 1.5 (compatible con versiones anteriores)
+\item OpenGL ES 2.0 (2007): similar a OpenGL 2.0 (no compatible con versiones anteriores)
+\item OpenGL ES 3.0 (2012): similar a OpenGL 3.3 
+\item OpenGL ES 3.1 (2014): similar a OpenGL 4.3
+\item OpenGL ES 3.2 (2015): similar a OpenGL 4.3
+\item OpenGL ES 3.3 (2017): similar a OpenGL 4.6
+\item WebGL esta basado en OpenGL ES 2.0 (y WebGL 2.0 en OpenGL ES 3.0) y permite gráficos 3D en páginas web (compatible con la mayoría de navegadores)
+\end{itemize}
+}
+
+\begin{frame}{SoCs para Teléfonos Inteligentes}
+\begin{columns}
+\begin{column}{0.60\textwidth}  
+\begin{itemize}
+\item El término SoC significa system-on-a-chip.
+\item Un SoC es un sistema completo contenido en un solo circuito integrado.
+\item La combinación de todos sus componentes en una sola unidad de procesamiento permite un ahorro de energía significativo. 
+\item Bloques comunes en un SoC:
+\begin{itemize}
+\item Central Processing Unit (CPU).
+\item Graphics Processing Unit (GPU).
+\item Image Processing Unit (ISP).
+\item Digital Signal Processor (DSP).
+\item Neural Processing Unit (NPU).
+\item Video encoder/decoder.
+\item Modems.
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{0.40\textwidth}  
+    \begin{center}
+\includegraphics[width=0.65\textwidth]{FigsOpenGL/qualcomm_snapdragon410_block}\\
+\includegraphics[width=0.85\textwidth]{FigsOpenGL/Snapdragon-855-1}
+     \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\frame{
+\frametitle{¿Qué es un GPU (Graphics Processing Unit)?}
+\begin{columns}
+\begin{column}{0.49\textwidth}
+\begin{itemize}
+\item Un GPU es un procesador formado por muchos núcleos más pequeños y especializados, especializada en operaciones de punto flotante en paralelo.
+\item Al trabajar conjuntamente, los núcleos ofrecen un desempeño masivo cuando se puede dividir una tarea de procesamiento y es procesada por muchos núcleos.
+\item Por ejemplo, el Samsung S10 utiliza un Qualcomm Snapdragon 855 SoC (tiene un CPU de 8 núcleos y un GPU dedidado para gráficos (Adreno 640).
+\end{itemize}
+\end{column}
+\begin{column}{0.19\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{FigsOpenGL/GPU}\\
+\includegraphics[width=0.9\textwidth]{FigsOpenGL/CPU}\\
+\end{center}
+\end{column}
+\begin{column}{0.30\textwidth}  
+    \begin{center}
+     \includegraphics[width=\textwidth]{FigsOpenGL/Typical-NVIDIA-GPU-architecture}
+     \end{center}
+\end{column}
+\end{columns}
+}
+
+
+
+%\begin{frame}{OpenGL}
+%OpenGL signfiica Open Graphics Library, un estándar para la progamación de gráfica.
+%El OpenGL Shading Language es un lengauje de alto nivel (cuya sintaxis es parecida a C) diseñado para procesamiento en paralelo en un GPU. 
+%\end{frame}
+
+
+
+\begin{frame}{OpenGL Pipeline}
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{itemize}
+\item Un Pipeline es una estructura de procesamiento paralelo
+\item Un GPU tiene dos tipos de procesadores, incorporados en un Pipeline:
+\begin{itemize}
+\item El vertex processor
+\item El fragment processor
+\end{itemize}
+\item Los programas son cargados en cada procesador.
+\end{itemize}
+\end{column}
+\begin{column}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{FigsOpenGL/Pipeline1.png}\\
+    \includegraphics[width=\textwidth]{FigsOpenGL/Pipeline2.png}    
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{OpenGL Pipeline (2)}
+    \begin{center}
+    %\includegraphics[width=\textwidth]{FigsOpenGL/Graphics3D_Pipe}
+    \includegraphics[width=\textwidth]{FigsOpenGL/OpenGL_Pipeline_Espaniol.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{OpenGL Pipeline (3)}
+    \begin{center}
+    \includegraphics[width=\textwidth]{FigsOpenGL/evasgl-graphics-pipeline}
+    \end{center}
+\end{frame}
+
+\begin{frame}{OpenGL Shading Language}
+\begin{itemize}
+\item Las aplicaciones móviles son ejecutadas principalmente en el CPU y la memoria principal
+\item Para procesamiento de gráficos, los programas son ejecutados en el GPU el cual tiene su propia memoria local (memoria gráfica).
+\item Los programas del GPU son escritos en un lenguaje llamado Shading Language (Lenguaje de sombreado). 
+\item La mayoría de los GPUs adoptaron el lenguaje de OpenGL shading Language (OGSL)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Transformaciones}
+    \begin{center}
+    \includegraphics[width=0.75\textwidth]{FigsOpenGL/ModelViewProjection_MVP_Matrix}
+    \end{center}
+\end{frame}
+
+
 
 \end{document}
 %\input{00_IntroProgramacionMovil/IntroPM_Light.tex}
