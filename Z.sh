@@ -18,13 +18,13 @@ rm .fuse*
 file=2024_ForoNalTI
 
 #file=ProyectosMaestria_2009-2024
-file=2025_TallerRealidadVirtual_y_Aumentada
+#file=2025_TallerRealidadVirtual_y_Aumentada
 #file=TallerProgramacionMovil_V3
 #file=SalonDeLaFamaAplicacionesMoviles
 #file=ConferenciaProgramacionMovil_2024
 #file=MacroPresentacion
 #file=2023_PonenciaRealidadVirtual
-
+file=IntroduccionDesarrolloAPlicacionesMoviles
 
 
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex

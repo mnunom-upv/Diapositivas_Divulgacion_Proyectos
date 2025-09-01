@@ -1,0 +1,129 @@
+%    minted language=cpp,
+
+\documentclass[pdf,
+%8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+serif,
+%handout,	% remove overlays
+compress,
+xcolor=table,
+dvipsnames,
+spanish,
+aspectratio=169]{beamer}
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+%% Encoding, fonts, language
+\input{settings/pdflatex_setup}
+\usepackage{graphics}
+\usepackage{url}
+\usepackage{amsmath,amssymb,amsfonts,marvosym}
+\usepackage{ulem}			% to cross out text
+\usepackage{subfig}			% to cross out text
+\normalem
+\usepackage{ragged2e}
+\let\raggedright=\RaggedRight
+\input{settings/beamer_setup}
+\input{settings/biblatex_setup2.tex}
+
+\usepackage{datetime}
+\newdateformat{specialdate}{\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR}
+%\newdateformat{specialdate}{\twodigit{\THEDAY}-\THEYEAR}
+\date{\specialdate\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\title[\arabic{page} ]{Advanced Computer Graphics}
+\title{Desarrollo de Aplicaciones M\'oviles para Android}
+% Sin subtitulos
+%\subtitle[short]{}
+% Corchetes: Solo apellidos de los integrantes, Llaves: Los nombres completos!!
+\author[Dr. Marco Aurelio Nuño-Maganda]{Dr. Marco Aurelio Nuño-Maganda}
+\institute[UPV]{Universidad Politecnica de Victoria
+%\\
+%\url{https://github.com/mnunom-upv/Curso_Desarollo_Aplicaciones_Moviles_2023}
+}
+\date[]{Septiembre 2025}
+\logo{\pgfimage[height=0.75cm]{graphics/logo_upv_transparente}}			% Logo on all slides (pdf,png,jpg,eps)
+\titlegraphic{\includegraphics[height=1.5cm]{graphics/logo_upv_transparente} \hfill  \includegraphics[height=1.5cm]{graphics/kotlin.png}}	% Logo on title slide
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Configuracion para dibujar AUTOMATAS
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\AtBeginSection[]
+{
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents[currentsection]
+\end{frame}
+}
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{
+\parident 1em\noident
+\raggedright
+*
+\insertfootnotetext\par
+}
+
+
+\begin{document}
+
+% Diapositiva de título
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido}  
+  \tableofcontents
+\end{frame}
+
+\input{00_IntroProgramacionYMoviles/Introduccion.tex}
+\input{00_IntroProgramacionMovil/IntroPM.tex}
+
+\end{document}
+%\input{00_IntroProgramacionMovil/IntroPM_Light.tex}
+%\input{00_Configurar/Configurar.tex}
+%\input{00_PasosParaConfigurarSmartphoneModoDesarrollador/Pasos.tex}
+
+%\input{00_Modificacion/Modificacion0.tex}
+%\input{00_CambiosInterfaz/Interfaz.tex}
+%\input{00_ComportamientoAplicacionTicTacToe/Comportamiento.tex}
+
+\section{Conclusiones} 
+\begin{frame}
+\frametitle{Conclusiones}  
+\begin{itemize}
+\item En este taller describimos conceptos fundamentales de programaci\'on, computadoras y sistemas operativos
+\item Configuramos un tel\'efono inteligente en modo de depuraci\'on
+\item Creaamos una aplicaci\'on vac\'ia en Android Studio, instalar y ejecutar tal aplicaci\'on en el tel\'efono inteligente
+\item Comprendimos los archivos principales de la aplicaci\'on
+\item Modificarmos la interfaz para entender el concepto de contenedor
+\item Modificarmos la interfaz para implementar el juego de TIC-TAC-TOE
+\item Modificarmos el comportamiento de la aplicaci\'on agregando variables, m\'etodos y clases 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Agradecimiento}  
+Presentaci\'on y c\'odigo fuente disponible en el siguiente enlace:\\
+\url{https://github.com/mnunom-upv/Curso_Desarollo_Aplicaciones_Moviles_2023}\\
+Comentarios o Dudas: mnunom@upv.edu.mx
+\end{frame}
+
+\end{document}
+
+
+
