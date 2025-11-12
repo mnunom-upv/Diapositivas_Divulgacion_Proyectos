@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{package}\PYG{+w}{ }\PYG{n+nn}{com.example.primeraplicacionandroid}
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.appcompat.app.AppCompatActivity}
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nn}{android.os.Bundle}
+\PYG{k+kd}{class}\PYG{+w}{ }\PYG{n+nc}{MainActivity}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n}{AppCompatActivity}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Bundle?)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{setContentView}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{layout}\PYG{p}{.}\PYG{n+na}{activity\PYGZus{}main}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

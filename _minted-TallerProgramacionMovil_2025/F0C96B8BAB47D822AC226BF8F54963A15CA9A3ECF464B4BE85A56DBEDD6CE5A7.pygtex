@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{ReiniciarControles}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{i}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m}{0.}\PYG{p}{.}\PYG{n+na}{numRows}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{j}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{l+m}{0.}\PYG{p}{.}\PYG{n+na}{numCols}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{matrix}\PYG{o}{[}\PYG{n}{i}\PYG{o}{][}\PYG{n}{j}\PYG{o}{]!!}\PYG{p}{.}\PYG{n+na}{deviceStatus}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}SIN\PYGZus{}MARCA\PYGZdq{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{n}{B1\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B1\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B1\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B2\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B2\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B2\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B3\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B3\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{B3\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setImageResource}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{drawable}\PYG{p}{.}\PYG{n+na}{usuario}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{Turno}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{1}\PYG{+w}{  }\PYG{c+c1}{// 1 \PYGZhy{} Turno Cruz, 2 \PYGZhy{} Turno Corazon}
+\PYG{+w}{        }\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0}\PYG{+w}{  }\PYG{c+c1}{// Numero de Celdas MArcadas con Cruz}
+\PYG{+w}{        }\PYG{n}{ConteoCorazones}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m}{0}\PYG{+w}{  }\PYG{c+c1}{// Numero de Celdas Marcadas con Gato}
+
+\PYG{+w}{        }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Inicio del Juego: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{                }\PYG{l+s}{\PYGZdq{}\PYGZbs{}n Conteo Cruces: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{+}
+\PYG{+w}{                }\PYG{l+s}{\PYGZdq{}\PYGZbs{}n Contro Corazones: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{ConteoCorazones}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

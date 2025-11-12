@@ -24,7 +24,8 @@ file=2024_ForoNalTI
 #file=ConferenciaProgramacionMovil_2024
 #file=MacroPresentacion
 #file=2023_PonenciaRealidadVirtual
-file=IntroduccionDesarrolloAPlicacionesMoviles
+#file=IntroduccionDesarrolloAPlicacionesMoviles
+file=TallerProgramacionMovil_2025
 
 
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex

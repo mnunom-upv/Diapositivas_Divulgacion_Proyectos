@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{InicializarBotonesConIds}\PYG{p}{()}
+\PYG{n}{AsignarListenerABotones}\PYG{p}{()}
+\PYG{n}{CrearMatrizEstatus}\PYG{+w}{ }\PYG{p}{()}
+\PYG{n}{ReiniciarControles}\PYG{p}{()}
+
+\end{Verbatim}

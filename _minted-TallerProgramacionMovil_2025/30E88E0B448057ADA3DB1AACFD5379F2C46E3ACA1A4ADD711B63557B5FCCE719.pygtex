@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class}\PYG{+w}{ }\PYG{n+nc}{CeldaGato}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{row}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{col}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{deviceStatus}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}SIN\PYGZus{}MARCA\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{constructor}\PYG{p}{(}\PYG{n}{row}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{col}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{statusCode}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{p}{:}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{(}\PYG{n}{row}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{col}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{deviceStatus}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{when}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{statusCode}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+m}{0}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}TACHA\PYGZdq{}}
+\PYG{+w}{            }\PYG{l+m}{1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}CORAZON\PYGZdq{}}
+\PYG{+w}{            }\PYG{k}{else}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}SIN\PYGZus{}MARCA\PYGZdq{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}
