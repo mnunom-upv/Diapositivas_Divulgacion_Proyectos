@@ -167,21 +167,21 @@ La clase \texttt{GameView} es la superficie de dibujo principal y el motor de l�
 \begin{enumerate}
 \item \textbf{Gestión de Hilos (Threading)}
 \begin{itemize}
-\item Contiene un \textbf{hilo secundario} (a menudo un \texttt{GameThread} o similar) que ejecuta el bucle de juego para \textbf{actualizar la lógica} (\texttt{update()}) y \textbf{dibujar} (\texttt{draw()}) en un ciclo constante.
-\item Esto asegura que las animaciones y la física se ejecuten fluidamente sin bloquear el Hilo Principal (UI).
+\item Contiene un \textbf{GameThread} que ejecuta el bucle de juego para \textbf{actualizar la lógica} (\texttt{update()}) y (\texttt{draw()}) en un ciclo constante.
+\item Esto asegura que las animaciones se ejecuten fluidamente sin bloquear el Hilo Principal (UI).
 \end{itemize}
 \item \textbf{Implementación de la Lógica del Juego}
 \begin{itemize}
 \item Maneja la posición y el movimiento de los objetos (pelotas, paletas, etc.) y la detección de colisiones.
 \item Es responsable de incrementar los contadores de puntaje tras eventos clave, como anotar un punto.
 \end{itemize}
-\item \textbf{Dibujo de la Interfaz Gráfica}
-\begin{itemize}
-\item Sobrescribe el método \texttt{onDraw()} o utiliza un \texttt{SurfaceHolder} para pintar los elementos del juego (texto, gráficos) en el \texttt{Canvas} proporcionado.
-\end{itemize}
+%\item \textbf{Dibujo de la Interfaz Gráfica}
+%\begin{itemize}
+%\item Sobrescribe el método \texttt{onDraw()} o utiliza un \texttt{SurfaceHolder} para pintar los elementos del juego (texto, gráficos) en el \texttt{Canvas} proporcionado.
+%\end{itemize}
 \item \textbf{Control de Estado y Comunicación}
 \begin{itemize}
-\item Expone métodos de control de estado (\texttt{pauseGame()}, \texttt{resumeGame()}) llamados desde la \texttt{GameActivity}.
+%\item Expone métodos de control de estado (\texttt{pauseGame()}, \texttt{resumeGame()}) llamados desde la \texttt{GameActivity}.
 \item Utiliza la interfaz \texttt{ScoreUpdateListener} para notificar a la actividad sobre los cambios de puntaje, separando la lógica del juego de la actualización de la UI.
 \end{itemize}
 \end{enumerate}
