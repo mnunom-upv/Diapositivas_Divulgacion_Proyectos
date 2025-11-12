@@ -88,6 +88,7 @@ aspectratio=169]{beamer}
 \end{frame}
 
 
+\section{Tic-Tac-Toe}
 \begin{frame}{Tic-Tac-Toe: La Estrategia de la Sencillez}
 Mecánica y Tablero
 \begin{itemize}
@@ -115,12 +116,13 @@ Desarrollo de la Partida
 
 \end{frame}
 
+\section{Pong}
 \begin{frame}{Pong: El Nacimiento de la Industria}
 \textbf{Creador y Compañía}
 \begin{itemize}
 \item Desarrollado para la empresa \textbf{Atari} en 1972, convirtiéndose en el \textbf{primer videojuego de éxito comercial masivo}.
 \item El concepto se inspira en el deporte del tenis de mesa (ping pong).
-\end{itemize}      
+\end{itemize}
 Revolución Doméstica (1975)
 \begin{itemize}
 \item Atari lanzó una versión casera, \textit{Home Pong}, vendida exclusivamente a través de las tiendas Sears durante la temporada navideña de 1975.
@@ -131,6 +133,30 @@ Legado Técnico y Cultural
 \item A pesar de su simplicidad gráfica (dos paletas y una pelota), sentó las bases para mecánicas de juego fundamentales y estableció a los videojuegos como una \textbf{forma de entretenimiento viable y lucrativa}.
 \end{itemize}
 \end{frame}
+
+
+\begin{frame}{Aplicación Pong}
+\begin{enumerate}
+\item \textbf{Configuración de Pantalla Completa}
+\begin{itemize}
+\item Se asegura una experiencia inmersiva eliminando la barra de título (\texttt{FEATURE\_NO\_TITLE}) y la barra de acción (\texttt{supportActionBar.hide()}), y estableciendo el modo de \textbf{pantalla completa} (\texttt{FLAG\_FULLSCREEN}).
+\end{itemize}
+\item \textbf{Motor de Juego Principal (\texttt{GameView})}
+\begin{itemize}
+\item La lógica del juego (dibujo, física, bucle de actualización) reside en una vista personalizada (\texttt{GameView}), la cual se añade dinámicamente al contenedor (\texttt{FrameLayout}) de la actividad.
+\end{itemize}
+\item \textbf{Comunicación y Actualización de Puntaje}
+\begin{itemize}
+\item Se establece un \textbf{Listener} (\texttt{ScoreUpdateListener}) en la \texttt{GameView} para recibir los nuevos puntajes.
+\item La actualización de los \texttt{TextView} de los jugadores se realiza de forma segura en el \textbf{Hilo Principal} de Android (\texttt{runOnUiThread}) para evitar fallos en la interfaz de usuario.
+\end{itemize}
+\item \textbf{Manejo del Ciclo de Vida del Juego}
+\begin{itemize}
+\item La actividad maneja el estado del juego mediante los métodos \texttt{onPause()} y \texttt{onResume()}, llamando a \texttt{gameView.pauseGame()} y \texttt{gameView.resumeGame()} respectivamente. Esto es esencial para \textbf{conservar recursos} al cambiar de aplicación.
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
 
 \end{document}
 
