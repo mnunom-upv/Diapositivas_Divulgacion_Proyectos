@@ -1,0 +1,96 @@
+
+\section{Pong}
+\begin{frame}{Pong: El Nacimiento de la Industria}
+\textbf{Creador y Compañía}
+\begin{itemize}
+\item Desarrollado para la empresa \textbf{Atari} en 1972, convirtiéndose en el \textbf{primer videojuego de éxito comercial masivo}.
+\item El concepto se inspira en el deporte del tenis de mesa (ping pong).
+\end{itemize}
+Revolución Doméstica (1975)
+\begin{itemize}
+\item Atari lanzó una versión casera, \textit{Home Pong}, vendida exclusivamente a través de las tiendas Sears durante la temporada navideña de 1975.
+\item Esto introdujo los videojuegos en el \textbf{hogar} y provocó el nacimiento del mercado de consolas domésticas.
+\end{itemize}
+Legado Técnico y Cultural
+\begin{itemize}
+\item A pesar de su simplicidad gráfica (dos paletas y una pelota), sentó las bases para mecánicas de juego fundamentales y estableció a los videojuegos como una \textbf{forma de entretenimiento viable y lucrativa}.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Aplicación Pong}
+\begin{enumerate}
+\item \textbf{Configuración de Pantalla Completa}
+\begin{itemize}
+\item Se asegura una experiencia inmersiva eliminando la barra de título (\texttt{FEATURE\_NO\_TITLE}) y la barra de acción (\texttt{supportActionBar.hide()}), y estableciendo el modo de \textbf{pantalla completa} (\texttt{FLAG\_FULLSCREEN}).
+\end{itemize}
+\item \textbf{Motor de Juego Principal (\texttt{GameView})}
+\begin{itemize}
+\item La lógica del juego (dibujo, física, bucle de actualización) reside en una vista personalizada (\texttt{GameView}), la cual se añade dinámicamente al contenedor (\texttt{FrameLayout}) de la actividad.
+\end{itemize}
+\item \textbf{Comunicación y Actualización de Puntaje}
+\begin{itemize}
+\item Se establece un \textbf{Listener} (\texttt{ScoreUpdateListener}) en la \texttt{GameView} para recibir los nuevos puntajes.
+\item La actualización de los \texttt{TextView} de los jugadores se realiza de forma segura en el \textbf{Hilo Principal} de Android (\texttt{runOnUiThread}) para evitar fallos en la interfaz de usuario.
+\end{itemize}
+\item \textbf{Manejo del Ciclo de Vida del Juego}
+\begin{itemize}
+\item La actividad maneja el estado del juego mediante los métodos \texttt{onPause()} y \texttt{onResume()}, llamando a \texttt{gameView.pauseGame()} y \texttt{gameView.resumeGame()} respectivamente. Esto es esencial para \textbf{conservar recursos} al cambiar de aplicación.
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+
+% Suponiendo que la primera diapositiva de la portada ya fue generada...
+
+\begin{frame}{El Corazón del Juego: Clase \texttt{GameView} }
+La clase \texttt{GameView} es la superficie de dibujo principal y el motor de lógica de la aplicación.
+\begin{enumerate}
+\item \textbf{Gestión de Hilos (Threading)}
+\begin{itemize}
+\item Contiene un \textbf{GameThread} que ejecuta el bucle de juego para \textbf{actualizar la lógica} (\texttt{update()}) y (\texttt{draw()}) en un ciclo constante.
+\item Esto asegura que las animaciones se ejecuten fluidamente sin bloquear el Hilo Principal (UI).
+\end{itemize}
+\item \textbf{Implementación de la Lógica del Juego}
+\begin{itemize}
+\item Maneja la posición y el movimiento de los objetos (pelotas, paletas, etc.) y la detección de colisiones.
+\item Es responsable de incrementar los contadores de puntaje tras eventos clave, como anotar un punto.
+\end{itemize}
+%\item \textbf{Dibujo de la Interfaz Gráfica}
+%\begin{itemize}
+%\item Sobrescribe el método \texttt{onDraw()} o utiliza un \texttt{SurfaceHolder} para pintar los elementos del juego (texto, gráficos) en el \texttt{Canvas} proporcionado.
+%\end{itemize}
+\item \textbf{Control de Estado y Comunicación}
+\begin{itemize}
+%\item Expone métodos de control de estado (\texttt{pauseGame()}, \texttt{resumeGame()}) llamados desde la \texttt{GameActivity}.
+\item Utiliza la interfaz \texttt{ScoreUpdateListener} para notificar a la actividad sobre los cambios de puntaje, separando la lógica del juego de la actualización de la UI.
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+
+
+\section{Etapa 1: Definir Apariencia de la Aplicacion (Interfaz de usuario) }
+%\section{Etapa 1: Definir Apariencia de la Aplicacion (Interfaz de usuario) }
+\begin{frame}[fragile]
+\frametitle{Fase 1: Dividir la pantalla en contenedores verticales} 
+\begin{columns}
+\column{0.78\linewidth}
+\begin{block}{Archivo \textbf{activity\_main.xml}}
+%\input{Layout_Fase1.xml}
+\inputminted[highlightlines={7-11},linenos,fontsize=\tiny]{xml}{02_DiapositivasPong_2025/activity_main.xml}
+\end{block}
+\column{0.20\linewidth}
+%\begin{block}{Archivo \textbf{MainActivity.kt}}
+%\begin{minted}[linenos,fontsize=\tiny]{kotlin}
+%\end{minted}
+%\end{block}
+\begin{center}
+%\includegraphics[width=0.95\linewidth]{00_CambiosInterfaz/Fase1.png}    
+\end{center}
+\end{columns}
+\end{frame}
+
+
