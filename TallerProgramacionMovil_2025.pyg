@@ -1,0 +1,12 @@
+
+    <LinearLayout android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView android:id="@+id/textView_Pizarra_Estatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
