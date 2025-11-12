@@ -94,3 +94,49 @@ La clase \texttt{GameView} es la superficie de dibujo principal y el motor de l�
 \end{frame}
 
 
+%\section{Agregar Codigo a la Interfaz}
+\begin{frame}[fragile]
+\frametitle{Agregar codigo a la interfaz}  
+
+
+\begin{columns}
+
+\column{0.05\linewidth}
+%\textit{Apariencia}
+
+\column{0.93\linewidth}
+\textit{Comportamento}
+\begin{block}{Archivo \textbf{MainActivity.kt}}
+\begin{minted}[linenos,fontsize=\tiny]{kotlin}
+    // Declaración de variables usando 'lateinit' para inicialización no nula en onCreate
+    private lateinit var gameView: GameView
+    private lateinit var scorePlayer1: TextView
+    private lateinit var scorePlayer2: TextView
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        setContentView(R.layout.activity_main)
+        scorePlayer1 = findViewById(R.id.scorePlayer1)
+        scorePlayer2 = findViewById(R.id.scorePlayer2)
+        val gameContainer: FrameLayout = findViewById(R.id.gameContainer)
+        gameView = GameView(this)
+        gameContainer.addView(gameView)
+        gameView.setScoreUpdateListener(object : GameView.ScoreUpdateListener {
+            override fun onScoreUpdate(player1Score: Int, player2Score: Int) {
+                runOnUiThread {
+                    scorePlayer1.text = player1Score.toString() // Convierte Int a String
+                    scorePlayer2.text = player2Score.toString() // Convierte Int a String
+                }
+            }
+        })
+
+    }
+..
+\end{minted}
+\end{block}
+\end{columns}
+\end{frame}
+
