@@ -26,6 +26,7 @@ file=2024_ForoNalTI
 #file=2023_PonenciaRealidadVirtual
 #file=IntroduccionDesarrolloAPlicacionesMoviles
 file=TallerProgramacionMovil_2025
+file=2026_RecorridosRealidadVirtual
 
 
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex

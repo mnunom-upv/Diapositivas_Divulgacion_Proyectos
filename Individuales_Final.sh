@@ -91,7 +91,8 @@ myArray=(
 #myArray=('00_CambiosInterfaz')
 #myArray=('00_ComportamientoAplicacionTicTacToe')
 
-myArray=('2024_GerminadorAutomatico')
+#myArray=('2024_GerminadorAutomatico')
+myArray=('2025_RompecabezasMexico')
 
 cat ZZ_Generica.tex > TemporalFinal2.tex
 
