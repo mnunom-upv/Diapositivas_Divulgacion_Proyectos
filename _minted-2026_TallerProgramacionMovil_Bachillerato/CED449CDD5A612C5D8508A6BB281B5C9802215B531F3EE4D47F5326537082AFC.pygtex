@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{o}{\PYGZlt{}}\PYG{n}{activity}
+\PYG{+w}{            }\PYG{n}{android}\PYG{p}{:}\PYG{n}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}.MainActivity\PYGZdq{}}
+\PYG{+w}{            }\PYG{n}{android}\PYG{p}{:}\PYG{n}{exported}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}true\PYGZdq{}}\PYG{o}{\PYGZgt{}}
+\PYG{+w}{            }\PYG{o}{\PYGZlt{}}\PYG{n}{intent}\PYG{o}{\PYGZhy{}}\PYG{n}{filter}\PYG{o}{\PYGZgt{}}
+\PYG{+w}{                }\PYG{o}{\PYGZlt{}}\PYG{n}{action}\PYG{+w}{ }\PYG{n}{android}\PYG{p}{:}\PYG{n}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}android.intent.action.MAIN\PYGZdq{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+
+\PYG{+w}{                }\PYG{o}{\PYGZlt{}}\PYG{n}{category}\PYG{+w}{ }\PYG{n}{android}\PYG{p}{:}\PYG{n}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}android.intent.category.LAUNCHER\PYGZdq{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{+w}{            }\PYG{o}{\PYGZlt{}/}\PYG{n}{intent}\PYG{o}{\PYGZhy{}}\PYG{n}{filter}\PYG{o}{\PYGZgt{}}
+\PYG{+w}{        }\PYG{o}{\PYGZlt{}/}\PYG{n}{activity}\PYG{o}{\PYGZgt{}}
+\end{Verbatim}

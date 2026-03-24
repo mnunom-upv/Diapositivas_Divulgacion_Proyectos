@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{btnListener}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{View}\PYG{p}{.}\PYG{n+na}{OnClickListener}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nv}{fila}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{columna}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ObtieneFilaColumna}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nb}{it}\PYG{p}{)}
+\PYG{+w}{    }\PYG{c+c1}{//Toast.makeText(applicationContext, }
+\PYG{+w}{    }\PYG{c+c1}{//    \PYGZdq{}PresionasteBoton [\PYGZdq{}+fila+\PYGZdq{},\PYGZdq{}+columna+\PYGZdq{}]\PYGZdq{}+}
+\PYG{+w}{    }\PYG{c+c1}{//        matrix[fila][columna]!!.deviceStatus, }
+\PYG{+w}{    }\PYG{c+c1}{//    Toast.LENGTH\PYGZus{}SHORT).show()}
+\PYG{+w}{    }\PYG{c+c1}{//TextViewPizarra.text = \PYGZdq{}Alguna informacion util\PYGZdq{}}
+
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{ImageButton}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n+nb}{it}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{CambiarEstadoCasilla}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{fila}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{// Declaración de variables usando \PYGZsq{}lateinit\PYGZsq{} para inicialización no nula en onCreate}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{gameView}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{GameView}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{scorePlayer1}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{TextView}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{scorePlayer2}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{TextView}
+\PYG{+w}{    }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Bundle?)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{requestWindowFeature}\PYG{p}{(}\PYG{n}{Window}\PYG{p}{.}\PYG{n+na}{FEATURE\PYGZus{}NO\PYGZus{}TITLE}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{supportActionBar}\PYG{o}{?.}\PYG{n+na}{hide}\PYG{p}{()}
+\PYG{+w}{        }\PYG{n}{window}\PYG{p}{.}\PYG{n+na}{setFlags}\PYG{p}{(}\PYG{n}{WindowManager}\PYG{p}{.}\PYG{n+na}{LayoutParams}\PYG{p}{.}\PYG{n+na}{FLAG\PYGZus{}FULLSCREEN}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{WindowManager}\PYG{p}{.}\PYG{n+na}{LayoutParams}\PYG{p}{.}\PYG{n+na}{FLAG\PYGZus{}FULLSCREEN}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{setContentView}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{layout}\PYG{p}{.}\PYG{n+na}{activity\PYGZus{}main}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{scorePlayer1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{scorePlayer1}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{scorePlayer2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{scorePlayer2}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{gameContainer}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{FrameLayout}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{gameContainer}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{gameView}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{GameView}\PYG{p}{(}\PYG{k}{this}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{gameContainer}\PYG{p}{.}\PYG{n+na}{addView}\PYG{p}{(}\PYG{n}{gameView}\PYG{p}{)}
+\PYG{+w}{        }\PYG{n}{gameView}\PYG{p}{.}\PYG{n+na}{setScoreUpdateListener}\PYG{p}{(}\PYG{k}{object}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{GameView}\PYG{p}{.}\PYG{n+na}{ScoreUpdateListener}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onScoreUpdate}\PYG{p}{(}\PYG{n}{player1Score}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{player2Score}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{runOnUiThread}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{n}{scorePlayer1}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{player1Score}\PYG{p}{.}\PYG{n+na}{toString}\PYG{p}{()}\PYG{+w}{ }\PYG{c+c1}{// Convierte Int a String}
+\PYG{+w}{                    }\PYG{n}{scorePlayer2}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{player2Score}\PYG{p}{.}\PYG{n+na}{toString}\PYG{p}{()}\PYG{+w}{ }\PYG{c+c1}{// Convierte Int a String}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{})}
+
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{..}
+\end{Verbatim}

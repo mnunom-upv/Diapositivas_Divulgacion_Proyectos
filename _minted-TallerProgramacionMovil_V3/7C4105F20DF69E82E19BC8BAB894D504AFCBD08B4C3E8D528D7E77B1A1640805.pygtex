@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{ChecarAlgunGanadorFin}\PYG{p}{(}\PYG{n}{fila}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{):}\PYG{+w}{ }\PYG{k+kt}{Boolean}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{ConteoCorazones}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{ConteoCruces}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m}{2}\PYG{p}{))}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{         }\PYG{c+c1}{// Checa si hay fila ganadora}
+\PYG{+w}{        }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nv}{Ganador}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Indice}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Jugador}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ChecarGanadorPorFilas}\PYG{p}{()}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Ganador}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{c+c1}{// Hay una fila ganadora}
+\PYG{+w}{            }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Gano: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{} Fila: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Indice}
+\PYG{+w}{            }\PYG{n}{MostrarAlertDialog}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ganador: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador}\PYG{p}{)}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{)}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{c+c1}{// Checa si hay columna ganadora}
+\PYG{+w}{            }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nv}{Ganador2}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Indice2}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Jugador2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ChecarGanadorPorColumnas}\PYG{p}{()}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Ganador2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{c+c1}{// Hay una columna ganadora}
+\PYG{+w}{                }\PYG{n}{MostrarAlertDialog}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ganador: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador2}\PYG{p}{)}
+\PYG{+w}{                }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Gano: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador2}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{} Columna: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Indice2}
+\PYG{+w}{                }\PYG{k}{return}\PYG{+w}{ }\PYG{k+kc}{true}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nv}{Ganador3}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Indice3}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nv}{Jugador3}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ChecarGanadorPorDiagonales}\PYG{p}{()}
+\PYG{+w}{                }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Ganador3}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{c+c1}{// Ganador por alguna columna}
+\PYG{+w}{                    }\PYG{n}{MostrarAlertDialog}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ganador: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador3}\PYG{p}{)}
+\PYG{+w}{                    }\PYG{n}{TextViewPizarra}\PYG{p}{.}\PYG{n+na}{text}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Gano: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Jugador3}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{} Diagonal: \PYGZdq{}}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{Indice3}
+\PYG{+w}{                    }\PYG{k}{return}\PYG{+w}{ }\PYG{k+kc}{true}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}
+\PYG{+w}{                    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kc}{false}\PYG{p}{)}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{ActualizarEstatusTablero}\PYG{p}{(}\PYG{n}{fila}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{columna}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{+w}{ }
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{numero\PYGZus{}ninos}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{8}\PYG{p}{;}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{Estaturas}\PYG{p}{[}\PYG{n}{numero\PYGZus{}ninos}\PYG{p}{];}\PYG{+w}{ }\PYG{c+c1}{//Estatura en Centimetros}
+\PYG{n}{indice}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{indice}\PYG{o}{\PYGZlt{}}\PYG{n}{numero\PYGZus{}ninos}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{EstaturaActual}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{preguntarEstatura}\PYG{p}{(}\PYG{n}{indice}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{Estaturas}\PYG{p}{[}\PYG{n}{indice}\PYG{p}{]}\PYG{o}{=}\PYG{n}{EstaturaActual}
+\PYG{+w}{    }\PYG{n}{indice}\PYG{o}{=}\PYG{n}{indice}\PYG{o}{+}\PYG{l+m+mi}{1}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

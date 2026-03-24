@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{dependencies}\PYG{+w}{ }\PYG{o}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{implementation}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}com.journeyapps:zxing\PYGZhy{}android\PYGZhy{}embedded:4.3.0\PYGZsq{}}
+\PYG{+w}{    }\PYG{n}{implementation}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}com.google.zxing:core:3.5.1\PYGZsq{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

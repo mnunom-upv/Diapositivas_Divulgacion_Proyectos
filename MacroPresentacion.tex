@@ -1,0 +1,287 @@
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.0,0.4,0.4}]{structure}
+%\usecolortheme[rgb={0,0.4,0}]{structure}
+%\usetheme{AnnArbor}
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+\title{Titulo Rinbombante de Cualquier cosa Apatalladoras Que nadie entiende pero suenta bien chido..}
+%\subtitle{The Beamer Class}
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Marzo 24, 2022}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+
+\DeclareSortingScheme{ydmdddnt}{ 
+  \sort{ 
+    \field{presort} 
+  } 
+  \sort[final]{ 
+    \field{sortkey} 
+  } 
+  \sort[direction=descending]{ 
+    \field{year} 
+  } 
+  \sort[direction=descending]{ 
+    \field{month} 
+  } 
+  \sort[direction=descending]{ 
+    \field{day} 
+  } 
+  \sort{ 
+    \field{journaltitle} 
+  } 
+  \sort{ 
+    \field{author} 
+    \field{editor} 
+  } 
+  \sort{ 
+    \field{title} 
+  } 
+}
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+% Parte V: Desarrollos Tecnologicos (No publicados formalmente)
+\section{Proyectos Estudiantiles y en Desarollo}
+
+\input{2021_RecorridoUPV/RecorridoUPV.tex}
+\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+\input{2017_Ajedrez3D/Ajedrez3D.tex}
+\input{2017_CruzdeMalta/CruzDeMalta.tex}
+\input{2020_MascotaUPV3D/MascotaUPV3D.tex}
+\input{2019_RealidadAumentada/RealidadAumentada.tex}
+\input{2020_TutorialBlender/TutorialBlender.tex}
+\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+
+\end{document}
+
+\section{Introduccion}
+\subsection{IA, ML, VC y GC}
+\input{00_IntroAI/IntroAI.tex}
+\input{00_IntroComputerVision/IntroVC.tex}
+\input{00_IntroMachineLearning/IntroMLyRNA.tex}
+\subsection{VR y GC}
+\input{00_IntroGC/IntroGC.tex}
+\input{00_IntroAR_VR/IntroAR_VR.tex}
+\input{00_IntroOpenGL_GLSL/IntroOpenGL_GLSL.tex}
+\subsection{PM y GPUs}
+\input{00_IntroProgramacionMovil/IntroPM.tex}
+\input{00_IntroGPUs_Smartphones/IntroGPUsSmartphones.tex}
+\subsection{Computo Paralelo y FPGAs}
+\input{00_IntroComputoParalelo/IntroComputoParalelo.tex}
+\input{00_IntroFPGAs/FPGAs.tex}
+
+
+%
+
+\section{Sistemas Basados en FPGAs}
+% Parte I: Cosas FPGA-osas
+\input{2002_ArquitecturaPiramide/ES_ArquitecturaPiramide_2002.tex}
+\input{2003_PiramideMultiresolucion/ES_PiramideMultiresolucion_2003.tex}
+\input{2005_ArquitecturaInterpolacion/ES_ArquitecturaInterpolacion_2005.tex}
+\input{2009_Spiking/ES_Spiking_Neural_Networks_2009.tex}
+\input{2011_Peptidos/ES_FPGAs_Peptidos_2011.tex}
+\input{2014_LocalAdaptiveImageThresholding/Thresholding_2014.tex}
+\input{2019_Naranjas/Segmentacion_Naranjas_2019.tex}
+% 0) Comparison between 2D cellular automata based pseudorandom number generator (2012)
+% 1) A Hardware Coprocessor integrated with OpenCV for Edge Detection using Cellular Neural Networks Proceedings of the 6th International Conference on Image and Graphics (ICIG) 2011, 2011, 957-962
+% 2) Pendiente ImageClusteringSpiking (2012)
+% 3) Pendiente separacion de botellas (2022)
+
+%% Parte II:  Aplicaciones de Escritorio....
+\section{Aplicaciones de Escritorio}
+\input{2013_SerbotI/Serbot_ES.tex}
+\input{2014_VehicleCounter/T9.tex}
+%\input{2014_VehicleCounter/T9_EN.tex}
+\input{2020_Karyograms/T15.tex}
+%\input{2020_Karyograms/T15_EN.tex}
+\input{2012_HuellasDactilares/T22_EN.tex}
+% Pendiente: Analisis de Asistencia OnLine
+
+%% Parte III:  Sistemas Embebidos....
+\section{Sistemas Embebidos}
+%\input{2014_BookSCanner/T10.tex}
+\input{2014_BookSCanner/T10_EN.tex}
+%\input{2020_BasculaInteligente/T17.tex}
+\input{2020_BasculaInteligente/T17_EN.tex}
+\input{2012_Glucometro/T21_EN.tex}
+% Falta: Proyecto Jose Ramon (2021)
+% Refrigeraadores SSA?
+
+% Parte IV: Aplicaciones Moviles
+\section{Aplicaciones Moviles}
+%\input{2015_ActivityRecognition/T11.tex} % Activity Recognition Mobile App
+\input{2015_ActivityRecognition/T11_EN.tex} % Activity Recognition Mobile App
+
+%\input{2018_RemoteMonitoring/T12.tex} % Vital Signs Remote Sensing System
+\input{2018_RemoteMonitoring/T12_EN.tex} % Vital Signs Remote Sensing System
+
+%\input{2018_IPS/T13.tex} % Indoor Positioning System
+\input{2018_IPS/T13_EN.tex} % Indoor Positioning System
+
+%\input{2018_AugmentedReality/T14.tex} % Augmented Reality System
+\input{2018_AugmentedReality/T14_EN.tex} % Augmented Reality System
+
+%\input{2020_RemoteLearning/T16_EN.tex} % Remote Learning
+\input{2020_RemoteLearning/T16.tex} % Remote Learning
+
+\input{2020_SeguridadAutomotriz/T18_EN.tex} % Seguridad en el Automovil
+%\input{2020_SeguridadAutomotriz/T18.tex} % Seguridad en el Automovil
+
+\input{2020_AEDMA/T19_EN.tex} % AEDMA
+%\input{2020_AEDMA/T19.tex} % AEDMA
+
+\input{2022_FatChild3D/T20_EN.tex} % JuegoEchartea
+%\input{2022_FatChild3D/T20.tex} % JuegoEchartea
+
+
+
+
+
+
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+\begin{itemize}
+\item Se presentaron conceptos básicos (Inteligencia Artificial, Redes Neuronales, Visión por Computadora y Procesamiento de Imagenes, etc).
+\item Se expusó la necesidad de los FPGAs en ciertas aplicaciones y las alternativas existentes. 
+\item Se explicaron algunas aplicaciones relacionados con FPGAs y sus principales resultados.
+\end{itemize}
+\begin{block}{Invitación} 
+	\begin{itemize}
+\item A incorporate a la UPV para sus programas de Licenciatura o Maestría.
+	\begin{itemize}
+	\item Ingeniería en Tecnologías de la Información.
+	\item Maestría en Ingenería. Actualmente forma parte del Programa Nacional de Posgrados de Calidad (PNPC) del CONACYT.
+	\end{itemize}
+	\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}%%     1
+\begin{center}
+\Huge Thank You! \\
+\Huge Gracias! \\
+\end{center}
+\end{frame}
+
+\begin{frame}%%     2
+\begin{center}
+{\fontsize{40}{50}\selectfont Thank You!}\\
+{\fontsize{40}{50}\selectfont Gracias!}
+\end{center}
+\end{frame}
+
+
+\renewcommand*{\bibfont}{\tiny}  
+\begin{frame}[allowframebreaks]{Referencias}
+%\begin{frame}
+    \printbibliography[title=Referencias,keyword=secundary]
+    %\printbibliography
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+
+\end{document}
+
+

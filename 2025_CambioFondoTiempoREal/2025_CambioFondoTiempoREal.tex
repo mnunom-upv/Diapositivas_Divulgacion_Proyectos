@@ -1,0 +1,45 @@
+
+\renewcommand{\Folder}{2025_CambioFondoTiempoREal}
+\renewcommand{\EntradaBibtex}{2025_CambioFondoTiempoREal}
+
+\begin{frame}{\citetitle{\EntradaBibtex} \footnotemark[1] (1)}
+
+\begin{columns}
+	\begin{column}{0.98\textwidth}
+		\begin{itemize}
+			\item Una aplicación Android que realiza segmentación en tiempo real de personas en imágenes y video, utilizando CameraX para la captura de la cámara, ML Kit Selfie Segmentation para generar máscaras de segmentación, y Jetpack Compose para la interfaz de usuario.
+            \item La segmentación en tiempo real se realizó con ML Kit Selfie Segmentation en modo STREAM\_MODE.
+            \item La segmentación se desplegó en la interfaz de usuario mediante el componente Image de Jetpack.
+Compose.
+		\end{itemize}
+	\end{column}
+\end{columns}
+%\end{block} 
+\footnotetext[1]{\fullcite{\EntradaBibtex}}
+\end{frame}
+
+
+\begin{frame}{\citetitle{\EntradaBibtex}  (2)}
+
+\begin{columns}
+	\begin{column}{0.58\textwidth}
+		\begin{itemize}
+			\item Una vez concedidos los permisos, la aplicación presenta la opción de personalizar el entorno visual mediante un botón para seleccionar un fondo. Al activarlo, se despliega la galería del dispositivo, donde la persona puede elegir entre diferentes imágenes disponibles.
+            \item El sistema procesa la fotografía capturada, aplicando segmentación para aislar a la persona del fondo original.
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.2\textwidth}
+		 \begin{center}
+		     \includegraphics[width=0.98\textwidth]{\Folder/figs/3}
+		 \end{center}
+	\end{column}
+	\begin{column}{0.2\textwidth}
+		 \begin{center}
+		     \includegraphics[width=0.98\textwidth]{\Folder/figs/4}
+		 \end{center}
+	\end{column}
+\end{columns}
+%\end{block} 
+%\footnotetext[1]{\fullcite{\EntradaBibtex}}
+\end{frame}
+

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cm}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} ES necesario registar todas las actividades adicionales\PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}activity}\PYG{+w}{ }\PYG{n+na}{android:name=}\PYG{l+s}{\PYGZdq{}.MainActivity\PYGZus{}Demo01\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}\PYGZlt{}/activity\PYGZgt{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}activity}\PYG{+w}{ }\PYG{n+na}{android:name=}\PYG{l+s}{\PYGZdq{}.MainActivity\PYGZus{}Demo02\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}\PYGZlt{}/activity\PYGZgt{}}
+...
+\PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}activity}\PYG{+w}{ }\PYG{n+na}{android:name=}\PYG{l+s}{\PYGZdq{}.MainActivity\PYGZus{}Demo19\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}\PYGZlt{}/activity\PYGZgt{}}
+\end{Verbatim}

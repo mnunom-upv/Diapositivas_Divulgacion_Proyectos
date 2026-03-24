@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package}\PYG{+w}{ }\PYG{n+nn}{com.example.primerappmovil}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{android.os.Bundle}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.activity.EdgeToEdge}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.appcompat.app.AppCompatActivity}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.core.graphics.Insets}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.core.view.ViewCompat}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{androidx.core.view.WindowInsetsCompat}\PYG{p}{;}
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{MainActivity}\PYG{+w}{ }\PYG{k+kd}{extends}\PYG{+w}{ }\PYG{n}{AppCompatActivity}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nd}{@Override}
+\PYG{+w}{    }\PYG{k+kd}{protected}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{Bundle}\PYG{+w}{ }\PYG{n}{savedInstanceState}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kd}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{EdgeToEdge}\PYG{p}{.}\PYG{n+na}{enable}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{setContentView}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{layout}\PYG{p}{.}\PYG{n+na}{activity\PYGZus{}main}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{ViewCompat}\PYG{p}{.}\PYG{n+na}{setOnApplyWindowInsetsListener}\PYG{p}{(}\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{main}\PYG{p}{),}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{v}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{insets}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{Insets}\PYG{+w}{ }\PYG{n}{systemBars}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{insets}\PYG{p}{.}\PYG{n+na}{getInsets}\PYG{p}{(}\PYG{n}{WindowInsetsCompat}\PYG{p}{.}\PYG{n+na}{Type}\PYG{p}{.}\PYG{n+na}{systemBars}\PYG{p}{());}
+\PYG{+w}{            }\PYG{n}{v}\PYG{p}{.}\PYG{n+na}{setPadding}\PYG{p}{(}\PYG{n}{systemBars}\PYG{p}{.}\PYG{n+na}{left}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{systemBars}\PYG{p}{.}\PYG{n+na}{top}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{systemBars}\PYG{p}{.}\PYG{n+na}{right}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{systemBars}\PYG{p}{.}\PYG{n+na}{bottom}\PYG{p}{);}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{insets}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{});}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

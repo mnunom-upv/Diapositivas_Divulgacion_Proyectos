@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{package} \PYG{n}{com}\PYG{o}{.}\PYG{n}{example}\PYG{o}{.}\PYG{n}{myapplication}
+\PYG{n}{fun} \PYG{n}{CompararNumeros} \PYG{p}{(}\PYG{n}{A} \PYG{p}{:} \PYG{n}{Int}\PYG{p}{,} \PYG{n}{B}\PYG{p}{:} \PYG{n}{Int}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{A}\PYG{o}{==}\PYG{n}{B}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Son Iguales\PYGZdq{}}\PYG{p}{)}
+    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{A} \PYG{o}{\PYGZgt{}} \PYG{n}{B}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}A es mayor que B\PYGZdq{}}\PYG{p}{)}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}B es mayor que A\PYGZdq{}}\PYG{p}{)}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{fun} \PYG{n}{main}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Escribe el primer numero (A):\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{val} \PYG{n}{As} \PYG{o}{=} \PYG{n}{readLine}\PYG{p}{()}\PYG{err}{!!}
+    \PYG{n}{val} \PYG{n}{A}\PYG{o}{=} \PYG{n}{Integer}\PYG{o}{.}\PYG{n}{parseInt}\PYG{p}{(}\PYG{n}{As}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Escribe el segundo numero (B):\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{val} \PYG{n}{Bs} \PYG{o}{=} \PYG{n}{readLine}\PYG{p}{()}\PYG{err}{!!}
+    \PYG{n}{val} \PYG{n}{B}\PYG{o}{=} \PYG{n}{Integer}\PYG{o}{.}\PYG{n}{parseInt}\PYG{p}{(}\PYG{n}{Bs}\PYG{p}{)}
+    \PYG{n}{CompararNumeros}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,}\PYG{n}{B}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{AsignarListenerABotones}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B1\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B2\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}1}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}2}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{B3\PYGZus{}3}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{btnListener}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,447 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.1,0.5,0.70}]{structure}
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+
+\title{Programación Móvil para Profesores de Educación Media Superior} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Marzo de 2026}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+% ACtualizacion 2024: Se necesita esta Entrada
+\newcommand{\EntradaBibtex}{InvalidEntry}
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+
+%\end{document}
+
+
+%* Realidad Virtual
+%\section[RV y RA]{Conceptos de Realidad Virtual y Aumentada}
+%\input{00_IntroAR_VR/IntroAR_VR.tex}
+
+\section[IntroPM]{Programación Móvil}
+\input{00_IntroProgramacionYMoviles/Introduccion.tex}
+
+
+\section[POO]{Programación Orientada a Objetos}
+
+\begin{frame}{¿Qué es la Programación Orientada a Objetos?}
+\begin{itemize}
+    \item Paradigma de programación basado en el uso de \textbf{objetos}.
+    \item Los objetos representan entidades con:
+    \begin{itemize}
+        \item \textbf{Atributos} (datos)
+        \item \textbf{Métodos} (comportamientos)
+    \end{itemize}
+    \item Facilita la reutilización, mantenimiento y escalabilidad del código.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Principios Fundamentales de la POO}
+\begin{block}{1. Encapsulamiento}
+Agrupa datos y métodos en una sola unidad (clase) y restringe el acceso directo.
+\end{block}
+
+\begin{block}{2. Abstracción}
+Permite representar conceptos complejos mostrando solo lo esencial.
+\end{block}
+
+\begin{block}{3. Herencia}
+Permite que una clase herede propiedades y comportamientos de otra.
+\end{block}
+
+\begin{block}{4. Polimorfismo}
+Permite que diferentes objetos respondan de manera distinta al mismo método.
+\end{block}
+\end{frame}
+
+\begin{frame}{Ejemplo Conceptual}
+\begin{itemize}
+    \item Clase: \texttt{Vehículo}
+    \item Atributos: color, velocidad
+    \item Método: acelerar()
+    \item Subclase: \texttt{Auto}, \texttt{Motocicleta}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Idea clave:} Modelar problemas del mundo real mediante objetos.
+\end{frame}
+
+
+
+
+\section[Config]{Configuracion de Dispositivo}
+
+\begin{frame}{Materiales Necesarios}
+\textbf{Hardware:}
+\begin{itemize} 
+\item Cualquier smartphone o tablet con Sistema Operativo Android 
+\item Cable USB de Datos.
+\item Laptop con cualquier Sistema Operativo (minimo de memoria requerido: 8 GB). 
+\end{itemize}
+
+\vspace{0.5cm} 
+\textbf{Software:} 
+\begin{itemize} 
+\item Android Studio (la versión más reciente).
+\end{itemize}
+\end{frame}
+
+\input{00_Configurar/Configurar.tex}
+
+\input{01_PasosCrearProyectoAndroidStudio/Pasos_Java.tex}
+
+
+
+\section[Conceptos]{Conceptos Basicos de Apps en Android}
+
+\begin{frame}{Componentes de una APP en Android}
+\textbf{¿Qué es un Layout?}
+\begin{itemize} 
+\item Es un contenedor que define la estructura visual de la interfaz de usuario. 
+\item Organiza y posiciona los componentes (Views) como botones, textos e imágenes. 
+\item Se puede definir en archivos XML (por defecto, AS genera un archivo \textit{activity\_main.xml}). 
+\end{itemize}
+
+\vspace{0.5cm} 
+\textbf{Tipos principales de Layouts:} 
+\begin{itemize} 
+\item \textbf{LinearLayout:} Organiza los elementos en una fila o columna. 
+\item \textbf{GridLayout:} Organiza los elementos en una cuadrícula. 
+\item \textbf{RelativeLayout:} Posiciona elementos en relación a otros componentes. 
+\item \textbf{ConstraintLayout:} Permite diseños flexibles usando restricciones. 
+\item \textbf{FrameLayout:} Superpone elementos uno encima de otro. 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+%\begin{frame}{Demo 1: Primer Proyecto en Android Studio}
+%\begin{frame}{Demo 1: Primer Proyecto en Android Studio}
+\begin{frame}{Componentes de Interfaz de usuario de una APP en Android}
+
+
+\textbf{¿Qué es TextView?} 
+\begin{itemize} 
+\item Es un componente de interfaz de usuario utilizado para mostrar texto en una aplicación Android. 
+\item Permite presentar información estática o dinámica al usuario. 
+\item Soporta texto plano y con formato (colores, tamaños, estilos).
+\end{itemize} 
+
+\textbf{Características principales:} 
+\begin{itemize} 
+\item Soporta texto plano y con formato (colores, tamaños, estilos). 
+\item Puede configurarse desde XML o mediante código Java/Kotlin. 
+\item Permite alineación, padding y control de tamaño de texto. 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Actividades e Intents en Android}
+\textbf{¿Qué es una Actividad (Activity)?}
+
+\begin{itemize}
+    \item Es un componente fundamental de una aplicación Android que representa una pantalla con la que el usuario puede interactuar.
+\end{itemize}
+
+\vspace{0.4cm}
+
+\textbf{Principales tipos de Actividades:}
+\begin{itemize}
+    \item \textbf{Actividad Principal (MainActivity):} Punto de entrada de la aplicación.
+    \item \textbf{Actividades Secundarias:} Pantallas adicionales para navegación y funciones específicas.
+    \item \textbf{Actividades de Diálogo:} Se muestran como ventanas emergentes.
+\end{itemize}
+
+\vspace{0.4cm}
+
+\textbf{¿Qué es un Intent (Intento)?}
+\begin{itemize}
+    \item Es un mecanismo de comunicación entre componentes de Android, que permite lanzar actividades (de sistema o codificadas por el usuario.
+    \item Puede ser \textbf{explícito} (define el componente destino) o \textbf{implícito} (define una acción a realizar).
+\end{itemize}
+
+\end{frame}
+
+
+\input{00_Modificacion/ModificacionJAVA.tex}
+
+\section{Demos}
+
+\input{02_TallerCBTis/Demo01.tex}
+\input{02_TallerCBTis/Demo02.tex}
+\input{02_TallerCBTis/Demo03.tex}
+\input{02_TallerCBTis/Demo04.tex}
+\input{02_TallerCBTis/Demo05.tex}
+\input{02_TallerCBTis/Demo06.tex}
+\input{02_TallerCBTis/Demo07.tex}
+\input{02_TallerCBTis/Demo08.tex}
+
+%\end{document}
+
+%\input{02_TallerCBTis/TallerCBTis.tex}
+
+\input{02_TallerCBTis/Demo09.tex}
+\input{02_TallerCBTis/Demo10.tex}
+\input{02_TallerCBTis/Demo11.tex}
+\input{02_TallerCBTis/Demo12.tex}
+\input{02_TallerCBTis/Demo13.tex}
+\input{02_TallerCBTis/Demo14.tex}
+\input{02_TallerCBTis/Demo15.tex}
+\input{02_TallerCBTis/Demo16.tex}
+\input{02_TallerCBTis/Demo17.tex}
+\input{02_TallerCBTis/Demo18.tex}
+\input{02_TallerCBTis/Demo19.tex}
+\input{02_TallerCBTis/Demo20.tex}
+
+
+\section[CP1]{Conclusiones}
+\begin{frame}{Conclusiones}
+En este taller:
+\begin{itemize}
+\item Se explicaron los conceptos de Telefono Inteligente, Sistema Operativo.
+\item Se describieron los materiales necesarios (hardware y software) para la implementacion de una app en Android.
+\item Se revisaron los principales componentes de interfaz grafica y su uso en Apps de Android Studio. 
+\item Se pusieron en practica aplicaciones simples que emplean componentes de interfaz grafica, manejo de archivos y librerias externas para propositos misceláneos. 
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}%%     2
+\begin{center}
+{\fontsize{40}{50}\selectfont ¡Gracias!}
+\end{center}
+Comentarios o Dudas: mnunom@upv.edu.mx 
+\end{frame}
+
+
+\end{document}
+
+
+
+
+
+\begin{frame}
+\frametitle{Agradecimiento}  
+%Se agradece al Consejo Tamaulipeco de Ciencia y Tecnologia (COTACYT) por la invitaci\'on a este evento
+
+%Comentarios o Dudas: mnunom@upv.edu.mx 
+\end{frame}
+
+
+\end{document}
+
+
+%\input{00_DispositivosVR/DispositivosVR.tex}
+
+%\section[HR]{Herramientas Requeridas}
+%\input{00_AndroidStudio/AndroidStudio.tex}
+%\input{00_HerramientasParaTallerGraficos/Herramientas.tex}
+
+
+
+%\section[Intro]{Conceptos}
+%Parte 1: Conceptos
+%\input{00_IntroAI/IntroAI.tex}
+%* Vision por Computadora
+%\input{00_IntroComputerVisionV2/IntroVC.tex}
+%* Graficos por Computadora
+%\input{00_IntroGC/IntroGC.tex}
+%* Realidad Virtual
+%\input{00_IntroAR_VR/IntroAR_VR.tex}
+%* Realidad Aumentada
+%Parte 2: Intro a Telefonos Moviles
+%\section[Tools]{Herramientas}
+%* Android y SO para smartphones
+%\input{00_IntroProgramacionMovil/IntroPM.tex}
+%* Tomada del Taller del CBTIS
+
+%\section[PCS]{Pasos para configurar Smartphone}
+%\input{01_Configurar/Configurar.tex}
+
+%\input{01_PasosCrearProyectoAndroidStudio/Pasos.tex}
+
+%\section[PDAS]{Primer demo en Android Studio}
+
+%\input{01_Modificacion/Modificacion0.tex}
+
+%\section[PRVA]{Prototipos de Aplicaciones Graficas y de VC}
+
+%\input{2017_Ajedrez3D/Ajedrez3D.tex}
+%\input{2017_CruzdeMalta/CruzDeMalta.tex}
+%\input{2017_Tetris3D/Tetris3D.tex}
+%\input{2022_FatChild3D/T20.tex}
+%\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+
+
+
+
+%----A) Software (Android Studio, Scrcpy, Blender, Gimp, UNITY)
+%----B) Hardware: Adaptador, Cable USB, Control de Juegos Bluetooth
+%Parte 3: Android Studio
+%* Creacion de proyectos en Android (Taller de Moviles CBTIS 236)
+%* Herramienta ADB para instalar APKs existentes (Taller de Moviles CBTIS 236)
+%* Hola Mundo Android (Juego del Gato)  (Simplificacion de Taller de Moviles CBTIS 236)
+%* Hola Mundo Android OpenGL ES (Triangulos)
+%* Hola Mundo Android OpenCV (Segmentar Color)
+%Parte 4: OpenGL ES Primitivas (y sus respectivos demos) - Taller OpenGL
+%* Cubo, Circulo, Cilindro, Esfera, Texturas, etc (Demos 1 a 7 del Taller de OpenGL)
+%Parte 5: Realidad Aumentada
+%* Demo del CUBO con OpenCV (Clases)
+%* Demo del Jaguar de la UPV (Libreria Rajawali)
+%* Version minima del Demo del Tigre/Mapa de la UPV
+%* APK Mapa de la UPV
+%Parte 6: Realidad Virtual
+%** Version minima del Mapa de la UPV
+%** APK Mapa de la UPV
+%Parte 7: Conclusiones
+
+
+\section[CP1]{Conclusiones}
+\begin{frame}{Conclusi\'on}
+\begin{itemize}
+\item Se present\'o la relaci\'on entre Inteligencia Articial, Visi\'on por Computadora y los Gr\'aficos por Computadora con la RA y la RV
+\item Se establecieron las herramientas Hardware y Software para Realizar proyectos Gr\'aficos y de RA y RV para Tel\'efonos Inteligentes en Android Studio
+\item Se presentaron proyectos de Graficaci\'on y de RA y RV, principalmente desarrollados por estudiantes de la UPV (Ingenier\'ia en Tecnolog\'ias de la Informaci\'on y de Maestría en Ingeniería)
+%\item Algunos trabajos establecen vínculos de colaboracion con otras universidades
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\end{document}
+
+
+  
+
+
+
+\end{document}
+
+

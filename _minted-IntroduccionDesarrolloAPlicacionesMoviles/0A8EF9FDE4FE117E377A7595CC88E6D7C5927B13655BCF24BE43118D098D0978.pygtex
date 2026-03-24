@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{CompararNumeros}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,}\PYG{n}{B}\PYG{p}{):}
+	\PYG{k}{if} \PYG{p}{(}\PYG{n}{A}\PYG{o}{==}\PYG{n}{B}\PYG{p}{):}
+		\PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Son Iguales \PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{else}\PYG{p}{:}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{A}\PYG{o}{\PYGZgt{}}\PYG{n}{B}\PYG{p}{):}
+			\PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}A es mayor que B \PYGZdq{}}\PYG{p}{)}
+		\PYG{k}{else}\PYG{p}{:}
+			\PYG{n+nb}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}B es mayor que A \PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{As} \PYG{o}{=} \PYG{n+nb}{input} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Escribe el primer numero (A): \PYGZdq{}}\PYG{p}{)}
+\PYG{n}{A} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{As}\PYG{p}{)}
+\PYG{n}{Bs} \PYG{o}{=} \PYG{n+nb}{input} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Escribe el segundo numero (B): \PYGZdq{}}\PYG{p}{)}
+\PYG{n}{B} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{Bs}\PYG{p}{)}
+\PYG{n}{CompararNumeros}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,}\PYG{n}{B}\PYG{p}{)}
+\end{Verbatim}

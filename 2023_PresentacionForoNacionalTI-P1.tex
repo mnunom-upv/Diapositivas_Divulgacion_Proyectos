@@ -1,0 +1,243 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.7,0.0,0.0}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+%\title{20 proyectos de la línea de sistemas inteligentes de la maestría en ingeniería de la UPV: aplicaciones en el área de salud, agroindustria, seguridad y educación}
+%\title{Proyectos selectos de visión por computadora y aprendizaje automático del Laboratorio de Sistemas Inteligentes de la UPV} % TecMTY
+\title{Fundamentos de VR-AR mediante aplicaciones Gráficas 3D en Android utilizando OpenGL- Parte I\\ \large 3er Foro Nacional de Tecnologías de la Información y Sistemas Computacionales} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{28 y 29 de Septiembre de 2023}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+\section[Intro]{Conceptos}
+
+
+%Parte 1: Conceptos
+\input{00_IntroAI/IntroAI.tex}
+%* Vision por Computadora
+\input{00_IntroComputerVisionV2/IntroVC.tex}
+%* Graficos por Computadora
+\input{00_IntroGC/IntroGC.tex}
+%* Realidad Virtual
+\input{00_IntroAR_VR/IntroAR_VR.tex}
+%* Realidad Aumentada
+%Parte 2: Intro a Telefonos Moviles
+\section[Tools]{Herramientas}
+%* Android y SO para smartphones
+%\input{00_IntroProgramacionMovil/IntroPM.tex}
+%* Tomada del Taller del CBTIS
+
+\section[PyTI]{Programaci\'on y Tel\'efonos Inteligentes}
+\input{00_IntroProgramacionYMoviles/Introduccion.tex}
+\section[HR]{Herramientas Requeridas}
+
+\input{00_AndroidStudio/AndroidStudio.tex}
+\input{00_HerramientasParaTallerGraficos/Herramientas.tex}
+
+\section[PCS]{Pasos para configurar Smartphone}
+\input{01_Configurar/Configurar.tex}
+
+\input{01_PasosCrearProyectoAndroidStudio/Pasos.tex}
+
+\section[PDAS]{Primer demo en Android Studio}
+
+\input{01_Modificacion/Modificacion0.tex}
+
+\section[PRVA]{Prototipos de Aplicaciones Graficas y de VC}
+
+\input{2017_Ajedrez3D/Ajedrez3D.tex}
+\input{2017_CruzdeMalta/CruzDeMalta.tex}
+\input{2017_Tetris3D/Tetris3D.tex}
+\input{2020_AEDMA/T19.tex}
+\input{2021_JugadasAjedrezComputerVision/JugadasAjedrez.tex}
+\input{2022_FatChild3D/T20.tex}
+\input{2022_Scanner3D/Scanner3D.tex}
+\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
+\input{2022_MapaVickyRanch/MapaVickyRanch.tex}
+
+\section[PRVA]{Prototipos de Realidad Virtual y Aumentada}
+
+\input{2013_SerbotI/Serbot_ES.tex}
+\input{2018_AugmentedReality/T14.tex}
+\input{2019_RealidadAumentada/RealidadAumentada.tex}
+\input{2020_MascotaUPV3D/MascotaUPV3D.tex}
+\input{2021_RecorridoUPV/RecorridoUPV.tex}
+\input{2022_MapaUPV_RealidadAumentada/MapaUPV_RealidadAumentada.tex}
+
+%----A) Software (Android Studio, Scrcpy, Blender, Gimp, UNITY)
+%----B) Hardware: Adaptador, Cable USB, Control de Juegos Bluetooth
+%Parte 3: Android Studio
+%* Creacion de proyectos en Android (Taller de Moviles CBTIS 236)
+%* Herramienta ADB para instalar APKs existentes (Taller de Moviles CBTIS 236)
+%* Hola Mundo Android (Juego del Gato)  (Simplificacion de Taller de Moviles CBTIS 236)
+%* Hola Mundo Android OpenGL ES (Triangulos)
+%* Hola Mundo Android OpenCV (Segmentar Color)
+%Parte 4: OpenGL ES Primitivas (y sus respectivos demos) - Taller OpenGL
+%* Cubo, Circulo, Cilindro, Esfera, Texturas, etc (Demos 1 a 7 del Taller de OpenGL)
+%Parte 5: Realidad Aumentada
+%* Demo del CUBO con OpenCV (Clases)
+%* Demo del Jaguar de la UPV (Libreria Rajawali)
+%* Version minima del Demo del Tigre/Mapa de la UPV
+%* APK Mapa de la UPV
+%Parte 6: Realidad Virtual
+%** Version minima del Mapa de la UPV
+%** APK Mapa de la UPV
+%Parte 7: Conclusiones
+
+
+\section[CP1]{Conclusiones parte 1}
+\begin{frame}{Conclusi\'on parte 1}
+\begin{itemize}
+\item Se present\'o la relaci\'on entre Inteligencia Articial, Visi\'on por Computadora y los Gr\'aficos por Computadora con la RA y la RV
+\item Se establecieron las herramientas Hardware y Software para Realizar proyectos Gr\'aficos y de RA y RV para Tel\'efonos Inteligentes en Android Studio
+\item Se presentaron proyectos de Graficaci\'on y de RA y RV, principalmente desarrollados por estudiantes de la UPV (Ingenier\'ia en Tecnolog\'ias de la Informaci\'on y de Maestría en Ingeniería)
+\item Algunos trabajos establecen vínculos de colaboracion con otras universidades
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\renewcommand*{\bibfont}{\tiny}
+\begin{frame}[allowframebreaks]{Artículos publicados}
+    \printbibliography[title=Artículos publicados,keyword=primary]
+\end{frame}
+
+\end{document}
+
+
+  
+
+
+
+\end{document}
+
+

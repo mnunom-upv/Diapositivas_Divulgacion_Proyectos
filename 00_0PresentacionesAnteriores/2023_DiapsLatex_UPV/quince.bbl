@@ -1,0 +1,23 @@
+\begin{thebibliography}{}
+
+\bibitem[Howard, 1990]{LibroIngSoftware}
+Howard, D. (1990).
+\newblock {\em Ingenieria de Software}.
+\newblock Ed. Mc. Graw Hill.
+
+\bibitem[Nuno, 2001]{MarcoNuno2001}
+Nuno, M. (2001).
+\newblock Redes neuronales.
+\newblock {\em IEEE Journal of Computers}.
+
+\bibitem[Tocci, 1990]{LibroSistDigitales}
+Tocci, J. (1990).
+\newblock {\em Sistemas Digitales para lentos}.
+\newblock Ed. Mc. Graw Hill.
+
+\bibitem[Vargas, 2001]{RevistaITSA}
+Vargas, J. (2001).
+\newblock Sistemas expertos para invernaderos.
+\newblock {\em Revista Evolucion, ITSA}.
+
+\end{thebibliography}
