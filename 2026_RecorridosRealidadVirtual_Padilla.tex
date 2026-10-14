@@ -1,0 +1,283 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.93,0.03,0.02}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+%\title{20 proyectos de la línea de sistemas inteligentes de la maestría en ingeniería de la UPV: aplicaciones en el área de salud, agroindustria, seguridad y educación}
+%\title{Proyectos selectos de visión por computadora y aprendizaje automático del Laboratorio de Sistemas Inteligentes de la UPV} % TecMTY
+%\title{Fundamentos de VR-AR mediante aplicaciones Gráficas 3D en Android utilizando OpenGL- Parte I\\ \large 3er Foro Nacional de Tecnologías de la Información y Sistemas Computacionales} % UPP
+%\title{Aplicaciones de Realidad Aumentada y Realidad Virtual de la Universidad Polit\'ecnica de Victoria} % UPP
+\title{Taller: Recorridos Virtuales de Sitios de Interés de Ciudad Victoria} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda,\\Ing. Hestybalyz Jackelyn Fernández Cantú,\\
+Ing. Ángela Marisol Meléndez Fuentes}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes /Maestría en Ingeniería  \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Octubre de 2026}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+% \AtBeginSection[]
+%{
+%    \begin{frame}
+%        \frametitle{Outline}
+%        \tableofcontents[currentsection]
+%    \end{frame}
+%}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+
+%\frame{
+%\frametitle{Contenido}
+%\tableofcontents
+%}
+
+\section[RV]{Conceptos de Realidad Virtual}
+
+
+
+
+\begin{frame}{¿Que es la realidad virtual?}
+
+
+La \textbf{Realidad Virtual} (RV) es un entorno de escenas y objetos simulados por computadora que genera en el usuario la sensación de estar inmerso en él.
+\begin{columns}
+        \column{0.6\textwidth}
+Características principales:
+\begin{itemize}
+\item \scriptsize Inmersión total: Aíslan el mundo real mediante visores especiales.
+\item \scriptsize  Interactividad: Permite interactuar con objetos virtuales en tiempo real.
+\item Estímulos sensoriales: Utiliza pantallas, audio 3D y sensores de movimiento.
+\item Perspectiva en 3D: El entorno cambia según giras o mueves la cabeza
+\end{itemize}
+
+Componentes básicos:
+\begin{itemize}
+\item \scriptsize El Visor (HMD): Casco con pantallas que cubren todo el campo visual.
+\item Controles manuales: Rastrean tus manos para tocar o sujetar objetos interactivos.
+\item Sensores de posición: Cámaras o giroscopios que miden tus movimientos físicos. 
+\end{itemize}
+
+        \column{0.38\textwidth}
+        \begin{center}
+        \includegraphics[width=\linewidth]{00_Intro_VR/VR_user.jpeg}
+        \end{center}
+    \begin{center}
+            \tiny Image generated by AI assistant (Gemini AI) based on the prompt by Marco Aurelio Nuño-Maganda, May 28th, 2026.
+        \end{center}
+\end{columns}
+
+\end{frame}
+
+ 
+
+
+
+\begin{frame}{Experimento de la Salchicha flotante}
+
+\begin{columns}
+        \column{0.6\textwidth}
+
+\textbf{Pasos a seguir: }
+\begin{itemize}
+    \item Posición inicial: Levanta tus dedos índices y apunta el uno hacia el otro, manteniendo las yemas muy cerca (pero sin que lleguen a tocarse).
+    \item Acerca a tu cara: Coloca tus manos a unos 15 o 20 centímetros de tu nariz.
+    \item Cambia el enfoque: No mires directamente a tus dedos. Abre bien los ojos y dirige tu mirada a través de ellos, como si estuvieras viendo un objeto lejano al fondo de la habitación.
+    \item Observa la ilusión: Al desenfocar tus ojos de los dedos, verás aparecer una pequeña salchicha flotando en el espacio intermedio.
+\end{itemize}
+
+        \column{0.4\textwidth}
+\begin{center}
+\includegraphics[width=\linewidth]{00_Intro_VR/SalchichaFlotante.jpeg}
+\end{center}
+\end{columns}
+
+\end{frame}
+
+%\begin{frame}{Experimento de la Salchicha flotante (2)}
+%\textbf{¿Que explicación tiene la Salchicha flotante?}
+%\begin{itemize}
+%    \item El fenómeno ocurre gracias a la visión binocular y el campo visual.
+%    \item Cada uno de tus ojos percibe el mundo desde un ángulo ligeramente distinto.
+%    \item Normalmente, tu cerebro superpone estas dos imágenes para crear una sola visión en 3D.
+%    \item Cuando miras al infinito en lugar de a tus dedos, estás alterando el enfoque. Esto hace que tus ojos reciban información cruzada, engañando al cerebro y haciéndole interpretar erróneamente el espacio vacío entre las puntas de tus dedos como una forma sólida.
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}{Estereoscopio}
+\begin{center}
+\includegraphics[width=0.85\linewidth]{00_Intro_VR/Stereoscope_ChatGPT.png}
+\end{center}
+\begin{center}
+\tiny Image generated by AI assistant (ChatGpt) based on the prompt by Marco Aurelio Nuño-Maganda, May 28th, 2026.
+\end{center}
+\end{frame}
+
+
+
+
+%\input{00_Intro_VR/Intro_VR.tex}
+\input{00_Intro_VR/Intro_VR_Light.tex}
+
+
+\section[PRV]{Recorridos Virtuales}
+
+\input{00_IntroRecorridosVirtuales/IntroRecoridosVirtuales.tex}
+
+
+\begin{frame}{Recorridos Virtuales Desarrollados en la UPV}
+
+Principalmente desarrollados con ayuda de estudiantes de la carrera de \textbf{Ingeniería en Tecnologías de la Información (ITI)/Ingeniería en Tecnologías de la Información e Innovación Digital (ITIID)} de la \textit{Universidad Politécnica de Victoria}.
+
+Materiales:
+\begin{itemize}
+\item Un teléfono inteligente con Android y soporte para realidad virtual.
+\item Un control de XBox (o Genérico) vinculado con el telefono inteligente (Bluetooth). 
+\item Una carcasa para realidad virtual. 
+\end{itemize}
+Demos disponibles:
+\begin{itemize}
+\item Recorrido Virtual de la UPV.
+\item Museo de Historia Regional de Tamaulipas.
+\item Pinacoteca, Ciudad Victoria, Tamaulipas.
+\item Casa del Arte, Ciudad Victoria, Tamaulipas.
+\item Museo Tamux, Ciudad Victoria, Tamaulipas.
+\end{itemize}
+\end{frame}
+
+
+%\input{2021_RecorridoUPV/RecorridoUPV.tex} % Actualizacion
+\input{2025_RecorridoUPV/2025_RecorridoUPV.tex} % Actualizacion
+\input{2023_MuseoRegional_Virtual/MuseoRegional.tex}
+\input{2024_Pinacoteca_Virtual/PicacotecaVirtual.tex}
+\input{2025_RecorridoVirtualCasaArte/2025_RecorridoVirtualCasaArte.tex}
+
+
+
+\section[CP1]{Conclusiones }
+\begin{frame}{Conclusi\'on y Áreas de Oportunidad}
+En esta presentacion:
+\begin{itemize}
+\item se presentaron conceptos relacionados con la RV. 
+\item se describen las herramientas requeridas para interactuar con los demos realizados. 
+\item se describen los demos implementados. Es posible que os asistentes interactúen con los demos presentados si se solicita extender esta presentación de manera presencial.
+\end{itemize}
+Areas de oportunidad:
+\begin{itemize}
+\item Abiertos a propuestas de proyectos y/o exploracion de plataformas alternas.
+\item Posibilidades de proyectos bajo financiamiento externo en multiples aplicaciones.
+\end{itemize}
+
+\end{frame}
+
+
+
+\end{document}
+

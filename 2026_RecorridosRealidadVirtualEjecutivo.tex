@@ -1,0 +1,256 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.93,0.93,0.5}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+%\title{20 proyectos de la línea de sistemas inteligentes de la maestría en ingeniería de la UPV: aplicaciones en el área de salud, agroindustria, seguridad y educación}
+%\title{Proyectos selectos de visión por computadora y aprendizaje automático del Laboratorio de Sistemas Inteligentes de la UPV} % TecMTY
+%\title{Fundamentos de VR-AR mediante aplicaciones Gráficas 3D en Android utilizando OpenGL- Parte I\\ \large 3er Foro Nacional de Tecnologías de la Información y Sistemas Computacionales} % UPP
+%\title{Aplicaciones de Realidad Aumentada y Realidad Virtual de la Universidad Polit\'ecnica de Victoria} % UPP
+\title{Recorridos Virtuales de Sitios de Intéres del Estado de Tamaulipas} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Marzo de 2026}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+
+
+%\section[RV]{Conceptos de Realidad Virtual}
+
+%\input{00_Intro_VR/Intro_VR.tex}
+
+\section[PRV]{Recorridos Virtuales}
+
+\begin{frame}{Recorridos Virtuales y Uso de Teléfonos Inteligentes}
+
+\textbf{¿Qué son los recorridos virtuales?}
+\begin{itemize}
+    \item Son representaciones digitales interactivas de espacios reales o simulados.
+    \item Permiten explorar lugares de forma remota mediante imágenes 360°, video o entornos 3D.
+    \item Se utilizan en turismo, educación, bienes raíces y museos.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{¿Cómo ayudan los teléfonos inteligentes?}
+\begin{itemize}
+    \item \textbf{Portabilidad:} Acceso a recorridos en cualquier momento y lugar.
+    \item \textbf{Sensores integrados:} Uso de giroscopio y acelerómetro para navegación inmersiva.
+    \item \textbf{Realidad Virtual/Aumentada:} Integración con apps para experiencias más interactivas.
+    \item \textbf{Bajo costo:} No es necesaria la adquisición de licencias de software.
+\end{itemize}
+
+\end{frame}
+
+%\begin{frame}{Recorridos Virtuales Desarrollados en la UPV}
+%\textbf{}
+%\begin{itemize}
+%\item Los recorridos son proyectos de materia (\textit{Programación Móvil o Desarrollo de Aplicaciones Móviles} según la generación). 
+%\item Principalmente desarrollados por estudiantes de la carrera de \textbf{Ingeniería en Tecnologías de la Información (ITI)/Ingeniería en Tecnologías de la Información e Innovación Digital (ITIID)} de la \textit{Universidad Politécnica de Victoria}.
+%\item Algunos han pasado por varios grupos de estudiantes, quienes los mejoran y obtienen la siguiente versión.  
+%\item Se seleccionó desarrollar una Aplicación Nativa por encima de una plataforma por cuestión de desempeño. 
+%\item Específicamente, se seleccionó Android debido a:
+%\begin{itemize}
+%\item Disponibilidad en los teléfonos de los estudiantes 
+%\item EL IDE para desarrollo (Android Studio) es gratis.  
+%\item El bajo costo para cargar la app en la tienda de aplicaciones.  
+%\end{itemize}
+
+%\end{itemize}
+%\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Proyectos de Realidad Virtual (VR)}
+\textbf{Proyectos a presentar:}
+\begin{enumerate}
+\item Recorrido Virtual de la UPV.
+\item Museo de Historia Regional de Tamaulipas.
+\item Pinacoteca de Ciudad Victoria, Tamaulipas.
+\item Casa del Arte de Ciudad Victoria, Tamaulipas.
+\end{enumerate}
+\textbf{Material requerido para interactuar con los proyectos:}
+\begin{itemize}
+\item Un teléfono inteligente de gama media con Sistema Operativo Android y soporte para realidad virtual.
+\item Un control de XBox (o Genérico) con interfaz Bluetooth\tm. Este dispositivo debe estar vinculado con el teléfono inteligente. 
+\item Una carcasa para realidad virtual que contiene el teléfono inteligente con el proyecto desarrollado en ejecución. 
+\end{itemize}
+\end{frame}
+
+ 
+%\begin{frame}{Acerca de los Recorridos Virtuales desarollados}
+%\textbf{Ventajas}
+%\begin{itemize}
+%    \item No requerir de un dispositivo especializado (de alto costo) ya que solo se necesita un teléfono inteligente.
+%    \item El código abierto permite que una comunidad de desarrolladores aporte mejoras.
+%	\item Puede ser ejecutado y una diversidad de modelos. 
+%\end{itemize}
+%\textbf{Desventajas}
+%\begin{itemize}
+%    \item El telefóno inteligente no puede ser utilizado para otras actividades durante el DEMO. 
+%    \item El desempeño puede estar limitado por las prestaciones del teléfono inteligente.
+%    \item Se requiere de otros aditamentos (Control de Videojuego y Adaptador para Teléfono Inteligente).
+%\end{itemize}
+%\end{frame}
+
+
+
+\section{UPV-Virtual}
+\input{2025_RecorridoUPV/2025_RecorridoUPV.tex} % Actualizacion
+\section{Museo Regional Virtual}
+\input{2023_MuseoRegional_Virtual/MuseoRegional.tex}
+\section{Pinacoteca Virtual}
+\input{2024_Pinacoteca_Virtual/PicacotecaVirtual.tex}
+\section{Casa del Arte Virtual}
+\input{2025_RecorridoVirtualCasaArte/2025_RecorridoVirtualCasaArte.tex}
+
+
+
+\section[CP1]{Áreas de Oportunidad}
+\begin{frame}{Áreas de Oportunidad}
+Areas de oportunidad:
+\begin{itemize}
+\item Se tiene el conocimiento de las herramientas para desarrollar propuestas de recorridos virtuales, lo cual nos permitiría tener hasta 3 prototipos en un tiempo relativamente corto (de 3 a 4 meses).
+\item Se requiere la DONACION/COMODATO de un conjunto de aditamentos para poder desarrollarlos.
+\begin{itemize}
+\item Una Computadora de Escritorio.
+\item Una Laptop.
+\item Un teléfono inteligente de gama media.
+\item Un par de controles de XBox (Bluetooth).
+\item Un par de gafas de realidad virtual. 
+\end{itemize}
+\item Ademas requerimos el apoyo de la depedencia para poder obtener fotos/videos de los lugares a modelar sin requerir presentarse físicamente. 
+\end{itemize}
+
+\end{frame}
+
+
+
+\end{document}
+
