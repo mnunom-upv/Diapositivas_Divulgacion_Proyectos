@@ -41,8 +41,8 @@ rm output.pdf
 
 # Use the variable
 echo "# Diapositivas Divulacion Proyectos " > README.md
-echo "Last updated on $current_date \n" >> README.md
-echo "Last presentation updated: $file \n" >> README.md
+echo -e "Last updated on $current_date \n" >> README.md
+echo -e "Last presentation updated: $file \n" >> README.md
 
 echo "Last updated on $current_date" 
 echo "Last presentation updated: $file"
