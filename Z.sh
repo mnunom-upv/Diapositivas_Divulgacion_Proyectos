@@ -8,6 +8,7 @@
 #git branch -M main
 #git remote add origin https://github.com/mnunom-upv/Diapositivas_Divulgacion_Proyectos.git
 
+
 #
 # git pull origin main --allow-unrelated-histories
 
@@ -17,6 +18,12 @@ rm .fuse*
 
 #file=2026_RecorridosRealidadVirtual_TAMUX
 file="2026_RecorridosRealidadVirtual_Padilla"
+
+
+current_date=$(date '+%Y/%m/%d %H:%M:%S')
+
+#exit
+
 
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex
 pdflatex -interaction nonstopmode -shell-escape -synctex=1 $file.tex
@@ -28,6 +35,20 @@ rm .fuse*
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $file.pdf
 cp output.pdf $file.pdf
 rm output.pdf
+
+# Store formatted date
+#current_date=$(date +%Y-%m-%d)
+
+# Use the variable
+echo "# Diapositivas Divulacion Proyectos " > README.md
+echo "Last updated on $current_date" >> README.md
+echo "Last presentation updated: $file" >> README.md
+
+echo "Last updated on $current_date" 
+echo "Last presentation updated: $file"
+
+
+
 
 #git remote add origin https://github.com/mnunom-upv/Diapositivas_Divulgacion_Proyectos.git
 
