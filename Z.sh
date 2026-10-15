@@ -17,7 +17,8 @@ rm *.aux *.bbl *.blg *.out *.toc *.nav *.bcf *.xml *.snm *.log *.gz *.vrb
 rm .fuse*
 
 #file=2026_RecorridosRealidadVirtual_TAMUX
-file="2026_RecorridosRealidadVirtual_Padilla"
+#file="2026_RecorridosRealidadVirtual_Padilla"
+file="2026_Depuracion"
 
 
 current_date=$(date '+%Y/%m/%d %H:%M:%S')
@@ -36,16 +37,19 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE 
 cp output.pdf $file.pdf
 rm output.pdf
 
+#open $file.pdf
 # Store formatted date
 #current_date=$(date +%Y-%m-%d)
 
 # Use the variable
-echo "# Diapositivas Divulacion Proyectos " > README.md
-echo -e "Last updated on $current_date \n" >> README.md
-echo -e "Last presentation updated: $file \n" >> README.md
+#echo "# Diapositivas Divulacion Proyectos " > README.md
+#echo -e "Last updated on $current_date \n" >> README.md
+#echo -e "Last presentation updated: $file \n" >> README.md
 
-echo "Last updated on $current_date" 
-echo "Last presentation updated: $file"
+#echo "Last updated on $current_date" 
+#echo "Last presentation updated: $file"
+
+python3 AnalizarDemos.py > README.md
 
 
 

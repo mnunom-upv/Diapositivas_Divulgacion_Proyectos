@@ -1,0 +1,148 @@
+%    minted language=cpp,
+
+%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aspectratio=169,compress]{beamer}
+\mode<presentation> 
+
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.93,0.03,0.02}]{structure}
+
+
+\usepackage[algosection,lined]{algorithm2e}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+
+
+% define
+%\usepackage{beamerouterthememiniframes} % Para los puntitos 
+\setbeamertemplate{footline}[frame number]{}
+
+% include packages
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\usepackage{algorithmic}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\usepackage{pgfpages}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+
+
+
+%\title{20 proyectos de la línea de sistemas inteligentes de la maestría en ingeniería de la UPV: aplicaciones en el área de salud, agroindustria, seguridad y educación}
+%\title{Proyectos selectos de visión por computadora y aprendizaje automático del Laboratorio de Sistemas Inteligentes de la UPV} % TecMTY
+%\title{Fundamentos de VR-AR mediante aplicaciones Gráficas 3D en Android utilizando OpenGL- Parte I\\ \large 3er Foro Nacional de Tecnologías de la Información y Sistemas Computacionales} % UPP
+%\title{Aplicaciones de Realidad Aumentada y Realidad Virtual de la Universidad Polit\'ecnica de Victoria} % UPP
+\title{Taller: Recorridos Virtuales de Sitios de Interés de Ciudad Victoria} % UPP
+
+\author{Dr. Marco Aurelio Nu\~no Maganda,\\Ing. Hestybalyz Jackelyn Fernández Cantú,\\
+Ing. Ángela Marisol Meléndez Fuentes}
+\institute{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes /Maestría en Ingeniería  \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Octubre de 2026}
+%\textbf{nmaganda@ccc.inaoep.mx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin Your Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+\usepackage{listings}
+ 
+% \AtBeginSection[]
+%{
+%    \begin{frame}
+%        \frametitle{Outline}
+%        \tableofcontents[currentsection]
+%    \end{frame}
+%}
+
+\makeatletter
+\def\@makefnmark{}
+\makeatletter
+\setbeamertemplate{footnote}{%
+  \parindent 1em\noindent
+  \raggedright
+  *  
+  \insertfootnotetext\par
+}
+
+% A HUEVO EN TODOS!!!
+\newcommand{\EntradaBibtex}{XXX}
+
+\begin{document}
+
+\frame{
+	%\titlepage 
+	\begin{titlepage}
+	\end{titlepage}
+	
+}
+
+
+%\input{2022_Spelling/Spelling.tex}
+%\input{2022_Scanner3D/Scanner3D.tex}
+%\input{2022_RefrigeradoresFrios/RefrigeradoresFrios.tex}
+%\input{2022_MapaVickyRanch/MapaVickyRanch.tex}
+%\input{2022_MaquinaChilePiquin/MaquinaChilePiquin.tex}
+%\input{2022_MapaVickyRanch/MapaVickyRanch.tex}
+%\input{2022_MapaUPV_RealidadAumentada/MapaUPV_RealidadAumentada.tex}
+%\input{2022_HidroponicosDavid/Hidroponicos.tex}
+\input{2022_FatChild3D/T20.tex}
+
+\end{document}
+

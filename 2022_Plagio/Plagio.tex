@@ -1,5 +1,7 @@
 
-\begin{frame}{\citetitle{Plagio_Marlly2022}$^*$  (1)}
+\renewcommand{\EntradaBibtex}{Plagio_Marlly2022}
+
+\begin{frame}{\citetitle{\EntradaBibtex} \footnotemark[1] (1)}
 \begin{columns}
 \begin{column}{0.6\textwidth}
 	\begin{itemize}
@@ -20,11 +22,11 @@
 \end{center}
 \end{column} 
 \end{columns} 
-\footfullcite*{Plagio_Marlly2022}
+\footnotetext[1]{\fullcite{\EntradaBibtex}}
 \end{frame}
 
 
-\begin{frame}{\citetitle{Plagio_Marlly2022} (2)}
+\begin{frame}{\citetitle{\EntradaBibtex} (2)}
 	\begin{itemize}
         \item La aplicación esta codificada en Python, hace uso de OpenCV para comparar imágenes y la librería \textit{TfidVectorizer} para comparación de textio
         \item Una vez efectuado el análisis, se reportan los resultados
