@@ -1,22 +1,23 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 15:39:18
+# Ultima Actualizacion:  2026-10-19 15:59:16
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
-|  80 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
-|  79 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
-|  78 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
-|  77 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 
-|  76 |  Android Skin Change |  2025  |  2025_SkinReplacement |  2025_SkinReplacement | 
-|  75 |  Mejora del Simulador de Cubo de Rubik para Android con Animaciones 3D mediante Migración a OpenGL ES 3.0 |  2025  |  2025_RubikCode_Grafo |  CuboRubik_Grafo | 
-|  74 |  Rompecabezas de los Estados de México |  2025  |  2025_RompecabezasMexico |  2025_RompecabezasMexico | 
-|  73 |  Recorrido de Casa del Arte |  2025  |  2025_RecorridoVirtualCasaArte |  2025_RecorridoVirtualCasaArte | 
-|  72 |  Recorrido virtual UPV |  2025  |  2025_RecorridoUPV |  2025_RecorridoUPV | 
-|  71 |  Unsupervised Optical Mark Recognition on Answer Sheets for Massive Printed Multiple-Choice Tests |  2025  |  2025_ProyectoCalificadorExamenes |  MarcoNuno_Revista_2025_09_02 | 
-|  70 |  Mapa de Realidad Aumentada UPV |  2023  |  2025_MapaRA_UPV |  MapaRAChidoUPV_2023 | 
-|  69 |  Interactive Map of the State of Tamaulipas |  2025  |  2025_MapaMunicipiosTamaulipas |  2025_MapaMunicipiosTamaulipas | 
-|  68 |  Mexico Municipalities Map with Google Maps and OpenGL ES 2.0 |  2025  |  2025_MapaMuniciosMexico |  2025_MapaMuniciosMexico | 
+|  81 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
+|  80 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
+|  79 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
+|  78 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 
+|  77 |  Android Skin Change |  2025  |  2025_SkinReplacement |  2025_SkinReplacement | 
+|  76 |  Mejora del Simulador de Cubo de Rubik para Android con Animaciones 3D mediante Migración a OpenGL ES 3.0 |  2025  |  2025_RubikCode_Grafo |  CuboRubik_Grafo | 
+|  75 |  Rompecabezas de los Estados de México |  2025  |  2025_RompecabezasMexico |  2025_RompecabezasMexico | 
+|  74 |  Recorrido de Casa del Arte |  2025  |  2025_RecorridoVirtualCasaArte |  2025_RecorridoVirtualCasaArte | 
+|  73 |  Recorrido virtual UPV |  2025  |  2025_RecorridoUPV |  2025_RecorridoUPV | 
+|  72 |  Unsupervised Optical Mark Recognition on Answer Sheets for Massive Printed Multiple-Choice Tests |  2025  |  2025_ProyectoCalificadorExamenes |  MarcoNuno_Revista_2025_09_02 | 
+|  71 |  Mapa de Realidad Aumentada UPV |  2023  |  2025_MapaRA_UPV |  MapaRAChidoUPV_2023 | 
+|  70 |  Interactive Map of the State of Tamaulipas |  2025  |  2025_MapaMunicipiosTamaulipas |  2025_MapaMunicipiosTamaulipas | 
+|  69 |  Mexico Municipalities Map with Google Maps and OpenGL ES 2.0 |  2025  |  2025_MapaMuniciosMexico |  2025_MapaMuniciosMexico | 
+|  68 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2025_FlipAnim |  2026_RecorridoUPV_mas_Jaguar | 
 |  67 |  Automatic Detection and Counting of Nannochloropsis oceanica Microalgae: A Comparative Study of Classical Machine Learning Versus Deep Learning–Based Approaches |  2025  |  2025_ConteoMicroAlgas |  MarcoNuno_Revista_2025_10_28 | 
 |  66 |  Real-time background change |  2025  |  2025_CambioFondoTiempoREal |  2025_CambioFondoTiempoREal | 
 |  65 |  Filtro de Cabeza de Jaguar UPV |  2023  |  2025_CabezaJaguarUPV |  CabezaJaguar_2023 | 
