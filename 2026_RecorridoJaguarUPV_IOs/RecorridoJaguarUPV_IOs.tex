@@ -20,7 +20,6 @@ Se incorporan:
 
 \begin{frame}{\citetitle{\EntradaBibtex} (2)}
 \begin{block}{Arquitectura y componentes} 
-
 Componentes de la arquitectura:
 \begin{itemize}
 \item UPVScene: controlador principal de la escena.
@@ -34,8 +33,28 @@ Componentes de la arquitectura:
 \item ContentView.	Controles y posición del NPC en minimapa
 \end{itemize}
 \end{itemize}
+\end{block} 
+\end{frame}
 
+\begin{frame}{\citetitle{\EntradaBibtex} (3)}
+\begin{block}{Jaguar: modelo, pelaje y navegación autónoma} 
+El jaguar se obtiene de Mixamo mediante un modelo COLLADA (.dae) con:
+\begin{itemize}
+\item Malla 3D.
+\item Esqueleto.
+\item Animación Slow Run
+\end{itemize}
+El modelo no incluye textura propia, fue necesario generar un pelaje procedural mediante código
+\end{block} 
+
+\begin{block}{Cámara en tercera persona} 
+La cámara puede alternar entre:
+\begin{itemize}
+\item Primera persona (Vista desde los ojos del jugador).
+\item Tercera persona (La cámara orbita detrás del avatar).
+\end{itemize}
 \end{block} 
 
 \end{frame}
+
 
