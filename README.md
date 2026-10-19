@@ -1,7 +1,7 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 15:36:20
+# Ultima Actualizacion:  2026-10-19 15:39:18
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
 |  80 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
