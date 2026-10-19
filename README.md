@@ -1,9 +1,10 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 12:54:59
+# Ultima Actualizacion:  2026-10-19 15:15:43
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
+|  79 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
 |  78 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
 |  77 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 
 |  76 |  Android Skin Change |  2025  |  2025_SkinReplacement |  2025_SkinReplacement | 
@@ -11,41 +12,41 @@
 |  74 |  Rompecabezas de los Estados de México |  2025  |  2025_RompecabezasMexico |  2025_RompecabezasMexico | 
 |  73 |  Recorrido de Casa del Arte |  2025  |  2025_RecorridoVirtualCasaArte |  2025_RecorridoVirtualCasaArte | 
 |  72 |  Recorrido virtual UPV |  2025  |  2025_RecorridoUPV |  2025_RecorridoUPV | 
-|  71 |  Mapa de Realidad Aumentada UPV |  2023  |  2025_MapaRA_UPV |  MapaRAChidoUPV_2023 | 
-|  70 |  Interactive Map of the State of Tamaulipas |  2025  |  2025_MapaMunicipiosTamaulipas |  2025_MapaMunicipiosTamaulipas | 
-|  69 |  Mexico Municipalities Map with Google Maps and OpenGL ES 2.0 |  2025  |  2025_MapaMuniciosMexico |  2025_MapaMuniciosMexico | 
-|  68 |  Real-time background change |  2025  |  2025_CambioFondoTiempoREal |  2025_CambioFondoTiempoREal | 
-|  67 |  Filtro de Cabeza de Jaguar UPV |  2023  |  2025_CabezaJaguarUPV |  CabezaJaguar_2023 | 
-|  66 |  Skeletal Animation |  2024  |  2024_SkeletalAnimation |  2024_SkeletalAnimation | 
-|  65 |  Detección Automática de Respuestas en Exámenes de Opción Múltiple de Nivel Medio Superior usando Visión por Computadora |  2023  |  2024_ProyectoCalificadorExamenes |  MarcoNuno_ReporteTecnico2024 | 
-|  64 |  Desarrollo de una Aplicación Móvil para Recorrido Virtual Pinacoteca |  2024  |  2024_Pinacoteca_Virtual |  PinacotecaVirtual_2024 | 
-|  63 |  Pase de Lista con Código QR y Reconocimiento de personas |  2024  |  2024_PaseDeListaCodigoQR |  PaseListasCodigoQRFaceDetection_SistemasInteligentes_UPV_2024 | 
-|  62 |  Identificador de Genero Mediante Imágenes de Espectrogramas |  2024  |  2024_IdentificadorGeneroEspectrograma |  IdentificadorGeneroEspectrogramas_SistemasInteligentes_UPV_2024 | 
-|  61 |  Sistema de monitoreo remoto de humedad, temperatura y estado de los brotes en un germinador automático |  2024  |  2024_GerminadorAutomatico |  GerminadorAutomatico_EstadiasMecatronica_UPV_2024 | 
-|  60 |  Detector de Vehiculos y Motos |  2024  |  2024_DetectorMotos |  DetectorMotos_SistemasInteligentes_UPV_2024 | 
-|  59 |  Detección de Consumo de Alimentos en Personas cercanas a una Alberca |  2024  |  2024_DeteccionAlimentosAlbercas |  DetecciónAlimentosEnAlbercas_SistemasInteligentes_UPV_2024 | 
-|  58 |  Aplicación Móvil para la detección de Curl de Bíceps |  2024  |  2024_CurlBiceps |  CurlBiceps_UPV_2024 | 
-|  57 |  Contador de sentadillas utilizando MediaPipe |  2024  |  2024_ConteoSentadillas |  ConteoSentadillas_UPV_2024 | 
-|  56 |  Aplicación PyQt6 para el Conteo en Tiempo Real: Un Caso de Estudio con Detección de Naranjas |  2024  |  2024_ConteoNaranjasArbol |  ConteoNaranjasArboles_UPV_2024 | 
-|  55 |  Aplicación de Escritorio para Conteo de Monedas |  2024  |  2024_ConteoMonedasEscritorio |  ConteoMonedasEscritorio_SistemasInteligentes_UPV_2024 | 
-|  54 |  Contador de lagartijas con audio para Android |  2024  |  2024_ConteoLagartijas |  ConteoLagartijas_UPV_2024 | 
-|  53 |  Recorrido Museo Regional de Historia de Tamaulipas |  2023  |  2023_MuseoRegional_Virtual |  MuseoRegionalVirtual_2023 | 
-|  52 |  Aplicación móvil para el seguimiento de puntos caraterísticos de una mano y la visualización simultánea de su modelo 3D |  2023  |  2023_ManoRobotica |  AplicacionMovilManoRobotica_SistemasInteligentes_UPV_2023 | 
-|  51 |  Real-Time Embedded Vision System for Online Monitoring and Sorting of Citrus Fruits |  2023  |  2023_ConteoNaranjasBandaTransportadora |  MarcoNuno_Revista_2023_09_00 | 
-|  50 |  Clasificación de la madurez de chiles habaneros usando aprendizaje automático |  2023  |  2023_ChilesHabaneros |  ClasificadorHabaneros_ProcesadoresDigitales_UPV_2023 | 
-|  49 |  Chromosome Segmentor App |  2023  |  2023_AppSegmentaCromosomas |  AppSegmentaCromosomas_SistemasInteligentes_UPV_2023 | 
-|  48 |  Aplicación de Detección de Comida Tamaulipeca |  2023  |  2023_AppComidaTamaulipeca |  AppComidaTamaulipeca_SistemasInteligentes_UPV_2023 | 
-|  47 |  Aplicación Móvil para el Entrenamiento en Concursos de Spelling Utilizando Síntesis y Reconocimiento de Voz |  2022  |  2022_Spelling |  MarcoNuno_CongArbEsp_2022_11_01 | 
-|  46 |  Integración de un escanner 3D con sensores ultrasónicos y una aplicación móvil para visualización de modelos tridimensionales |  2022  |  2022_Scanner3D |  Escanner3D_Aleman2022 | 
-|  45 |  Monitoreo remoto de refrigeradores y cámaras frías de la red de frío del área de vacunación universal de la Secretaría de Salud de Tamaulipas |  2022  |  2022_RefrigeradoresFrios |  ProyectoRefrigeradoresFrios_2022 | 
-|  44 |  Aplicación de Visión por Computadora y Análisis de Texto para Detección de Plagio en Reportes de Proyectos |  2022  |  2022_Plagio |  Plagio_Marlly2022 | 
-|  43 |  Diseño y construcción de una máquina desprendedora de pedúnculos de chile piquín |  2022  |  2022_MaquinaChilePiquin |  MarcoNuno_ReporteTecnico2022_B | 
-|  42 |  Aplicación móvil para consultar rutas de autobuses urbanos en Ciudad Victoria, Tamaulipas |  2022  |  2022_MapaVickyRanch |  MarcoNuno_Revista_2022_10_00 | 
-|  41 |  Desarrollo de una app móvil de realidad aumentada de la Universidad Politécnica de Victoria |  2022  |  2022_MapaUPV_RealidadAumentada |  MapaRealidadVirtual_UPV_2022 | 
-|  40 |  Módulos de supervisión y automatización de un sistema hidropónico mediante lógica difusa y visión por computadora |  2022  |  2022_HidroponicosDavid |  ArticuloDavidHidroponia_2022 | 
-|  39 |  Mobile Application for Overweight Education |  2021  |  2022_FatChild3D |  Avatar3d_Echartea_2021 | 
-|  38 |  Exploración de técnicas de integración de mosaicos de imágenes para el conteo de ostiones bajo el microscopio |  2022  |  2022_ConteoOstioncitos |  MarcoNuno_ReporteTecnicoMosaicoOstiones2022_C | 
-|  37 |  Conteo de MicroAlgas a partir de imágenes de microscopía |  2022  |  2022_ConteoMicroAlgas |  MarcoNuno_ReporteTecnicoMicroAlgas2022 | 
+|  71 |  Unsupervised Optical Mark Recognition on Answer Sheets for Massive Printed Multiple-Choice Tests |  2025  |  2025_ProyectoCalificadorExamenes |  MarcoNuno_Revista_2025_09_02 | 
+|  70 |  Mapa de Realidad Aumentada UPV |  2023  |  2025_MapaRA_UPV |  MapaRAChidoUPV_2023 | 
+|  69 |  Interactive Map of the State of Tamaulipas |  2025  |  2025_MapaMunicipiosTamaulipas |  2025_MapaMunicipiosTamaulipas | 
+|  68 |  Mexico Municipalities Map with Google Maps and OpenGL ES 2.0 |  2025  |  2025_MapaMuniciosMexico |  2025_MapaMuniciosMexico | 
+|  67 |  Automatic Detection and Counting of Nannochloropsis oceanica Microalgae: A Comparative Study of Classical Machine Learning Versus Deep Learning–Based Approaches |  2025  |  2025_ConteoMicroAlgas |  MarcoNuno_Revista_2025_10_28 | 
+|  66 |  Real-time background change |  2025  |  2025_CambioFondoTiempoREal |  2025_CambioFondoTiempoREal | 
+|  65 |  Filtro de Cabeza de Jaguar UPV |  2023  |  2025_CabezaJaguarUPV |  CabezaJaguar_2023 | 
+|  64 |  Skeletal Animation |  2024  |  2024_SkeletalAnimation |  2024_SkeletalAnimation | 
+|  63 |  Desarrollo de una Aplicación Móvil para Recorrido Virtual Pinacoteca |  2024  |  2024_Pinacoteca_Virtual |  PinacotecaVirtual_2024 | 
+|  62 |  Pase de Lista con Código QR y Reconocimiento de personas |  2024  |  2024_PaseDeListaCodigoQR |  PaseListasCodigoQRFaceDetection_SistemasInteligentes_UPV_2024 | 
+|  61 |  Identificador de Genero Mediante Imágenes de Espectrogramas |  2024  |  2024_IdentificadorGeneroEspectrograma |  IdentificadorGeneroEspectrogramas_SistemasInteligentes_UPV_2024 | 
+|  60 |  Sistema de monitoreo remoto de humedad, temperatura y estado de los brotes en un germinador automático |  2024  |  2024_GerminadorAutomatico |  GerminadorAutomatico_EstadiasMecatronica_UPV_2024 | 
+|  59 |  Detector de Vehiculos y Motos |  2024  |  2024_DetectorMotos |  DetectorMotos_SistemasInteligentes_UPV_2024 | 
+|  58 |  Detección de Consumo de Alimentos en Personas cercanas a una Alberca |  2024  |  2024_DeteccionAlimentosAlbercas |  DetecciónAlimentosEnAlbercas_SistemasInteligentes_UPV_2024 | 
+|  57 |  Aplicación Móvil para la detección de Curl de Bíceps |  2024  |  2024_CurlBiceps |  CurlBiceps_UPV_2024 | 
+|  56 |  Contador de sentadillas utilizando MediaPipe |  2024  |  2024_ConteoSentadillas |  ConteoSentadillas_UPV_2024 | 
+|  55 |  Aplicación PyQt6 para el Conteo en Tiempo Real: Un Caso de Estudio con Detección de Naranjas |  2024  |  2024_ConteoNaranjasArbol |  ConteoNaranjasArboles_UPV_2024 | 
+|  54 |  Aplicación de Escritorio para Conteo de Monedas |  2024  |  2024_ConteoMonedasEscritorio |  ConteoMonedasEscritorio_SistemasInteligentes_UPV_2024 | 
+|  53 |  Contador de lagartijas con audio para Android |  2024  |  2024_ConteoLagartijas |  ConteoLagartijas_UPV_2024 | 
+|  52 |  Recorrido Museo Regional de Historia de Tamaulipas |  2023  |  2023_MuseoRegional_Virtual |  MuseoRegionalVirtual_2023 | 
+|  51 |  Aplicación móvil para el seguimiento de puntos caraterísticos de una mano y la visualización simultánea de su modelo 3D |  2023  |  2023_ManoRobotica |  AplicacionMovilManoRobotica_SistemasInteligentes_UPV_2023 | 
+|  50 |  Real-Time Embedded Vision System for Online Monitoring and Sorting of Citrus Fruits |  2023  |  2023_ConteoNaranjasBandaTransportadora |  MarcoNuno_Revista_2023_09_00 | 
+|  49 |  Clasificación de la madurez de chiles habaneros usando aprendizaje automático |  2023  |  2023_ChilesHabaneros |  ClasificadorHabaneros_ProcesadoresDigitales_UPV_2023 | 
+|  48 |  Chromosome Segmentor App |  2023  |  2023_AppSegmentaCromosomas |  AppSegmentaCromosomas_SistemasInteligentes_UPV_2023 | 
+|  47 |  Aplicación de Detección de Comida Tamaulipeca |  2023  |  2023_AppComidaTamaulipeca |  AppComidaTamaulipeca_SistemasInteligentes_UPV_2023 | 
+|  46 |  Aplicación Móvil para el Entrenamiento en Concursos de Spelling Utilizando Síntesis y Reconocimiento de Voz |  2022  |  2022_Spelling |  MarcoNuno_CongArbEsp_2022_11_01 | 
+|  45 |  Integración de un escanner 3D con sensores ultrasónicos y una aplicación móvil para visualización de modelos tridimensionales |  2022  |  2022_Scanner3D |  Escanner3D_Aleman2022 | 
+|  44 |  Monitoreo remoto de refrigeradores y cámaras frías de la red de frío del área de vacunación universal de la Secretaría de Salud de Tamaulipas |  2022  |  2022_RefrigeradoresFrios |  ProyectoRefrigeradoresFrios_2022 | 
+|  43 |  Aplicación de Visión por Computadora y Análisis de Texto para Detección de Plagio en Reportes de Proyectos |  2022  |  2022_Plagio |  Plagio_Marlly2022 | 
+|  42 |  Diseño y construcción de una máquina desprendedora de pedúnculos de chile piquín |  2022  |  2022_MaquinaChilePiquin |  MarcoNuno_ReporteTecnico2022_B | 
+|  41 |  Aplicación móvil para consultar rutas de autobuses urbanos en Ciudad Victoria, Tamaulipas |  2022  |  2022_MapaVickyRanch |  MarcoNuno_Revista_2022_10_00 | 
+|  40 |  Desarrollo de una app móvil de realidad aumentada de la Universidad Politécnica de Victoria |  2022  |  2022_MapaUPV_RealidadAumentada |  MapaRealidadVirtual_UPV_2022 | 
+|  39 |  Módulos de supervisión y automatización de un sistema hidropónico mediante lógica difusa y visión por computadora |  2022  |  2022_HidroponicosDavid |  ArticuloDavidHidroponia_2022 | 
+|  38 |  Mobile Application for Overweight Education |  2021  |  2022_FatChild3D |  Avatar3d_Echartea_2021 | 
+|  37 |  Exploración de técnicas de integración de mosaicos de imágenes para el conteo de ostiones bajo el microscopio |  2022  |  2022_ConteoOstioncitos |  MarcoNuno_ReporteTecnicoMosaicoOstiones2022_C | 
 |  36 |  Implementation and integration of image processing blocks in a real-time bottle classification system |  2022  |  2022_BottleClassifier |  MarcoNuno_Revista_2022_03_00 | 
 |  35 |  Diseño e implementación de una aplicación móvil para pase de Lista |  2025  |  2022_AppPaseLista |  MarcoNuno_ReportePaseLista_2022 | 
 |  34 |  Mobile App for Mexican sign language recognition using Mediapipe and CNN |  2022  |  2022_AplicacionLSM |  ProyectoLSM_2022 | 
