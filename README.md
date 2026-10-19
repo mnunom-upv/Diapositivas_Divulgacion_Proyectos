@@ -1,10 +1,11 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 09:37:40
+# Ultima Actualizacion:  2026-10-19 12:54:59
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
-|  77 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
+|  78 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
+|  77 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 
 |  76 |  Android Skin Change |  2025  |  2025_SkinReplacement |  2025_SkinReplacement | 
 |  75 |  Mejora del Simulador de Cubo de Rubik para Android con Animaciones 3D mediante Migración a OpenGL ES 3.0 |  2025  |  2025_RubikCode_Grafo |  CuboRubik_Grafo | 
 |  74 |  Rompecabezas de los Estados de México |  2025  |  2025_RompecabezasMexico |  2025_RompecabezasMexico | 
