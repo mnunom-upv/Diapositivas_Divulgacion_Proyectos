@@ -1,9 +1,10 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 15:15:43
+# Ultima Actualizacion:  2026-10-19 15:31:58
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
+|  80 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
 |  79 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
 |  78 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
 |  77 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 

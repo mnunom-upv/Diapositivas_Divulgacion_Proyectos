@@ -1,0 +1,41 @@
+\renewcommand{\EntradaBibtex}{2026_RecorridoUPV_mas_Jaguar}
+
+\begin{frame}{\citetitle{\EntradaBibtex}$^*$ (1)}
+\begin{block}{Problema y objetivo} 
+El proyecto evoluciona un simulador de recorridos virtuales del campus de la Universidad Politécnica de Victoria para iOS (anteriormente solo para dispositivos Android).
+\end{block} 
+
+Esta tercera iteración busca resolver dos limitaciones:
+\begin{itemize}
+\item El campus era un espacio sin personajes o vida simulada.
+\item El recorrido solamente podía experimentarse en primera persona.Programación y resolución de problemas.
+\end{itemize}
+Se incorporan:
+\begin{itemize}
+  \item NPC (Non-Player Character) jaguar autónomo que recorre el campus.
+  \item Cámara en tercera persona para visualizar al jugador.
+\end{itemize}
+\footfullcite*{\EntradaBibtex}
+\end{frame}
+
+\begin{frame}{\citetitle{\EntradaBibtex} (2)}
+\begin{block}{Arquitectura y componentes} 
+
+Componentes de la arquitectura:
+\begin{itemize}
+\item UPVScene: controlador principal de la escena.
+\item ConstructorEdificio: geometría y sistema de colisiones.
+\item Campus y Ambiente: elementos del mundo exterior.
+\item Módulos adicionales:
+\begin{itemize}
+\item Jaguar. Modelo 3D, pelaje procedural y avatar animado
+\item JaguarNPC.	Navegación autónoma
+\item UPVScene.	Cámara en tercera persona y coordinación
+\item ContentView.	Controles y posición del NPC en minimapa
+\end{itemize}
+\end{itemize}
+
+\end{block} 
+
+\end{frame}
+
