@@ -1,0 +1,23 @@
+|  81 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
+|  80 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
+|  78 |  An Augmented Reality and Interactive 3D Mobile Visualization of Multifunctional Hybrid Materials: A Prototype and a Preliminary User Experience Evaluation |  2026  |  2026_Augmented_Reality_Multifunctional_Hybrid_Materials |  virtualworlds5040053 | 
+|  74 |  Recorrido de Casa del Arte |  2025  |  2025_RecorridoVirtualCasaArte |  2025_RecorridoVirtualCasaArte | 
+|  73 |  Recorrido virtual UPV |  2025  |  2025_RecorridoUPV |  2025_RecorridoUPV | 
+|  71 |  Mapa de Realidad Aumentada UPV |  2023  |  2025_MapaRA_UPV |  MapaRAChidoUPV_2023 | 
+|  65 |  Filtro de Cabeza de Jaguar UPV |  2023  |  2025_CabezaJaguarUPV |  CabezaJaguar_2023 | 
+|  63 |  Desarrollo de una Aplicación Móvil para Recorrido Virtual Pinacoteca |  2024  |  2024_Pinacoteca_Virtual |  PinacotecaVirtual_2024 | 
+|  57 |  Aplicación Móvil para la detección de Curl de Bíceps |  2024  |  2024_CurlBiceps |  CurlBiceps_UPV_2024 | 
+|  56 |  Contador de sentadillas utilizando MediaPipe |  2024  |  2024_ConteoSentadillas |  ConteoSentadillas_UPV_2024 | 
+|  53 |  Contador de lagartijas con audio para Android |  2024  |  2024_ConteoLagartijas |  ConteoLagartijas_UPV_2024 | 
+|  52 |  Recorrido Museo Regional de Historia de Tamaulipas |  2023  |  2023_MuseoRegional_Virtual |  MuseoRegionalVirtual_2023 | 
+|  41 |  Aplicación móvil para consultar rutas de autobuses urbanos en Ciudad Victoria, Tamaulipas |  2022  |  2022_MapaVickyRanch |  MarcoNuno_Revista_2022_10_00 | 
+|  40 |  Desarrollo de una app móvil de realidad aumentada de la Universidad Politécnica de Victoria |  2022  |  2022_MapaUPV_RealidadAumentada |  MapaRealidadVirtual_UPV_2022 | 
+|  38 |  Mobile Application for Overweight Education |  2021  |  2022_FatChild3D |  Avatar3d_Echartea_2021 | 
+|  34 |  Mobile App for Mexican sign language recognition using Mediapipe and CNN |  2022  |  2022_AplicacionLSM |  ProyectoLSM_2022 | 
+|  26 |  Modelo 3D del Jaguar de la UPV sobre un código QR |  2020  |  2020_MascotaUPV3D |  JaguarAplicacionMovil_2020 | 
+|  22 |  Visión por Computadora para Realidad Aumentada |  2019  |  2019_RealidadAumentada |  RealidadAumentada_PrimerPrototipo_2019 | 
+|  20 |  Simulación de brazo robótico en dispositivos móviles utilizando OpenGL ES |  2022  |  2019_BrazoRobot3D |  BrazoRobot_Uriegas2022 | 
+|  17 |  An Education Application for Teaching Robot Arm Manipulator Concepts Using Augmented Reality |  2018  |  2018_AugmentedReality |  MarcoNuno_Revista_2018_08_00 | 
+|  16 |  Tetris 3D en Android |  2017  |  2017_Tetris3D |  Reporte2017_Tetris3D | 
+|  15 |  Movimiento de la Cruz de Malta con Iluminación y Texturas con Java y OpenGL ES 2.0 en Android |  2017  |  2017_CruzdeMalta |  CruzdeMalta_2017 | 
+|  14 |  Ajedrez Multijugador |  2017  |  2017_Ajedrez3D |  Ajedrez3D_2017 | 

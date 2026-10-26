@@ -1,0 +1,14 @@
+Android Skin Change 
+Mejora del Simulador de Cubo de Rubik para Android con Animaciones 3D mediante Migración a OpenGL ES 3.0
+Filtro de Cabeza de Jaguar UPV
+Aplicación Móvil para la detección de Curl de Bíceps 
+Aplicación móvil para el seguimiento de puntos caraterísticos de una mano y la visualización simultánea de su modelo 3D
+Chromosome Segmentor App 
+Aplicación de Detección de Comida Tamaulipeca 
+Diseño e implementación de una aplicación móvil para pase de Lista 
+Mobile App for Mexican sign language recognition using Mediapipe and CNN 
+Implementación de un Sistema de Vídeo Vigilancia para Vehículos de Gama Media-Baja 
+Smartphone-Based Remote Monitoring Tool for e-Learning 
+Visión por Computadora para Realidad Aumentada 
+On-Device Learning of Indoor Location for WiFi Fingerprint Approach 
+Robust Smartphone-based Human Activity Recognition using a Tri-axial Accelerometer

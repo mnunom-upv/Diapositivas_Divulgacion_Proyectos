@@ -18,8 +18,10 @@ rm .fuse*
 
 #file=2026_RecorridosRealidadVirtual_TAMUX
 #file="2026_RecorridosRealidadVirtual_Padilla"
-file="2026_Depuracion"
 
+file="2026_Integración_de_Inteligencia_Artificial_en_Aplicaciones_Móviles"
+#file="2026_Fundamentos_Y_Aplicaciones_de_Realidad_Virtual_y_Aumentada"
+#file="2026_Depuracion"
 
 current_date=$(date '+%Y/%m/%d %H:%M:%S')
 
@@ -37,7 +39,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE 
 cp output.pdf $file.pdf
 rm output.pdf
 
-#open $file.pdf
+open $file.pdf
 # Store formatted date
 #current_date=$(date +%Y-%m-%d)
 
@@ -52,7 +54,7 @@ rm output.pdf
 python3 AnalizarDemos.py > README.md
 
 
-
+#exit
 
 #git remote add origin https://github.com/mnunom-upv/Diapositivas_Divulgacion_Proyectos.git
 

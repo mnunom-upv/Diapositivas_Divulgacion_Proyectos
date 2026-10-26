@@ -1,0 +1,778 @@
+
+\documentclass[aspectratio=169]{beamer}
+
+% --------------------------------------------------
+% Paquetes
+% --------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usetikzlibrary{
+    arrows.meta,
+    positioning,
+    shapes.geometric,
+    fit,
+    backgrounds
+}
+
+% --------------------------------------------------
+% Tema
+% --------------------------------------------------
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+
+
+%\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=ydmdddnt]{biblatex}
+\usepackage[backend=biber,maxcitenames=50,maxbibnames=50,sorting=none]{biblatex}
+
+
+
+
+
+
+%\renewrobustcmd{\mkbibfootnote}{\normalsize\footnotemark\footnotetext}
+\setbeamerfont{footnote}{size=\tiny}
+
+
+
+
+
+
+\newcommand{\ArchivoPrincipal}{Todos}
+\newcommand{\ArchivoSecundario}{Bibliografia}
+
+
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{\ArchivoPrincipal.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=primary, append]
+    }
+    \map{
+      \perdatasource{\ArchivoSecundario.bib}
+      \step[fieldset=KEYWORDS, fieldvalue=secundary, append]
+    }    
+  }
+}
+
+
+\addbibresource{\ArchivoPrincipal.bib}
+\addbibresource{\ArchivoSecundario.bib}
+
+
+
+% --------------------------------------------------
+% Información
+% --------------------------------------------------
+\title[IA en dispositivos móviles]
+      {Integración de Inteligencia Artificial en Aplicaciones Móviles}
+
+\subtitle{Relación entre proyectos de investigación y aplicaciones inteligentes}
+
+\author{Marco Aurelio Nuño-Maganda}
+
+\institute[UPV]{Universidad Politécnica de Victoria\\ Laboratorio de Sistemas Inteligentes \\
+mnunom@upv.edu.mx  \vspace{.25cm} }
+
+\date{Octubre de 2026}
+
+% --------------------------------------------------
+% Comandos
+% --------------------------------------------------
+\newcommand{\ia}{Inteligencia Artificial}
+\newcommand{\ondevice}{\textit{on-device}}
+
+% A HUEVO EN TODOS!!!
+\newcommand{\Folder}{YYY}
+\newcommand{\EntradaBibtex}{XXX}
+
+ \AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Contenido}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+% --------------------------------------------------
+% Documento
+% --------------------------------------------------
+\begin{document}
+
+% --------------------------------------------------
+% Portada
+% --------------------------------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\frame{
+\frametitle{Contenido}
+\tableofcontents
+}
+
+
+\section{Introducción}
+% ==================================================
+% ¿QUÉ ES LA INTELIGENCIA ARTIFICIAL?
+% ==================================================
+\begin{frame}
+\frametitle{¿Qué es la Inteligencia Artificial?}
+
+\begin{block}{Definición}
+La \textbf{Inteligencia Artificial (IA)} es el campo de la computación
+que desarrolla sistemas capaces de realizar tareas que normalmente
+requieren capacidades asociadas con la inteligencia humana.
+\end{block}
+
+\vspace{0.15cm}
+
+\begin{columns}[T]
+
+\column{0.70\textwidth}
+
+\textbf{Capacidades de la IA}
+
+\begin{itemize}
+    \item \textbf{Percibir:} interpretar imágenes, audio y sensores.
+    \item \textbf{Aprender:} identificar patrones a partir de datos.
+    \item \textbf{Razonar:} analizar información y establecer relaciones.
+    \item \textbf{Predecir:} estimar resultados o comportamientos.
+    \item \textbf{Decidir:} seleccionar acciones con base en la información.
+\end{itemize}
+
+\begin{alertblock}{Idea clave}
+\centering
+\textbf{\tiny La IA permite transformar datos en conocimiento, predicciones
+o decisiones para resolver problemas.}
+\end{alertblock}
+
+
+\column{0.30\textwidth}
+
+\begin{center}
+
+\begin{tikzpicture}[
+    thick,scale=1, every node/.style={scale=0.65},
+    node distance=0.45cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=3.0cm,
+        minimum height=0.65cm,
+        align=center
+    },
+    arrow/.style={-{Latex}, thick}
+]
+
+\node[box] (data) {Datos\\e información};
+
+\node[box, below=of data] (ai) {\textbf{Modelo de IA}};
+
+\node[box, below=of ai] (result) {Predicción\\o decisión};
+
+\node[box, below=of result] (action) {Acción\\o respuesta};
+
+\draw[arrow] (data) -- (ai);
+\draw[arrow] (ai) -- (result);
+\draw[arrow] (result) -- (action);
+
+\end{tikzpicture}
+
+\end{center}
+
+\end{columns}
+
+\vspace{0.15cm}
+
+
+\end{frame}
+
+
+
+% ==================================================
+% ¿QUÉ ES LA VISIÓN POR COMPUTADORA?
+% ==================================================
+\begin{frame}
+\frametitle{¿Qué es la Visión por Computadora?}
+
+\begin{block}{Definición}
+La \textbf{Visión por Computadora (Computer Vision)} es un área de la
+Inteligencia Artificial que permite a los sistemas computacionales
+\textbf{analizar, interpretar y comprender información visual}
+proveniente de imágenes y videos.
+\end{block}
+
+\vspace{0.15cm}
+
+\begin{columns}[T]
+
+\column{0.75\textwidth}
+
+\textbf{¿Qué puede hacer?}
+
+\begin{itemize}
+    \item \textbf{Detectar} objetos y personas.
+    \item \textbf{Clasificar} imágenes.
+    \item \textbf{Segmentar} regiones de interés.
+    \item \textbf{Reconocer} patrones y características.
+    \item \textbf{Seguir} objetos y movimientos.
+    \item \textbf{Estimar} posiciones y estructuras 3D.
+\end{itemize}
+
+
+
+%\begin{alertblock}{Idea clave}
+%\centering
+%\textbf{\tiny La Visión por Computadora transforma información visual
+%en información que una máquina puede utilizar para comprender
+%su entorno y tomar decisiones.}
+%\end{alertblock}
+
+
+\column{0.25\textwidth}
+
+\begin{center}
+
+\begin{tikzpicture}[
+    thick,scale=1, every node/.style={scale=0.55},
+    node distance=0.25cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=3.0cm,
+        minimum height=0.55cm,
+        align=center
+    },
+    arrow/.style={-{Latex}, thick}
+]
+
+\node[box] (image) {Imagen / Video};
+
+\node[box, below=of image] (processing)
+    {Procesamiento\\de imagen};
+
+\node[box, below=of processing] (features)
+    {Características\\visuales};
+
+\node[box, below=of features] (ai)
+    {\textbf{Modelo de IA}};
+
+\node[box, below=of ai] (result)
+    {Interpretación\\o decisión};
+
+\draw[arrow] (image) -- (processing);
+\draw[arrow] (processing) -- (features);
+\draw[arrow] (features) -- (ai);
+\draw[arrow] (ai) -- (result);
+
+\end{tikzpicture}
+
+\end{center}
+
+\end{columns}
+
+\textbf{\tiny La Visión por Computadora transforma información visual en información que una máquina puede utilizar para comprender su entorno y tomar decisiones.}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{¿Qué es el Aprendizaje Automático?}
+\small
+
+\begin{block}{Definición}
+El \textbf{aprendizaje automático} (\textit{Machine Learning, ML}) es una
+rama de la Inteligencia Artificial que permite a los sistemas
+\textbf{aprender patrones a partir de datos} y utilizarlos para realizar
+predicciones o tomar decisiones, sin programar explícitamente cada regla.
+\end{block}
+
+\vspace{0.2cm}
+
+\begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+        \textbf{¿Cómo funciona?}
+        \begin{enumerate}
+            \item Se recopilan datos.
+            \item Se entrena un modelo con esos datos.
+            \item Se evalúa su desempeño.
+            \item El modelo procesa nuevos datos y genera resultados.
+        \end{enumerate}
+    \end{column}
+
+    \begin{column}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}[
+            node distance=0.55cm,
+            box/.style={
+                draw, rounded corners, align=center,
+                minimum width=3.4cm, minimum height=0.75cm,
+                fill=blue!8
+            },
+            arrow/.style={->, thick}
+        ]
+            \node[box] (datos) {Datos de entrenamiento};
+            \node[box, below=of datos, fill=orange!15]
+                (modelo) {Algoritmo de aprendizaje};
+            \node[box, below=of modelo, fill=green!12]
+                (resultado) {Modelo entrenado};
+            \node[box, below=of resultado, fill=purple!10]
+                (pred) {Predicción o decisión};
+
+            \draw[arrow] (datos) -- (modelo);
+            \draw[arrow] (modelo) -- (resultado);
+            \draw[arrow] (resultado) -- (pred);
+        \end{tikzpicture}
+    \end{column}
+\end{columns}
+
+\vspace{0.2cm}
+
+\begin{alertblock}{Ejemplos en dispositivos móviles}
+Reconocer objetos con la cámara, identificar gestos de la mano,
+clasificar imágenes, reconocer voz y detectar actividades mediante sensores.
+\end{alertblock}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Realidad Aumentada}
+%\begin{alertblock}{Realidad Aumentada}
+\begin{center}
+\includegraphics[width=0.65\linewidth]{00_IntroAR_VR/Infografia-Realidad-Aumentada-y-Aplicaciones.png}
+\end{center}
+%\end{alertblock}
+\end{frame}
+
+
+
+% ==================================================
+% DIAPOSITIVA 1
+% ==================================================
+\begin{frame}
+\frametitle{Inteligencia Artificial en Dispositivos Móviles}
+
+\begin{block}{De las aplicaciones móviles tradicionales a sistemas inteligentes}
+Los dispositivos Android integran cámaras, sensores, GPU y capacidad de cómputo suficiente para ejecutar modelos de \ia.
+\end{block}
+
+\vspace{0.2cm}
+
+\begin{columns}[T]
+
+\column{0.48\textwidth}
+
+\textbf{La combinación de:}
+
+\begin{itemize}
+    \item Inteligencia Artificial
+    \item Visión por computadora
+    \item Sensores
+    \item Realidad Aumentada
+\end{itemize}
+
+\column{0.48\textwidth}
+
+\textbf{Permite:}
+
+\begin{itemize}
+    \item Reducir la dependencia de servidores.
+    \item Disminuir la latencia.
+    \item Mejorar la privacidad.
+    \item Operar sin conexión permanente.
+\end{itemize}
+
+\end{columns}
+
+\vspace{0.35cm}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=0.5cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=2.8cm,
+        minimum height=0.7cm,
+        align=center
+    },
+    arrow/.style={-{Latex}, thick}
+]
+
+\node[box] (p) {Percepción};
+\node[box, right=of p] (i) {Inteligencia};
+\node[box, right=of i] (in) {Interacción};
+\node[box, right=of in] (a) {Aplicación};
+
+\draw[arrow] (p) -- (i);
+\draw[arrow] (i) -- (in);
+\draw[arrow] (in) -- (a);
+
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+
+
+
+
+\section{Herramientas}
+
+
+% ==================================================
+% HERRAMIENTAS DE IA: VISIÓN, VOZ Y MODELOS
+% ==================================================
+\begin{frame}
+\frametitle{Herramientas de IA: Visión, Voz y Modelos}
+
+%\small
+
+%\begin{columns}[T]
+
+% --------------------------------------------------
+% VISIÓN POR COMPUTADORA
+% --------------------------------------------------
+%\column{0.49\textwidth}
+
+\begin{block}{Visión por Computadora}
+\begin{itemize}
+    \item \textbf{OpenCV:} procesamiento de imágenes,
+    filtros, geometría y seguimiento de objetos.
+
+    \item \textbf{MediaPipe:} detección de manos,
+    rostros, pose y puntos característicos.
+
+    \item \textbf{CameraX:} integración de la cámara
+    Android con el análisis de imágenes en tiempo real.
+\end{itemize}
+\end{block}
+
+
+
+
+
+% --------------------------------------------------
+% DESARROLLO DE MODELOS
+% --------------------------------------------------
+%\column{0.49\textwidth}
+
+\begin{block}{Entrenamiento y Preparación}
+\begin{itemize}
+    \item \textbf{TensorFlow / Keras:}
+    entrenamiento de redes neuronales y clasificación.
+
+    \item \textbf{PyTorch:}
+    desarrollo y entrenamiento de modelos de aprendizaje profundo.
+
+\end{itemize}
+\end{block}
+
+\begin{block}{Integración en Android}
+\begin{itemize}
+    \item \textbf{Android Studio + Kotlin:}
+    desarrollo de la aplicación móvil.
+
+\end{itemize}
+\end{block}
+
+%\end{columns}
+
+%\vspace{0.15cm}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=0.35cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum height=0.6cm,
+        minimum width=2.4cm,
+        align=center,
+        font=\small
+    },
+    arrow/.style={-{Latex}, thick}
+]
+
+\node[box] (data) {Cámara / Audio / Sensores};
+\node[box, right=of data] (model) {Modelo o API de IA};
+\node[box, right=of model] (app) {Aplicación Android};
+
+\draw[arrow] (data) -- (model);
+\draw[arrow] (model) -- (app);
+
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+
+
+\input{01_MediaPipe/MediaPipe.tex}
+
+% ==================================================
+% GRÁFICOS 3D, REALIDAD AUMENTADA E IA
+% ==================================================
+\begin{frame}
+\frametitle{Gráficos 3D, Realidad Aumentada e IA Móvil}
+\begin{block}{OpenGL ES: Renderizado gráfico 3D}
+\begin{itemize}
+    \item Renderizado acelerado por GPU, Animaciones, geometría y texturas.
+\end{itemize}
+\end{block}
+
+\begin{block}{Rajawali3D: Motor 3D para Android}
+\begin{itemize}
+    \item Simplifica escenas, cámaras, luces y materiales, facilita la creación de entornos 3D.
+\end{itemize}
+\end{block}
+
+
+\begin{block}{ARCore: Percepción espacial}
+\begin{itemize}
+    \item Seguimiento de movimiento, detección de superficies y estimación de profundidad,
+\end{itemize}   
+\end{block}
+
+\begin{block}{Sceneform: Desarrollo de experiencias de RA}
+\begin{itemize}
+    \item Facilita la integración de modelos 3D en aplicaciones Android.
+\end{itemize}
+\end{block}
+
+\vspace{0.15cm}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=0.35cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=2.25cm,
+        minimum height=0.65cm,
+        align=center,
+        font=\scriptsize
+    },
+    arrow/.style={-{Latex}, thick}
+]
+
+\node[box] (sensor) {Cámara y sensores};
+\node[box, right=of sensor] (ar) {ARCore / RA};
+\node[box, right=of ar] (ai) {Modelo de IA};
+\node[box, right=of ai] (render) {OpenGL ES / 3D};
+
+\draw[arrow] (sensor) -- (ar);
+\draw[arrow] (ar) -- (ai);
+\draw[arrow] (ai) -- (render);
+
+\end{tikzpicture}
+\end{center}
+
+%\begin{alertblock}{Aportación de la IA}
+%La IA reconoce objetos, gestos o poses; las herramientas 3D y de RA
+%permiten representar sus resultados e interactuar con ellos en el
+%entorno real.
+%\end{alertblock}
+
+\end{frame}
+
+\section{Proyectos}
+
+\subsection{Reconocimiento de actividades y ubicaciones}
+
+\input{2015_ActivityRecognition/T11.tex}
+\input{2018_IPS/T13.tex}
+
+
+\subsection{Reconocimiento basado en visión por computadora}
+
+\input{2020_SeguridadAutomotriz/T18.tex}
+\input{2022_AplicacionLSM/LSM.tex}
+\input{2023_AppComidaTamaulipeca/AppComidaTamaulipeca.tex}
+\input{2023_AppSegmentaCromosomas/AppSegmentaCromosomas.tex}
+\input{2022_AppPaseLista/AppPaseLista.tex}
+\input{2024_PaseDeListaCodigoQR/PaseListaCodigoQR.tex}
+
+\subsection{Reconocimiento de partes del cuerpo}
+\input{2025_SkinReplacement/2025_SkinReplacement.tex}
+\input{2024_CurlBiceps/CurlBiceps.tex}
+\input{2023_ManoRobotica/ManoRobotica.tex}
+
+
+\subsection{Realidad Aumentada}
+
+\input{2019_RealidadAumentada/RealidadAumentada.tex}
+\input{2018_AugmentedReality/T14.tex}
+\input{2022_MapaUPV_RealidadAumentada/MapaUPV_RealidadAumentada.tex}
+\input{2025_CabezaJaguarUPV/CabezaJaguar.tex}
+\input{2026_Augmented_Reality_Multifunctional_Hybrid_Materials/2026_Augmented_Reality_Multifunctional_Hybrid_Materials.tex}
+
+
+\section{Conclusiones}
+
+\begin{frame}
+\frametitle{Relación entre IA y los proyectos presentados}
+\framesubtitle{El smartphone como dispositivo de percepción}
+
+\begin{block}{Cámara del smartphone como \textbf{sensor inteligente}}
+\begin{itemize}
+\item Reconocimiento de objetos de interes  (cromosomas, alimentos).
+\item Detección de partes del cuerpo humano  (piel, manos, torso, cara).
+\end{itemize}
+\end{block}
+
+\begin{block}{Procesamiento de datos de los sensores de smartphone}
+\begin{itemize}
+\item Acelerometros (clasificador de actividad).
+\item WiFi (Detectar ubicación).
+\end{itemize}
+\end{block}
+
+
+\begin{block}{Idea Aplicaciones didácticas/lúdicas para enriquecen la experiencia de usuario}
+\begin{itemize}
+\item Filtro de Jaguar/Aplicaciones de Realidad Aumentada.
+\item Transportador Virtual/HSCM para materiales.
+\end{itemize}
+
+\end{block}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{¿Qué tienen en común estos proyectos?}
+
+\framesubtitle{Una línea común: Inteligencia Artificial en el dispositivo}
+
+\begin{center}
+
+\begin{tikzpicture}[
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=3.0cm,
+        minimum height=1.0cm,
+        align=center,
+        font=\small
+    },
+    arrow/.style={-{Latex}, very thick}
+]
+
+\node[box] (p) {
+    \textbf{PERCEPCIÓN}\\
+    Imágenes\\
+    Video\\
+    Gestos\\
+    Sensores
+};
+
+\node[box, right=1cm of p] (i) {
+    \textbf{INTELIGENCIA}\\
+    Clasificación\\
+    Detección\\
+    Segmentación\\
+    Predicción
+};
+
+\node[box, right=1cm of i] (in) {
+    \textbf{INTERACCIÓN}\\
+    RA\\
+    Interfaces naturales\\
+    Modelos 3D
+};
+
+\node[box, right=1cm of in] (a) {
+    \textbf{APLICACIÓN}\\
+    Educación\\
+    Salud/deporte\\
+    Cultura\\
+    Seguridad
+};
+
+\draw[arrow] (p) -- (i);
+\draw[arrow] (i) -- (in);
+\draw[arrow] (in) -- (a);
+
+\end{tikzpicture}
+
+\end{center}
+
+\vspace{0.35cm}
+
+\begin{alertblock}{Conclusión}
+Los proyectos comparten una arquitectura conceptual basada en
+\textbf{percibir, interpretar e interactuar} utilizando recursos
+computacionales disponibles en dispositivos móviles.
+\end{alertblock}
+
+\end{frame}
+
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+
+    % Fondo
+    \fill[blue!8]
+        (current page.south west)
+        rectangle
+        (current page.north east);
+
+    % Elementos decorativos
+    \fill[blue!75!black]
+        ([xshift=-1.5cm,yshift=1.2cm]current page.south east)
+        circle (3.2cm);
+
+    \fill[cyan!65]
+        ([xshift=0.8cm,yshift=-0.8cm]current page.north west)
+        circle (2.1cm);
+
+    \fill[orange!80]
+        ([xshift=-2.0cm,yshift=-1.0cm]current page.north east)
+        circle (0.35cm);
+
+    % Texto principal
+    \node[
+        align=center,
+        text=blue!75!black,
+        font=\fontsize{42}{50}\selectfont\bfseries
+    ] at ([yshift=0.4cm]current page.center)
+    {¡Gracias!};
+
+    % Línea decorativa
+    \draw[cyan!70!blue,line width=2pt]
+        ([xshift=-1.5cm,yshift=-0.5cm]current page.center)
+        --
+        ([xshift=1.5cm,yshift=-0.5cm]current page.center);
+
+    % Mensaje final
+    \node[
+        align=center,
+        text=black!70,
+        font=\large
+    ] at ([yshift=-1.2cm]current page.center)
+    {¿Preguntas o comentarios? \\ mnunom@upv.edu.mx};
+
+\end{tikzpicture}
+\end{frame}
+
+
+
+
+\end{document}
+
+

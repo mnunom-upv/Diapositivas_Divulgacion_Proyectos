@@ -1,9 +1,10 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-19 16:18:46
+# Ultima Actualizacion:  2026-10-26 16:46:28
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
+|  82 |  Recorrido Virtual del Museo de Historia Natural de Tamaulipas TAMUX - Sala 1 |  2026  |  2026_RecorridoTamux |  2026RecorridoVirtualTamux | 
 |  81 |  Simulador de Recorridos del Campus UPV en iOS: Personaje No Jugable con Apariencia de Jaguar y Cámara en Tercera Persona |  2026  |  2026_RecorridoJaguarUPV_IOs |  2026_RecorridoUPV_mas_Jaguar | 
 |  80 |  Mobile2D-3D-RoboticSim: A robotic platform for computational thinking assessment in STEM and STEAM education |  2026  |  2026_Mobile2D-3D-RoboticSim |  MarcoNuno_Revista_2026_02_01 | 
 |  79 |  Machine Learning and Queuing Algorithm Integration for Real-Time Citrus Size Classification on an Industrial Sorting Machine |  2026  |  2026_Citricos |  pr14010164 | 
