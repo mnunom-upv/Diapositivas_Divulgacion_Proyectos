@@ -20,7 +20,7 @@ rm .fuse*
 #file="2026_RecorridosRealidadVirtual_Padilla"
 
 file="2026_Integración_de_Inteligencia_Artificial_en_Aplicaciones_Móviles"
-#file="2026_Fundamentos_Y_Aplicaciones_de_Realidad_Virtual_y_Aumentada"
+file="2026_Fundamentos_Y_Aplicaciones_de_Realidad_Virtual_y_Aumentada"
 #file="2026_Depuracion"
 
 current_date=$(date '+%Y/%m/%d %H:%M:%S')
