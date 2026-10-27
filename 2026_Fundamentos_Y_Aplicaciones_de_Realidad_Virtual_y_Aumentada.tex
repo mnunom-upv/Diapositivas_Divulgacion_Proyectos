@@ -170,6 +170,8 @@ mnunom@upv.edu.mx  \vspace{.25cm} }
 
 \input{2025_MapaRA_UPV/MapaRAUPV.tex}
 
+\input{2026_Augmented_Reality_Multifunctional_Hybrid_Materials/2026_Augmented_Reality_Multifunctional_Hybrid_Materials.tex}
+
 \section[PRV]{Prototipos de Realidad Virtual}
 
 %\input{2019_BrazoRobot3D/BrazoRobot3D.tex}
@@ -201,20 +203,56 @@ mnunom@upv.edu.mx  \vspace{.25cm} }
 \end{itemize}
 \end{frame}
 
-\begin{frame}%%     2
-\begin{center}
-{\fontsize{40}{50}\selectfont ¡Gracias!}
-\end{center}
-Comentarios o Dudas: mnunom@upv.edu.mx 
+
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+
+    % Fondo
+    \fill[blue!8]
+        (current page.south west)
+        rectangle
+        (current page.north east);
+
+    % Elementos decorativos
+    \fill[blue!75!black]
+        ([xshift=-1.5cm,yshift=1.2cm]current page.south east)
+        circle (3.2cm);
+
+    \fill[cyan!65]
+        ([xshift=0.8cm,yshift=-0.8cm]current page.north west)
+        circle (2.1cm);
+
+    \fill[orange!80]
+        ([xshift=-2.0cm,yshift=-1.0cm]current page.north east)
+        circle (0.35cm);
+
+    % Texto principal
+    \node[
+        align=center,
+        text=blue!75!black,
+        font=\fontsize{42}{50}\selectfont\bfseries
+    ] at ([yshift=0.4cm]current page.center)
+    {¡Gracias!};
+
+    % Línea decorativa
+    \draw[cyan!70!blue,line width=2pt]
+        ([xshift=-1.5cm,yshift=-0.5cm]current page.center)
+        --
+        ([xshift=1.5cm,yshift=-0.5cm]current page.center);
+
+    % Mensaje final
+    \node[
+        align=center,
+        text=black!70,
+        font=\large
+    ] at ([yshift=-1.2cm]current page.center)
+    {¿Preguntas o comentarios? \\ mnunom@upv.edu.mx};
+
+\end{tikzpicture}
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Agradecimiento}  
-%Se agradece al Consejo Tamaulipeco de Ciencia y Tecnologia (COTACYT) por la invitaci\'on a este evento
 
-%Comentarios o Dudas: mnunom@upv.edu.mx 
-\end{frame}
 
 
 \end{document}

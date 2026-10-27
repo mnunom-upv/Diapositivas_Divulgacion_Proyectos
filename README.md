@@ -1,7 +1,7 @@
 # Dr. Marco Aurelio Nuño Maganda
 # Listado de Proyectos de Investigación y Desarrollo Tecnológico 
 # Codigo Fuente de Diapositivas Latex para Divulgación de la Ciencia y la Tecnología
-# Ultima Actualizacion:  2026-10-27 08:20:30
+# Ultima Actualizacion:  2026-10-27 08:28:20
 |#| Title  | Year  | Folder  | Bibtex Entry Key |
 | ----- | -----  | -----  | -----  | ----- | 
 |  82 |  Recorrido Virtual del Museo de Historia Natural de Tamaulipas TAMUX - Sala 1 |  2026  |  2026_RecorridoTamux |  2026RecorridoVirtualTamux | 
